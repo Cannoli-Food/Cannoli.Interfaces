@@ -10,6 +10,7 @@ export interface IEvolutionDatabaseQueue {
   log: string[];
   notified: boolean;
   notifiedAt: number;
+  sendAt: number;
   phoneNumber: string;
   text: string;
   updatedAt: number;

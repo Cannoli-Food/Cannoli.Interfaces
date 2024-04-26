@@ -1,9 +1,11 @@
+import { IDesenfilaToken } from './i-desenfila-token';
+
 export interface IDesenfila {
   // #region Properties (3)
 
-  accountId: string;
-  email: string | null;
-  token: string;
+  containerId: string;
+  merchantId: string;
+  token: IDesenfilaToken | null;
 
   // #endregion Properties (3)
 }

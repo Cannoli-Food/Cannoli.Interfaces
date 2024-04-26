@@ -10,6 +10,7 @@ export class EvolutionDatabaseQueueEntity implements IEvolutionDatabaseQueue {
   public instanceName: string = '';
   public globalApikey: string = '';
   public log: string[] = [];
+  public sendAt: number = 1713547959155;
   public notified: boolean = false;
   public notifiedAt: number = 0;
   public phoneNumber: string = '';

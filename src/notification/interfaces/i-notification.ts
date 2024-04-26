@@ -1,6 +1,9 @@
 import { NotificationCategoryEnum, NotificationPriorityEnum, NotificationStatusEnum } from '../enums';
 import { INotificationAction } from './i-notification-action';
 
+/**
+ * @deprecated
+ */
 export interface INotification {
   // #region Properties (13)
 

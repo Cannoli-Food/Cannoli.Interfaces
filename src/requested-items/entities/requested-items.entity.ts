@@ -13,6 +13,7 @@ export class RequestedItemsEntity implements IRequestedItems {
   public preview: boolean = false;
   public token: string = '';
   public updatedAt: Date = new Date();
+  public isPaid: boolean = false;
 
   // #endregion Properties (9)
 

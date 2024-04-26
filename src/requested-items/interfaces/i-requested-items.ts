@@ -10,7 +10,7 @@ export interface IRequestedItems {
   id: string;
   updatedAt: Date;
   preview: boolean;
+  isPaid: boolean;
   token: string;
   data: IRequestedItemData[];
-  // #endregion Properties (11)
 }
