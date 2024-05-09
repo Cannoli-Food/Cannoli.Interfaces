@@ -1,3 +1,3 @@
-import { INatiWa, INatigo, IRabbit } from '../interfaces';
+import { IDesenfila, INatiWa, INatigo, IRabbit } from '../interfaces';
 
-export type AppConfigType = null | INatigo | IRabbit | INatiWa;
+export type AppConfigType = null | INatigo | IRabbit | INatiWa | IDesenfila;

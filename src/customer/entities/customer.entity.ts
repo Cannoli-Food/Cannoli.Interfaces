@@ -5,7 +5,7 @@ import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
 export class CustomerEntity implements ICustomer {
-  // #region Properties (30)
+  // #region Properties (31)
 
   public address: AddressEntity = new AddressEntity();
   public blockedReason: string | null = null;
@@ -18,6 +18,7 @@ export class CustomerEntity implements ICustomer {
   public fullName: string = '';
   public id: string = '';
   public imageUrl: string | null = null;
+  public internationalCode: string = '55';
   public interval: ECustomerInterval = ECustomerInterval.MONTHLY;
   public limit: number = 0;
   public name: string = '';
@@ -38,7 +39,7 @@ export class CustomerEntity implements ICustomer {
   public type: ECustomerType = ECustomerType.SINGLE;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (30)
+  // #endregion Properties (31)
 
   // #region Constructors (1)
 

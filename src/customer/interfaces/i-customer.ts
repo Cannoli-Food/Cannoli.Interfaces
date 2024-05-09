@@ -16,6 +16,7 @@ export interface ICustomer {
   email: string;
   fullName: string;
   id: string;
+  internationalCode: string;
   imageUrl: string | null;
   interval: ECustomerInterval;
   limit: number;

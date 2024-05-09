@@ -11,6 +11,7 @@ export class MemberEntity extends BaseEntity implements IMember {
   public email: string = '';
   public name: string = '';
   public partnerId: string = '';
+  public internationalCode: string = '55';
   public phoneNumber: string = '';
   public phoneNumberVerified: boolean = false;
   public phoneNumberVerifiedAt: Date | null = null;

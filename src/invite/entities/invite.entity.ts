@@ -16,7 +16,7 @@ export class InviteEntity implements IInvite {
   public expireAt: Date = new Date(new Date().getTime() + 86400000);
   public expired: boolean = false;
   public id: string = '';
-  public internationalCode: string = '+55';
+  public internationalCode: string = '55';
   public name: string = '';
   public phoneNumber: string = '';
   public photoUrl: string = '';

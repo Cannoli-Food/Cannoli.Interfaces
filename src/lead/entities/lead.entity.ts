@@ -32,6 +32,8 @@ export class LeadEntity implements ILead {
   public origin: ELeadOrigin = ELeadOrigin.OTHERS;
   /**Status atual.  */
   public partnerId: string = '';
+  public internationalCode: string = '55';
+
   /**Outros endereços de e-mail, se disponíveis.  */
   phoneNumber?: string = '';
   /**Outros números de telefone, se disponíveis.  */

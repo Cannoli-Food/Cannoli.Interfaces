@@ -8,6 +8,7 @@ export class InvoicePayerEntity implements IInvoicePayer {
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
+  public internationalCode: string = '55';
   public name: string = '';
   public phoneNumber: string | null = null;
 

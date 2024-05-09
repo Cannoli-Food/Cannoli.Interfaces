@@ -2,7 +2,7 @@ import { ELeadOrigin } from '../../general/enums';
 import { LeadStatusEnum } from '../enums';
 
 export interface ILead {
-  // #region Properties (20)
+  // #region Properties (21)
 
   /**
    * Lista de atividades ou eventos relacionados ao lead.
@@ -45,6 +45,7 @@ export interface ILead {
    * Lista de produtos ou serviços de interesse.
    */
   interestedIn: string[];
+  internationalCode: string;
   /**
    * Data e hora do último contato.
    **/
@@ -86,6 +87,6 @@ export interface ILead {
    */
   updatedAt: Date;
 
-  // #endregion Properties (20)
+  // #endregion Properties (21)
   // Etiquetas ou categorias para ajudar na segmentação e busca.
 }

@@ -7,6 +7,7 @@ export interface IInvoicePayer {
   doc: string;
   docType: EDocType;
   email: string;
+  internationalCode: string;
   name: string;
   phoneNumber: string | null;
 
