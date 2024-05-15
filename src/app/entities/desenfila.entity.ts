@@ -1,14 +1,16 @@
 import { IDesenfila } from '../interfaces';
-import { IDesenfilaToken } from '../interfaces/i-desenfila-token';
+import { DesenfilaConfigEntity } from './desenfila-config.entity';
+import { DesenfilaTokenEntity } from './desenfila-token.entity';
 
 export class DesenfilaEntity implements IDesenfila {
-  // #region Properties (5)
+  // #region Properties (4)
 
+  public config: DesenfilaConfigEntity | null = null;
   public containerId: string = '';
   public merchantId: string = '';
-  public token: IDesenfilaToken | null = null;
+  public token: DesenfilaTokenEntity | null = null;
 
-  // #endregion Properties (5)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 
