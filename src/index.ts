@@ -40,6 +40,7 @@ export * from './subscription-company';
 export * from './subscription-customer';
 export * from './token';
 export * from './token-jwt';
+export * from './used-apps';
 export * from './verifier-token';
 export * from './viacep';
 export * from './voucher';
