@@ -1,4 +1,4 @@
-export interface IUsedApps {
+export interface IMonitor {
   // #region Properties (11)
 
   id: string;

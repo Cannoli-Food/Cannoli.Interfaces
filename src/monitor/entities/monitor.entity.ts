@@ -1,6 +1,6 @@
-import { IUsedApps } from '../interfaces/i-used-apps';
+import { IMonitor } from '../interfaces/i-monitor';
 
-export class UsedAppsEntity implements IUsedApps {
+export class MonitorEntity implements IMonitor {
   // #region Properties (9)
 
   id: string = '';
@@ -14,7 +14,7 @@ export class UsedAppsEntity implements IUsedApps {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<UsedAppsEntity>) {
+  constructor(data?: Partial<MonitorEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
