@@ -1,10 +1,11 @@
+import { IAppInfo } from '../../purchases';
+
 export interface IMonitor {
   // #region Properties (11)
 
   id: string;
-  companyIds: string[];
+  companies: { id: string; name: string }[];
   total: number;
   createdAt: Date;
-  appId: string;
-  appName: string;
+  app: IAppInfo;
 }

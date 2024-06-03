@@ -1,18 +1,14 @@
+import { IAppInfo } from '../../purchases';
 import { IMonitor } from '../interfaces/i-monitor';
 
 export class MonitorEntity implements IMonitor {
   // #region Properties (9)
 
   id: string = '';
-  companyIds: string[] = [];
+  companies = [{ id: '', name: '' }];
   total: number = 0;
   createdAt: Date = new Date();
-  appId: string = '';
-  appName: string = '';
-
-  // #endregion Properties (9)
-
-  // #region Constructors (1)
+  app: IAppInfo = { appId: '', name: '', version: '' };
 
   constructor(data?: Partial<MonitorEntity>) {
     if (data) {

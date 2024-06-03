@@ -20,6 +20,7 @@ export * from './invite';
 export * from './invoice';
 export * from './iugu';
 export * from './lead';
+export * from './master';
 export * from './member';
 export * from './mobyo';
 export * from './monitor';
