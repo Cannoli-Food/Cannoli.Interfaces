@@ -3,6 +3,7 @@ export interface IDesenfilaToken {
 
   id: string;
   prefix: string | null;
+  masterConfig: boolean;
 
   // #endregion Properties (2)
 }

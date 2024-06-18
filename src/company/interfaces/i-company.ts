@@ -8,6 +8,7 @@ import {
   IOrigin,
   IPaymentProvider,
 } from '../../general';
+import { IInstallation } from '../../installation';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
@@ -43,6 +44,6 @@ export interface ICompany {
   tags: string[];
   updatedAt: Date;
   version: string;
-
-  // #endregion Properties (25)
+  installationDesenfila?: IInstallation;
+  
 }

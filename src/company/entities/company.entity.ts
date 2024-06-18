@@ -6,6 +6,7 @@ import { MessagerChannelEntity } from '../../general/entities/messager-channel.e
 import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.entity';
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
+import { IInstallation } from '../../installation';
 import { ICompany, ICompanyTrialPlansUsed } from '../interfaces';
 
 export class CompanyEntity implements ICompany {

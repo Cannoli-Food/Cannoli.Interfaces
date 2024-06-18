@@ -5,6 +5,7 @@ export class DesenfilaTokenEntity implements IDesenfilaToken {
 
   public id: string = '';
   public prefix: string | null = '';
+  public masterConfig: boolean = false;
 
   // #endregion Properties (2)
 
