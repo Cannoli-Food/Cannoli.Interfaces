@@ -18,5 +18,5 @@ export interface IBillingPayment {
   transactionDate: Date;
   transactionId: string;
 
-  // #endregion Properties (13)
+  
 }

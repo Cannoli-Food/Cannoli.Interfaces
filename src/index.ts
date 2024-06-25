@@ -43,6 +43,7 @@ export * from './subscription-customer';
 export * from './token';
 export * from './token-jwt';
 // export * from './v1-entities'; // importacoes das tabelas do nati V1
+export * from './transaction';
 export * from './verifier-token';
 export * from './viacep';
 export * from './voucher';
