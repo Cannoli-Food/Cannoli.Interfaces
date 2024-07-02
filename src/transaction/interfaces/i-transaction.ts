@@ -1,35 +1,43 @@
-import { EReleaseStatus, EOperationType, EPaymentMethodId, EMpStatus, EMpStatusDetail, ETransactionStatus } from "../enums";
-import { ITransactionBalance } from "./i-balance";
-import { IFeeDeatil } from "./i-fee-detail";
-import { ITransactionPaymentMethod } from "./i-payment-method";
-import { ITransactionTotal } from "./i-total";
+import { EDesenfilaFrom } from '../../general';
+import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
+import { ITransactionBalance } from './i-balance';
+import { IFeeDetail } from './i-fee-detail';
+import { ITransactionPaymentMethod } from './i-payment-method';
+import { ITransactionTotal } from './i-total';
 
 export interface ITransaction {
-  id: string;
-  referenceId: string;
+  // #region Properties (30)
+
+  balance: ITransactionBalance | null;
   card: {};
-  merchantId: string;
   containerId: string;
-  dateApproved: Date;
+  createdAt: Date;
+  dateApproved: Date | null;
   dateCreated: Date;
   dateLastUpdated: Date;
-  dateOfExpiration: Date;
+  dateOfExpiration: Date | null;
   description: string;
   externalOrderReference: string;
-  feeDetails: IFeeDeatil[];
+  feeDetails: IFeeDetail[];
+  from: EDesenfilaFrom;
+  id: string;
   installments: number;
   liveMode: boolean;
-  moneyReleaseDate: Date;
+  merchantId: string;
+  moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;
   operationType: EOperationType;
-  paymentMethod: ITransactionPaymentMethod;
+  paymentMethod: ITransactionPaymentMethod | null;
   paymentMethodId: EPaymentMethodId;
   posId: string;
+  referenceId: string;
   status: EMpStatus;
   statusDetail: EMpStatusDetail;
+  total: ITransactionTotal | null;
   transactionAmount: number;
   transactionAmountRefunded: number;
-  total: ITransactionTotal;
-  balance: ITransactionBalance;
   transactionStatus: ETransactionStatus;
+  updatedAt: Date;
+
+  // #endregion Properties (30)
 }

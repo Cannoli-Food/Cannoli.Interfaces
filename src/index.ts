@@ -48,3 +48,4 @@ export * from './verifier-token';
 export * from './viacep';
 export * from './voucher';
 export * from './wa-server';
+export * from './withdraw';
