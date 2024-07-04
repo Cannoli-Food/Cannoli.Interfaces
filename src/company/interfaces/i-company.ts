@@ -9,6 +9,7 @@ import {
   IPaymentProvider,
 } from '../../general';
 import { IInstallation } from '../../installation';
+import { ICompanyContact } from './i-company-contact';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
@@ -45,5 +46,7 @@ export interface ICompany {
   updatedAt: Date;
   version: string;
   installationDesenfila?: IInstallation;
+  pixKey: string;
+  contacts: ICompanyContact[];
   
 }

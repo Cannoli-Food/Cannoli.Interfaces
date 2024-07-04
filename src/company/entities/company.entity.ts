@@ -7,7 +7,7 @@ import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.ent
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
 import { IInstallation } from '../../installation';
-import { ICompany, ICompanyTrialPlansUsed } from '../interfaces';
+import { ICompany, ICompanyContact, ICompanyTrialPlansUsed } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
   // #region Properties (27)
@@ -39,10 +39,9 @@ export class CompanyEntity implements ICompany {
   public updatedAt: Date = new Date();
   public usedTrialsPlans: ICompanyTrialPlansUsed[] = [];
   public version: string = '1.0.0';
-
-  // #endregion Properties (27)
-
-  // #region Constructors (1)
+  public pixKey: string = '';
+  public contacts: ICompanyContact[] = [];
+  
 
   constructor(data?: Partial<CompanyEntity>) {
     if (data) {
