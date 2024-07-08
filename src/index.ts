@@ -49,3 +49,4 @@ export * from './viacep';
 export * from './voucher';
 export * from './wa-server';
 export * from './withdraw';
+export * from './logs';
