@@ -42,6 +42,7 @@ export interface ICompany {
   paymentProvider: IPaymentProvider;
   phoneNumber: string;
   sandbox: boolean;
+  goTransactionsLive: boolean;
   tags: string[];
   updatedAt: Date;
   version: string;

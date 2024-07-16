@@ -2,14 +2,13 @@ import { ECustomerInterval } from '../../customer';
 import { IInvoice } from '../../invoice';
 import { SubscriptionBaseEntity } from '../../subscription-base';
 import { ISubscriptionCustomer } from '../interfaces/i-subscription';
+import { CustomerCreditLimitEntity } from './customer-credit-limit.entity';
 import { SubscriptionCustomerProfileEntity } from './subscription-customer.entity';
 
 export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implements ISubscriptionCustomer {
   // #region Properties (9)
 
-  public amountUsed: number = 0;
-  public creditLimit: number = 0;
-  public currentBalance: number = 0;
+  public customerCreditLimit: CustomerCreditLimitEntity[] = [];
   public customerId: string | null = null;
   public customerInterval: ECustomerInterval = ECustomerInterval.MONTHLY;
   public openedInvoices: IInvoice[] = [];

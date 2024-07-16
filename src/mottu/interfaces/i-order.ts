@@ -12,7 +12,7 @@ export interface IMottuOrder {
   expectedDelivery: Date;
   expectedPickup: Date;
   fullCode: string;
-  id: number;
+  id: any;
   origin: string;
   pickupCode: string;
   preparationTime: number;
@@ -20,6 +20,7 @@ export interface IMottuOrder {
   situation: number;
   storeId: number;
   totalDistance: number;
+  updatedAt: Date;
 
   // #endregion Properties (16)
 }

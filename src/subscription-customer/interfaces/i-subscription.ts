@@ -1,19 +1,14 @@
 import { ECustomerInterval } from '../../customer';
 import { IInvoice } from '../../invoice';
 import { ISubscriptionBase } from '../../subscription-base';
+import { ICustomerCreditLimit } from './i-customer-credit-limit';
 import { ISubscriptionCustomerProfile } from './i-subscription-customer';
 
 export interface ISubscriptionCustomer extends ISubscriptionBase {
-  // #region Properties (8)
-
-  amountUsed: number;
-  creditLimit: number;
-  currentBalance: number;
+  customerCreditLimit: ICustomerCreditLimit[];
   customerId: string | null;
   customerInterval: ECustomerInterval;
   openedInvoices: IInvoice[];
   preferedDueDate: number;
   profile: ISubscriptionCustomerProfile;
-
-  // #endregion Properties (8)
 }

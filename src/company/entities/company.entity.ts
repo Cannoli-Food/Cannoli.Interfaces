@@ -41,6 +41,7 @@ export class CompanyEntity implements ICompany {
   public version: string = '1.0.0';
   public pixKey: string = '';
   public contacts: ICompanyContact[] = [];
+  public goTransactionsLive: boolean = false;
   
 
   constructor(data?: Partial<CompanyEntity>) {

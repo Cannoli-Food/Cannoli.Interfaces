@@ -12,7 +12,7 @@ export class MottuOrderEntity implements IMottuOrder {
   public expectedDelivery: Date = new Date();
   public expectedPickup: Date = new Date();
   public fullCode: string = '';
-  public id: number = 0;
+  public id: any = 0;
   public origin: string = '';
   public pickupCode: string = '';
   public preparationTime: number = 0;
@@ -20,6 +20,7 @@ export class MottuOrderEntity implements IMottuOrder {
   public situation: number = 0;
   public storeId: number = 0;
   public totalDistance: number = 0;
+  public updatedAt: Date = new Date();
 
   // #endregion Properties (16)
 
