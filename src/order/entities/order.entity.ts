@@ -1,3 +1,4 @@
+import { EDesenfilaFrom } from '../../general';
 import { EOrderTiming, OrderStatusEnum } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrder } from '../interfaces';
@@ -35,10 +36,7 @@ export class OrderEntity implements IOrder {
   public total: OrderTotalEntity = new OrderTotalEntity();
   public updatedAt: Date = new Date();
   public version: string = '';
-
-  // #endregion Properties (22)
-
-  // #region Constructors (1)
+  public from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
 
   constructor(data?: Partial<OrderEntity>) {
     if (data) {

@@ -1,3 +1,4 @@
+import { EDesenfilaFrom } from '../../general';
 import { EOrderTiming, OrderStatusEnum } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrderAdditionalFee } from './i-additional-fee';
@@ -34,6 +35,6 @@ export interface IOrder {
   total: IOrderTotal;
   updatedAt: Date;
   version: string;
-
+  from: EDesenfilaFrom;
   // #endregion Properties (20)
 }
