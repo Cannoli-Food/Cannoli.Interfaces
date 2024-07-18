@@ -1,16 +1,20 @@
-import { IDesenfila } from '../interfaces';
+import { IDesenfila, IDesenfilaFee } from '../interfaces';
 import { DesenfilaConfigEntity } from './desenfila-config.entity';
 import { DesenfilaTokenEntity } from './desenfila-token.entity';
 
 export class DesenfilaEntity implements IDesenfila {
-  // #region Properties (4)
+  // #region Properties (8)
 
+  public balance: number = 0;
+  public blockedBalance: number = 0;
   public config: DesenfilaConfigEntity | null = null;
   public containerId: string = '';
+  public fees: IDesenfilaFee[] = [];
+  public goLive: boolean = false;
   public merchantId: string = '';
   public token: DesenfilaTokenEntity | null = null;
 
-  // #endregion Properties (4)
+  // #endregion Properties (8)
 
   // #region Constructors (1)
 
