@@ -20,6 +20,7 @@ export class MottuOrderEntity implements IMottuOrder {
   public situation: number = 0;
   public storeId: number = 0;
   public totalDistance: number = 0;
+  public trackingUrl: string = '';
   public updatedAt: Date = new Date();
 
   // #endregion Properties (16)

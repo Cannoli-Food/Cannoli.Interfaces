@@ -20,6 +20,7 @@ export interface IMottuOrder {
   situation: number;
   storeId: number;
   totalDistance: number;
+  trackingUrl: string;
   updatedAt: Date;
 
   // #endregion Properties (16)
