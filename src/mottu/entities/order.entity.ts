@@ -2,7 +2,7 @@ import { IMottuEvent, IMottuOrder, IMottuOrderDeliveryMan } from '../interfaces'
 import { MottuOrderDeliveryManEntity } from './order-deliverery-man.entity';
 
 export class MottuOrderEntity implements IMottuOrder {
-  // #region Properties (16)
+  // #region Properties (18)
 
   public code: string = '';
   public createdAt: Date = new Date();
@@ -23,7 +23,7 @@ export class MottuOrderEntity implements IMottuOrder {
   public trackingUrl: string = '';
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (16)
+  // #endregion Properties (18)
 
   // #region Constructors (1)
 
