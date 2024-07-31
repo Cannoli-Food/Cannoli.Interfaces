@@ -1,14 +1,21 @@
 export enum EOperationType {
+  // mp enums :
   INVESTMENT = 'investment',
   REGULAR_PAYMENT = 'regular_payment',
   MONEY_TRANSFER = 'money_transfer',
-  GOLIVE = 'go_live',
   RECURRING_PAYMENT = 'recurring_payment',
   ACCOUNT_FUND = 'account_fund',
   PAYMENT_ADDITION = 'payment_addition',
   CELLPHONE_RECHARGE = 'cellphone_recharge',
   POS_PAYMENT = 'pos_payment',
   MONEY_EXCHANGE = 'money_exchange',
+  
+  // arcnet enums :
+  NATI_PAY = 'Nati Pay',
+  GOLIVE = 'Go Live',
+  FEE_SHIPPING = 'Taxa de Entrega',
+  FIN_TAX = 'Taxa Financeira',
+  WITHDRAW = 'Saque em Conta',
 }
 
 // É o tipo de pagamento. Os tipos disponíveis são os seguintes.

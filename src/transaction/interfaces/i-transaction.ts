@@ -30,7 +30,7 @@ export interface ITransaction {
   paymentMethod: ITransactionPaymentMethod | null;
   paymentMethodId: EPaymentMethodId;
   posId: string;
-  referenceId: string;
+  referenceId: 'goLive' | 'engine_mobyo_fee' | 'withdraw' | string;
   status: EMpStatus;
   statusDetail: EMpStatusDetail;
   total: ITransactionTotal | null;

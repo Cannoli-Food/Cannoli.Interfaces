@@ -7,12 +7,15 @@ export class SponsorEntity implements ISponsor {
   name: string = '';
   doc: string = '';
   createdAt: Date = new Date();
-  fee: ISponsorFee[] = [];
+  fees: ISponsorFee[] = [];
   docType: EDocType = EDocType.CNPJ;
   desenfilaRefId: string | null = null;
   natiRefId: string | null = null;
   mobyoRefId: string | null = null;
   from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
+  internationalCode: string = '';
+  phoneNumer: string = '';
+  email: string = '';
 
   constructor(data?: Partial<SponsorEntity>) {
     if (data) {
