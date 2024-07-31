@@ -9,7 +9,8 @@ export class SponsorEntity implements ISponsor {
   createdAt: Date = new Date();
   fees: ISponsorFee[] = [];
   docType: EDocType = EDocType.CNPJ;
-  desenfilaRefId: string | null = null;
+  desenfilaMerchantId: string | null = null;
+  desenfilaContainerId: string | null = null;
   natiRefId: string | null = null;
   mobyoRefId: string | null = null;
   from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;

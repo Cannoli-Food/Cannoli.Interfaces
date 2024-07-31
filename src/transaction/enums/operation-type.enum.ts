@@ -9,14 +9,16 @@ export enum EOperationType {
   CELLPHONE_RECHARGE = 'cellphone_recharge',
   POS_PAYMENT = 'pos_payment',
   MONEY_EXCHANGE = 'money_exchange',
-  
+
   // arcnet enums :
+  FEE_SHIPPING = 'Taxa de Entrega',
+  FEE_CONVENIENCE = 'Taxa de Conveniencia',
   NATI_PAY = 'Nati Pay',
   GOLIVE = 'Go Live',
-  FEE_SHIPPING = 'Taxa de Entrega',
   FIN_TAX = 'Taxa Financeira',
   WITHDRAW = 'Saque em Conta',
 }
+export { EOperationType as ESponsorIdentifier };
 
 // É o tipo de pagamento. Os tipos disponíveis são os seguintes.
 // investment: When money is put into an investment, such as CDB, in the Mercado Pago application;

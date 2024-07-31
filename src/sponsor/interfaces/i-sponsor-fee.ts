@@ -1,5 +1,6 @@
 import { EDiscountType } from '../../general';
-import { ESponsorIdentifier } from '../enums/sponsor-identifier.enum';
+import { ESponsorIdentifier } from '../../transaction';
+
 export interface ISponsorFee {
   type: EDiscountType;
   amount: number;

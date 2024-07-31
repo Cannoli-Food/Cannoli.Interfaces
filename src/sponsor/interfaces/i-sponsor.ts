@@ -8,7 +8,8 @@ export interface ISponsor {
   doc: string;
   docType: EDocType;
   from: EDesenfilaFrom;
-  desenfilaRefId: string | null;
+  desenfilaContainerId: string | null;
+  desenfilaMerchantId: string | null;
   internationalCode: string;
   phoneNumer: string;
   email: string;

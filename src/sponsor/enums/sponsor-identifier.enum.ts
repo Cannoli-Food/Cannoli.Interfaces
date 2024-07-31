@@ -1,4 +1,0 @@
-export enum ESponsorIdentifier {
-  DEFAULT_PERCENT = 'DEFAULT_PERCENT',
-  DEFAULT_FIXED_AMOUNT = 'DEFAULT_FIXED_AMOUNT',
-}
