@@ -1,19 +1,26 @@
-import { IAddress } from '../interfaces';
+import { IAddress, IDeliveryArea } from '../interfaces';
 import { CoordsEntity } from './coords.entity';
 
 export class AddressEntity implements IAddress {
-  // #region Properties (8)
+  // #region Properties (15)
 
   public city: string = '';
   public complement: string | null = '';
   public coords: CoordsEntity = new CoordsEntity();
+  public country: string = '';
+  public deliveryArea: IDeliveryArea | null = null;
+  public formattedAddress: string | null = '';
+  public id: string | null = '';
+  public isDefault: boolean = false;
+  public name: string | null = '';
   public neighborhood: string = '';
   public postalCode: string = '';
+  public reference: string | null = '';
   public state: string = '';
   public streetName: string = '';
   public streetNumber: string = '';
 
-  // #endregion Properties (8)
+  // #endregion Properties (15)
 
   // #region Constructors (1)
 

@@ -1,2 +1,2 @@
-export * from './customer';
-export * from './deliverer';
+export * from './mobyo-customer-mobyo';
+export * from './mobyo-deliverer';

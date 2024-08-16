@@ -1,13 +1,14 @@
 import { EAppType } from '../../app';
-import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType, PaymentProviderEntity } from '../../general';
+import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType, IAddress, PaymentProviderEntity } from '../../general';
 import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
 export class CustomerEntity implements ICustomer {
-  // #region Properties (31)
+  // #region Properties (32)
 
   public address: AddressEntity = new AddressEntity();
+  public addresses: IAddress[] = [];
   public blockedReason: string | null = null;
   public createdAt: Date = new Date();
   public deliveryArea: DeliveryAreaEntity[] = [];
@@ -39,7 +40,7 @@ export class CustomerEntity implements ICustomer {
   public type: ECustomerType = ECustomerType.SINGLE;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (31)
+  // #endregion Properties (32)
 
   // #region Constructors (1)
 
