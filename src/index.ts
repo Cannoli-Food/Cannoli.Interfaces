@@ -45,6 +45,7 @@ export * from './subscription-customer';
 export * from './token';
 export * from './token-jwt';
 export * from './transaction';
+export * from './transfer-request';
 export * from './verifier-token';
 export * from './viacep';
 export * from './voucher';
