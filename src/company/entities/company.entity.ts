@@ -7,6 +7,7 @@ import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.ent
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
 import { IInstallation } from '../../installation';
+import { IFee } from '../../transaction';
 import { ICompany, ICompanyContact, ICompanyTrialPlansUsed } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
@@ -42,8 +43,8 @@ export class CompanyEntity implements ICompany {
   public pixKey: string = '';
   public contacts: ICompanyContact[] = [];
   public goTransactionsLive: boolean = false;
+  public fees: IFee[] = [];
   
-
   constructor(data?: Partial<CompanyEntity>) {
     if (data) {
       for (let key in data) {
@@ -53,6 +54,7 @@ export class CompanyEntity implements ICompany {
       }
     }
   }
+  installationDesenfila?: IInstallation | undefined;
 
   // #endregion Constructors (1)
 }

@@ -3,5 +3,5 @@
 Compilar:
 
 npm run packagr
-npm run buil
+npm run build
 npm publish

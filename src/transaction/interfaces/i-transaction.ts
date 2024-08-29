@@ -1,4 +1,4 @@
-import { EDesenfilaFrom } from '../../general';
+import { EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransactionBalance } from './i-balance';
 import { IFeeDetail } from './i-fee-detail';
@@ -10,7 +10,6 @@ export interface ITransaction {
 
   balance: ITransactionBalance | null;
   card: {};
-  containerId: string;
   createdAt: Date;
   dateApproved: Date | null;
   dateCreated: Date;
@@ -23,7 +22,9 @@ export interface ITransaction {
   id: string;
   installments: number;
   liveMode: boolean;
-  merchantId: string;
+  desenfilaInfo: IDesenfilaInfo;
+  natiInfo: INatiInfo;
+  mobyoInfo: IMobyoInfo;
   moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;
   operationType: EOperationType;

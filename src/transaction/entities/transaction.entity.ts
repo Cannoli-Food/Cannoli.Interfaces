@@ -1,4 +1,4 @@
-import { EDesenfilaFrom } from '../../general';
+import { EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransaction } from '../interfaces';
 import { FeeDetailEntity } from './fee-detail.entity';
@@ -11,7 +11,6 @@ export class TransactionEntity implements ITransaction {
 
   public balance: TransactionBalanceEntity | null = null;
   public card: {} = {};
-  public containerId: string = '';
   public createdAt: Date = new Date();
   public dateApproved: Date | null = null;
   public dateCreated: Date = new Date();
@@ -24,7 +23,6 @@ export class TransactionEntity implements ITransaction {
   public id: string = '';
   public installments: number = 0;
   public liveMode: boolean = true;
-  public merchantId: string = '';
   public moneyReleaseDate: Date | null = null;
   public moneyReleaseStatus: EReleaseStatus = EReleaseStatus.PENDING;
   public operationType: EOperationType = EOperationType.REGULAR_PAYMENT;
@@ -39,6 +37,9 @@ export class TransactionEntity implements ITransaction {
   public transactionAmountRefunded: number = 0;
   public transactionStatus: ETransactionStatus = ETransactionStatus.PROCESSING;
   public updatedAt: Date = new Date();
+  public desenfilaInfo: IDesenfilaInfo = { merchantId: '', containerId: '' };
+  public natiInfo: INatiInfo = { companyId: '', containerId: '' };
+  public mobyoInfo: IMobyoInfo = { companyId: '', containerId: '' };
 
   // #endregion Properties (30)
 

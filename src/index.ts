@@ -8,6 +8,8 @@ export * from './company';
 export * from './container';
 export * from './customer';
 export * from './customer-member';
+export * from './desenfila-merchant';
+export * from './desenfila-order';
 export * from './device';
 export * from './event-message';
 export * from './evolution';

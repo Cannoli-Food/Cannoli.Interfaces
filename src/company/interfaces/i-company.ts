@@ -9,6 +9,7 @@ import {
   IPaymentProvider,
 } from '../../general';
 import { IInstallation } from '../../installation';
+import { IFee } from '../../transaction';
 import { ICompanyContact } from './i-company-contact';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
@@ -49,5 +50,5 @@ export interface ICompany {
   installationDesenfila?: IInstallation;
   pixKey: string;
   contacts: ICompanyContact[];
-  
+  fees: IFee[];
 }
