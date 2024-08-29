@@ -14,6 +14,7 @@ export interface IGlobalSettingIugu {
   perDayInterestCents: number;
   perDayInterestValue: number;
   billingDays: number;
+  id:string;
 
   // #endregion Properties (9)
 }

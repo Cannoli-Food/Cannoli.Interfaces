@@ -22,9 +22,9 @@ export interface ITransaction {
   id: string;
   installments: number;
   liveMode: boolean;
-  desenfilaInfo: IDesenfilaInfo;
-  natiInfo: INatiInfo;
-  mobyoInfo: IMobyoInfo;
+  desenfilaInfo: IDesenfilaInfo | null;
+  natiInfo: INatiInfo | null;
+  mobyoInfo: IMobyoInfo | null;
   moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;
   operationType: EOperationType;

@@ -22,3 +22,6 @@ export { PaymentEntity } from './payment.entity';
 export { QueryEntity } from './query.entity';
 export { RatingEntity } from './rating.entity';
 export { SponsorshipValueEntity } from './sponsorship-value.entity';
+export { MobyoInfoEntity } from './mobyo-info.entity';
+export { DesenfilaInfoEntity } from './desenfila-info.entity';
+export { NatiInfoEntity } from './nati-info.entity';

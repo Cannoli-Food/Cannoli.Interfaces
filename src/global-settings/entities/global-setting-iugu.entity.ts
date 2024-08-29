@@ -58,6 +58,7 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
   public perDayInterestValue: number = 1;
   public testApiToken: string = '';
   public userApiToken: string = '';
+  public id: string = '';
 
   // #endregion Properties (13)
 

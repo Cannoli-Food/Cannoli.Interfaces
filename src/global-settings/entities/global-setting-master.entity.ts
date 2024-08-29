@@ -18,6 +18,7 @@ export class GlobalSettingMasterEntity implements IGlobalSettingMaster {
   public waServerGlobalKey: string = '';
   public waServerInstanceName: string = '';
   public waServerNumber: string = '';
+  public id: string = '';
 
   // #endregion Properties (20)
 

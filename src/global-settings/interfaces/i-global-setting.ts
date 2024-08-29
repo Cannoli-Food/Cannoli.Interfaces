@@ -1,9 +1,8 @@
 import { IGlobalSettingIugu } from './i-global-setting-iugu';
 
 export interface IGlobalSetting {
-  // #region Properties (1)
   billingDays: number;
   iugu: IGlobalSettingIugu;
+  id: string;
 
-  // #endregion Properties (1)
 }
