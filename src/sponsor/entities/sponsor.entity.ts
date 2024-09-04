@@ -1,4 +1,13 @@
-import { EDesenfilaFrom, EDocType } from '../../general';
+import {
+  DesenfilaInfoEntity,
+  EDesenfilaFrom,
+  EDocType,
+  IDesenfilaInfo,
+  IMobyoInfo,
+  INatiInfo,
+  MobyoInfoEntity,
+  NatiInfoEntity,
+} from '../../general';
 import { ISponsor } from '../interfaces/i-sponsor';
 import { ISponsorFee } from '../interfaces/i-sponsor-fee';
 
@@ -18,6 +27,9 @@ export class SponsorEntity implements ISponsor {
   phoneNumer: string = '';
   email: string = '';
 
+  natiInfo: INatiInfo = new NatiInfoEntity();
+  mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
+  desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
   constructor(data?: Partial<SponsorEntity>) {
     if (data) {
       for (let key in data) {

@@ -19,6 +19,8 @@ export class AddressEntity implements IAddress {
   public state: string = '';
   public streetName: string = '';
   public streetNumber: string = '';
+  public mobyoDeliveryFee: number | null = null;
+  public mobyoDeliveryFeeOnline: number | null = null;
 
   // #endregion Properties (15)
 

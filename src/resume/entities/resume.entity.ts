@@ -1,17 +1,17 @@
-import { IResume } from '../interfaces';
-import { ResumeCollectionEntity } from './resume-collection.entity';
-import { ResumeTotalEntity } from './resume-total.entity';
+import { IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
+import { EResumeIntervalType } from '../enums';
+import { IResume, IResumeChild } from '../interfaces';
+import { GeneralResumeTotalEntity } from './general-resume-total.entity';
 
 export class ResumeEntity implements IResume {
-  // #region Properties (3)
-
-  public counts: ResumeCollectionEntity[] = [];
   public id: string = '';
-  public totals: ResumeTotalEntity[] = [];
-
-  // #endregion Properties (3)
-
-  // #region Constructors (1)
+  public interval: EResumeIntervalType = EResumeIntervalType.YEAR;
+  public info: IDesenfilaInfo | INatiInfo | IMobyoInfo | null = null;
+  public createdAt: Date = new Date();
+  public updatedAt: Date = new Date();
+  public totals: GeneralResumeTotalEntity = new GeneralResumeTotalEntity();
+  public child: IResumeChild[] = [];
+  public childByType: IResumeChild[] = [];
 
   constructor(data?: Partial<ResumeEntity>) {
     if (data) {
@@ -22,6 +22,4 @@ export class ResumeEntity implements IResume {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }

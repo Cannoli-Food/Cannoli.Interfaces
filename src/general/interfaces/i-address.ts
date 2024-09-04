@@ -19,6 +19,8 @@ export interface IAddress {
   isDefault: boolean;
   streetNumber: string;
   coords: ICoords;
+  mobyoDeliveryFee: number | null;
+  mobyoDeliveryFeeOnline: number | null;
 
   // #endregion Properties (7)
 }

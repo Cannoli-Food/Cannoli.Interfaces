@@ -1,12 +1,15 @@
-import { IResumeCollection } from './i-resume-collection';
-import { IResumeTotal } from './i-resume-total';
+import { IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
+import { EResumeIntervalType } from '../enums/interval-type.enum';
+import { IGeneralResumeTotal } from './i-resume-general';
+import { IResumeChild } from './i-resume-total';
 
 export interface IResume {
-  // #region Properties (1)
-
-  counts: IResumeCollection[];
-  totals: IResumeTotal[];
   id: string;
-
-  // #endregion Properties (1)
+  interval: EResumeIntervalType;
+  info: INatiInfo | IMobyoInfo | IDesenfilaInfo | null;
+  createdAt: Date;
+  updatedAt: Date;
+  totals: IGeneralResumeTotal;
+  child: IResumeChild[];
+  childByType: IResumeChild[];
 }

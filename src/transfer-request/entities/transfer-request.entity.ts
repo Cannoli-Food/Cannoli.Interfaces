@@ -1,6 +1,7 @@
+import { DesenfilaInfoEntity, IDesenfilaInfo, IMobyoInfo, INatiInfo, MobyoInfoEntity, NatiInfoEntity } from '../../general';
 import { IInvoicePix } from '../../invoice';
 import { EWithdrawRequestStatus } from '../../withdraw/enums';
-import { ITransferRequest } from '../interfaces/i-withdraw-request';
+import { ITransferRequest } from '../interfaces/i-transfer-request';
 
 export class TransferRequestEntity implements ITransferRequest {
   // #region Properties (11)
@@ -16,9 +17,12 @@ export class TransferRequestEntity implements ITransferRequest {
   public transactionId: string | null = null;
   public transferDocumentUrl: string | null = null;
   public updatedAt: Date = new Date();
-  public transactionReferenceId: string | null = null
+  public transactionReferenceId: string | null = null;
   public naiRefId: string = '';
   public pix: IInvoicePix | null = null;
+  public natiInfo: INatiInfo = new NatiInfoEntity();
+  public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
+  public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
 
   constructor(data?: Partial<TransferRequestEntity>) {
     if (data) {

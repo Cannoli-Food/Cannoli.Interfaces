@@ -1,13 +1,9 @@
-import { IResumeYear } from './i-resume-year';
+import { EDesenfilaFrom } from '../../general';
+import { EResumeType } from '../enums/type.enum';
+import { IGeneralResumeTotal } from './i-resume-general';
 
-export interface IResumeTotal {
-  // #region Properties (10)
-
-  collectionName: string;
-  total: number;
-  average: number;
-  count: number;
-  years: IResumeYear[];
-
-  // #endregion Properties (10)
+export interface IResumeChild {
+  type: EResumeType | EDesenfilaFrom | string | null;
+  totals: IGeneralResumeTotal; // valor total adiquirido do resume
+  id: string; // ano/mês/dia/hora em que ocorreu o resume.
 }

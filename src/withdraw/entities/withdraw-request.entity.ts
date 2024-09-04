@@ -1,3 +1,4 @@
+import { DesenfilaInfoEntity, IDesenfilaInfo, IMobyoInfo, INatiInfo, MobyoInfoEntity, NatiInfoEntity } from '../../general';
 import { EWithdrawRequestStatus } from '../enums';
 import { IWithdrawRequest } from '../interfaces/i-withdraw-request';
 
@@ -15,6 +16,9 @@ export class WithDrawRequestEntity implements IWithdrawRequest {
   public transactionId: string | null = null;
   public transferDocumentUrl: string | null = null;
   public updatedAt: Date = new Date();
+  public natiInfo: INatiInfo = new NatiInfoEntity();
+  public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
+  public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
 
   // #endregion Properties (11)
 

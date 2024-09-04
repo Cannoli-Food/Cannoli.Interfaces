@@ -1,1 +1,1 @@
-export { TransferRequestEntity } from './withdraw-request.entity';
+export { TransferRequestEntity } from './transfer-request.entity';

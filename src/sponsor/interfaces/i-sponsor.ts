@@ -1,4 +1,4 @@
-import { EDesenfilaFrom, EDocType } from '../../general';
+import { EDesenfilaFrom, EDocType, IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
 import { ISponsorFee } from './i-sponsor-fee';
 export interface ISponsor {
   id: string;
@@ -15,4 +15,7 @@ export interface ISponsor {
   email: string;
   natiRefId: string | null;
   mobyoRefId: string | null;
+  natiInfo: INatiInfo;
+  mobyoInfo: IMobyoInfo;
+  desenfilaInfo: IDesenfilaInfo;
 }
