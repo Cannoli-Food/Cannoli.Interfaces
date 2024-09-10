@@ -1,12 +1,12 @@
 import { ICompanyCustomData } from '../interfaces/i-company-custom-data';
+import { CompanyRemoteAccessEntity } from './company-remote-access.entity';
 
 export class CompanyCustomDataEntity implements ICompanyCustomData {
-  // #region Properties (2)
+  // #region Properties (1)
 
-  public code: string = '';
-  public remoteIp: string = '';
+  public remoteAccess: CompanyRemoteAccessEntity = new CompanyRemoteAccessEntity();
 
-  // #endregion Properties (2)
+  // #endregion Properties (1)
 
   // #region Constructors (1)
 

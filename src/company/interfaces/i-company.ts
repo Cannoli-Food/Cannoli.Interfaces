@@ -11,7 +11,7 @@ import {
 import { IInstallation } from '../../installation';
 import { IFee } from '../../transaction';
 import { ICompanyContact } from './i-company-contact';
-import { ICompanyCustom, ICompanyCustomData } from './i-company-custom-data';
+import { ICompanyCustomData } from './i-company-custom-data';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {

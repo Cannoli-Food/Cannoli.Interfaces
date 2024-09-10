@@ -1,8 +1,9 @@
+import { ICompanyRemoteAccess } from './i-company-remote-access';
+
 export interface ICompanyCustomData {
   // #region Properties (2)
 
-  remoteIp: string;
-  code: string;
+  remoteAccess: ICompanyRemoteAccess;
 
   // #endregion Properties (2)
 }

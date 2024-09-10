@@ -9,24 +9,30 @@ import { PaymentProviderEntity } from '../../general/entities/payment-provider.e
 import { IInstallation } from '../../installation';
 import { IFee } from '../../transaction';
 import { ICompany, ICompanyContact, ICompanyTrialPlansUsed } from '../interfaces';
+import { CompanyCustomDataEntity } from './company-custom-data.entity';
 
 export class CompanyEntity implements ICompany {
-  // #region Properties (27)
+  // #region Properties (33)
 
   public active: boolean = false;
   public address: AddressEntity = new AddressEntity();
   public bgImageUrl: string | null = null;
   public config: MobyoApiConfigEntity | null = null;
+  public contacts: ICompanyContact[] = [];
   public containerId: string = '';
   public createdAt: Date = new Date();
+  public customData: CompanyCustomDataEntity = new CompanyCustomDataEntity();
   public deliveryArea: DeliveryAreaEntity[] = [];
   public deliveryAreaFixed: DeliveryAreaFixedEntity | null = null;
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
+  public fees: IFee[] = [];
   public fullName: string = '';
+  public goTransactionsLive: boolean = false;
   public id: string = '';
   public imageUrl: string | null = null;
+  public installationDesenfila?: IInstallation | undefined;
   public internationalCode: string = '+55';
   public logoUrl: string | null = null;
   public messagerChannels: MessagerChannelEntity[] = [];
@@ -35,16 +41,17 @@ export class CompanyEntity implements ICompany {
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
   public phoneNumbersNotification: string[] = [];
+  public pixKey: string = '';
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
   public usedTrialsPlans: ICompanyTrialPlansUsed[] = [];
   public version: string = '1.0.0';
-  public pixKey: string = '';
-  public contacts: ICompanyContact[] = [];
-  public goTransactionsLive: boolean = false;
-  public fees: IFee[] = [];
-  
+
+  // #endregion Properties (33)
+
+  // #region Constructors (1)
+
   constructor(data?: Partial<CompanyEntity>) {
     if (data) {
       for (let key in data) {
@@ -54,7 +61,6 @@ export class CompanyEntity implements ICompany {
       }
     }
   }
-  installationDesenfila?: IInstallation | undefined;
 
   // #endregion Constructors (1)
 }
