@@ -11,6 +11,7 @@ import {
 import { IInstallation } from '../../installation';
 import { IFee } from '../../transaction';
 import { ICompanyContact } from './i-company-contact';
+import { ICompanyCustom, ICompanyCustomData } from './i-company-custom-data';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
@@ -31,6 +32,7 @@ export interface ICompany {
   fullName: string;
   id: string;
   imageUrl: string | null;
+  customData: ICompanyCustomData;
   internationalCode: string;
   logoUrl: string | null;
   /**@deprecated

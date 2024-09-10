@@ -14,5 +14,4 @@ export interface ICustomerMobyo extends ICustomer {
   uid: string;
   version: string;
 
-  // #endregion Properties (9)
 }
