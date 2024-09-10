@@ -1,14 +1,15 @@
 import { ICompanyRemoteAccess } from '../interfaces/i-company-remote-access';
 
 export class CompanyRemoteAccessEntity implements ICompanyRemoteAccess {
-  // #region Properties (4)
+  // #region Properties (5)
 
+  public active: boolean = true;
   public code: string = '';
   public domain: string = '';
   public remoteIp: string = '';
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (4)
+  // #endregion Properties (5)
 
   // #region Constructors (1)
 

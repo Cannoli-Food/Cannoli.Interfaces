@@ -1,10 +1,11 @@
 export interface ICompanyRemoteAccess {
-  // #region Properties (2)
+  // #region Properties (4)
 
-  remoteIp: string;
+  active: boolean;
   code: string;
   domain: string;
+  remoteIp: string;
   updatedAt: Date;
 
-  // #endregion Properties (2)
+  // #endregion Properties (4)
 }

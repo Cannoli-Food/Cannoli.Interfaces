@@ -15,24 +15,27 @@ import { ICompanyCustomData } from './i-company-custom-data';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
-  // #region Properties (25)
+  // #region Properties (33)
 
   active: boolean;
   address: IAddress;
   bgImageUrl: string | null;
   config: IMobyoApiConfig | null;
+  contacts: ICompanyContact[];
   containerId: string;
   createdAt: Date;
+  customData: ICompanyCustomData;
   deliveryArea: IDeliveryArea[];
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
-  phoneNumbersNotification: string[];
   doc: string;
   docType: EDocType;
   email: string;
+  fees: IFee[];
   fullName: string;
+  goTransactionsLive: boolean;
   id: string;
   imageUrl: string | null;
-  customData: ICompanyCustomData;
+  installationDesenfila?: IInstallation;
   internationalCode: string;
   logoUrl: string | null;
   /**@deprecated
@@ -40,17 +43,16 @@ export interface ICompany {
    */
   messagerChannels: IMessagerChannel[];
   name: string;
-  usedTrialsPlans: ICompanyTrialPlansUsed[];
   origin: IOrigin;
   paymentProvider: IPaymentProvider;
   phoneNumber: string;
+  phoneNumbersNotification: string[];
+  pixKey: string;
   sandbox: boolean;
-  goTransactionsLive: boolean;
   tags: string[];
   updatedAt: Date;
+  usedTrialsPlans: ICompanyTrialPlansUsed[];
   version: string;
-  installationDesenfila?: IInstallation;
-  pixKey: string;
-  contacts: ICompanyContact[];
-  fees: IFee[];
+
+  // #endregion Properties (33)
 }
