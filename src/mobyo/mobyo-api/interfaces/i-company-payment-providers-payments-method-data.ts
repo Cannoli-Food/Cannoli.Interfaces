@@ -1,44 +1,25 @@
-
-import { UpdateCompanyPaymentProviderPaymentMethodDataDto } from '../dto/update-company-payment-providers-payments-method-data.dto';
-
-export class ICompanyPaymentProviderPaymentMethodData {
+export interface ICompanyPaymentProviderPaymentMethodData {
     // #region Properties (9)
 
     
-    public bin: string;
+    bin: string;
     
 
-    public brand: string;
+    brand: string;
     
-    public displayNumber: string;
+    displayNumber: string;
     
-    public firstDigits: string;
+    firstDigits: string;
     
-    public holderName: string;
+    holderName: string;
     
-    public lastDigits: string;
+    lastDigits: string;
     
-    public maskedNumber: string;
+    maskedNumber: string;
     
-    public month: number;
+    month: number;
     
-    public year: number;
+    year: number;
 
-    // #endregion Properties (9)
-
-    // #region Constructors (1)
-
-    constructor(obj: UpdateCompanyPaymentProviderPaymentMethodDataDto) {
-        this.bin = obj.bin || '';
-        this.brand = obj.brand || '';
-        this.displayNumber = obj.displayNumber || '';
-        this.firstDigits = obj.firstDigits || '';
-        this.holderName = obj.holderName || '';
-        this.lastDigits = obj.lastDigits || '';
-        this.maskedNumber = obj.maskedNumber || '';
-        this.month = obj.month || null;
-        this.year = obj.year || null;
-    }
-
-    // #endregion Constructors (1)
+    // #endregion Properties (9
 }

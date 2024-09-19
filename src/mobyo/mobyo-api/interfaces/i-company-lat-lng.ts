@@ -1,10 +1,10 @@
 
 
-export class ILatLng {
+export interface ILatLng {
     // #region Properties (2)
     
-    public lat: number;
+    lat: number;
     
-    public lng: number;
+    lng: number;
 
 }

@@ -1,13 +1,12 @@
+import { IPaymentMethod } from "./i-payment-method";
 
-import { IPaymentMethod } from '../../payments/interface/i-payment-method';
-
-export class IDeviceAppConfig {
+export interface IDeviceAppConfig {
     // #region Properties (1)
 
-    public paymentsOffline: IPaymentMethod[];
-    public checkoutOnline: boolean;
-    public checkoutOffline: boolean;
-    public checkoutPix: boolean;
+    paymentsOffline: IPaymentMethod[];
+    checkoutOnline: boolean;
+    checkoutOffline: boolean;
+    checkoutPix: boolean;
 
     // #endregion Properties (1)
 }

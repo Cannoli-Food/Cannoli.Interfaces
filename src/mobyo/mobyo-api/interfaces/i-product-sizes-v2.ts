@@ -1,16 +1,16 @@
 
 
-export class IProductSizesV2 {
+export interface IProductSizesV2 {
     // #region Properties (8)
 
     
-    public code: string;
+    code: string;
     
-    public name: string;
+    name: string;
     
-    public price: number;
+    price: number;
     
-    public isDefault: boolean;
+    isDefault: boolean;
 
     // #endregion Properties (8)
 }

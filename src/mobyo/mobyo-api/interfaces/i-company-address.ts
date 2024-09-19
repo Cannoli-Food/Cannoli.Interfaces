@@ -1,37 +1,19 @@
-
-import { CreateCompanyAddressDto } from '../dto/create-company-address.dto';
-
-export class ICompanyAddress {
+export interface ICompanyAddress {
     // #region Properties (7)
 
     
-    public city: string;
+    city: string;
     
-    public complement?: string;
+    complement?: string;
     
-    public district: string;
+    district: string;
     
-    public state: string;
+    state: string;
     
-    public streetName: string;
+    streetName: string;
     
-    public streetNumber: string;
+    streetNumber: string;
     
-    public zipCode: string;
+    zipCode: string;
 
-    // #endregion Properties (7)
-
-    // #region Constructors (1)
-
-    constructor(body: CreateCompanyAddressDto) {
-        this.zipCode = body.zipCode;
-        this.streetName = body.streetName;
-        this.streetNumber = body.streetNumber;
-        this.complement = body.complement;
-        this.district = body.district;
-        this.city = body.city;
-        this.state = body.state;
-    }
-
-    // #endregion Constructors (1)
 }

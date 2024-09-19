@@ -1,4 +1,4 @@
-export enum IuguBankEnum {
+export enum EIuguBank {
     ITAU = 'Itaú',
     BRADESCO = 'Bradesco',
     CAIXA = 'Caixa Econômica',

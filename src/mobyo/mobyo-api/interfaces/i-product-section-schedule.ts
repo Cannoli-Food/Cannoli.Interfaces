@@ -1,6 +1,6 @@
 
 
-export class IProductSectionSchedule {
+export interface IProductSectionSchedule {
     fri: boolean;
     mon: boolean;
     sat: boolean;
@@ -11,17 +11,3 @@ export class IProductSectionSchedule {
     startAt: string;
     endAt: string;
 }
-
-export const factoryProductSectionSchedule = (): IProductSectionSchedule => {
-    return {
-        fri: true,
-        mon: true,
-        sat: true,
-        sun: true,
-        thu: true,
-        tue: true,
-        wed: true,
-        startAt: '00:00',
-        endAt: '23:59',
-    };
-};

@@ -1,20 +1,20 @@
 
 
-export class IProductComposition {
+export interface IProductComposition {
     // #region Properties (6)
 
     
-    public amount: number;
+    amount: number;
     
-    public code: string;
+    code: string;
     
-    public imageURL: string;
+    imageURL: string;
     
-    public name: string;
+    name: string;
     
-    public quantity: number;
+    quantity: number;
     
-    public unit: string;
+    unit: string;
 
     // #endregion Properties (6)
 }

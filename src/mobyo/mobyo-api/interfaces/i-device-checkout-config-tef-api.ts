@@ -1,9 +1,9 @@
 
 
-export class IDeviceCheckoutConfigTefApi {
+export interface IDeviceCheckoutConfigTefApi {
     // #region Properties (2)
-    public port: number;
-    public url: string;
+    port: number;
+    url: string;
 
     // #endregion Properties (2)
 }

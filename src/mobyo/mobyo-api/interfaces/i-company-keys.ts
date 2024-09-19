@@ -1,8 +1,7 @@
+import { ECompanyKeys } from "../../../company";
 
-import { CompanyKeysEnum } from './company-keys.enum';
+export interface ICompanyKeys {
+  field: ECompanyKeys;
 
-export class ICompanyKeys {
-    field: CompanyKeysEnum;
-    
-    value: string;
+  value: string;
 }

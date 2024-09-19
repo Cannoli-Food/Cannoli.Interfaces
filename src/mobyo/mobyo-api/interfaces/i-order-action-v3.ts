@@ -1,10 +1,9 @@
+import { EOrderV3Status } from '../enum/order-v3-status.enum';
 
-import { OrderStatusEnum } from './order-v3-status.enum';
+export interface IOrderActionV3 {
+  status: EOrderV3Status;
 
-export class IOrderActionV3 {
-    status: OrderStatusEnum;
-    
-    createdAt: Date;
-    
-    user?: any;
+  createdAt: Date;
+
+  user?: any;
 }

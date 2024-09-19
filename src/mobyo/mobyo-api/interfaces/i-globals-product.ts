@@ -1,5 +1,3 @@
-import { CompanyInfo } from '../../../framework/decorators/company-info';
-import { CreateGlobalsProductDto } from '../dto/create-globals-product.dto';
 import { IRating } from './i-globals-rating';
 import { IGlobalsUtilization } from './i-globals-utilizations';
 
@@ -31,36 +29,4 @@ export interface IGlobalsProduct {
     version: string;
 
     // #endregion Properties (18)
-}
-
-export function factoryGlobalsProduct(
-    companyInfo: CompanyInfo,
-    body: CreateGlobalsProductDto,
-) {
-    return {
-        active: true,
-        companyId: companyInfo.companyId,
-        createdBy: {
-            id: companyInfo.memberId,
-            companyName: body.createdByCompanyName,
-            name: companyInfo.memberName,
-            photoURL: body.createdByPhotoUrl,
-        },
-        createdAt: new Date(),
-        description: body.description || null,
-        id: null,
-        gtinEan: body.gtinEan,
-        imageURL: `https://firebasestorage.googleapis.com/v0/b/mobyo-00001.appspot.com/o/gtin-ean%2F${body.gtinEan}.webp?alt=media`,
-        measure: 'UN',
-        utilizations: [],
-
-        moderated: false,
-        moderatedAt: null,
-        moderatedBy: null,
-        name: body.name,
-        rate: 5,
-        rates: [],
-        updatedAt: new Date(),
-        version: '1.0.0',
-    } as IGlobalsProduct;
 }

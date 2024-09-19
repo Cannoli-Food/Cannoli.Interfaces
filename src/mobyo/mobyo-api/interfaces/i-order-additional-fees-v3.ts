@@ -1,6 +1,6 @@
 
 
-export class IOrderAditionalFeeV3 {
+export interface IOrderAditionalFeeV3 {
     
     type: string;
     

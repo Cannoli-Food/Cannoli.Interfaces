@@ -1,12 +1,11 @@
-
-import { DeviceTefTypeEnum } from './device-tef-type.enum';
+import { EDeviceTefType } from '../enum/device-tef-type.enum';
 import { IDeviceCheckoutConfigTefApi } from './i-device-checkout-config-tef-api';
 
-export class IDeviceCheckoutConfigTef {
-    // #region Properties (1)
-    public api: IDeviceCheckoutConfigTefApi;
+export interface IDeviceCheckoutConfigTef {
+  // #region Properties (1)
+  api: IDeviceCheckoutConfigTefApi;
 
-    public type: DeviceTefTypeEnum;
+  type: EDeviceTefType;
 
-    // #endregion Properties (1)
+  // #endregion Properties (1)
 }

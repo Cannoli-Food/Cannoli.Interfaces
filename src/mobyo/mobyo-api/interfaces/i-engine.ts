@@ -1,30 +1,20 @@
-
-import { IAction } from '../../../shared/services/action/action.interface';
-import { EngineTypesEnum } from './engine-type.enum';
+import { EEngineType } from '../enum/engine-type.enum';
+import { IAction } from './action.interface';
 import { IEngineCredential } from './i-engine-credential';
 import { IEngineFees } from './i-engine-fees';
-export class IEngine {
-    // #region Properties (16)
+export interface IEngine {
+  // #region Properties (16)
+  actions: IAction[];
+   active: boolean;
+   companyId: string;
+  containerId: string;
+  createdAt: Date;
+   credentials: IEngineCredential;
+   fees: IEngineFees;
+   id: string;
+   name: string;
+   type: EEngineType;
+   updatedAt: Date;
 
-    public actions: IAction[];
-    public active: boolean;
-    
-    public companyId: string;
-    
-    public containerId: string;
-    public createdAt: Date;
-    public credentials: IEngineCredential;
-    
-    public fees: IEngineFees;
-    
-    public id: string;
-    
-    public name: string;
-
-    public type: EngineTypesEnum;
-    
-    public updatedAt: Date;
-    
-
-    // #endregion Properties (16)
+  // #endregion Properties (16)
 }

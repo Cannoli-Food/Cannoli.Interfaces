@@ -1,16 +1,16 @@
 
 
-export class IProductOptionsTypeV2 {
+export interface IProductOptionsTypeV2 {
     // #region Properties (8)
 
     
-    public code: string;
+    code: string;
     
-    public name: string;
+    name: string;
     
-    public modularPrice: number;
+    modularPrice: number;
     
-    public isDefault: boolean;
+    isDefault: boolean;
 
     // #endregion Properties (8)
 }

@@ -1,56 +1,32 @@
+import { IProductSectionMenu } from "./i-product-section-menu";
 
-import { CompanyInfo } from '../../../../framework/decorators/company-info';
-import { IProductSectionMenu } from '../../coll-products-section-menu/interfaces/i-product-section-menu';
-import { CreateSectionMenuDto } from '../dto/create.dto';
-
-export class ISectionMenu {
+export interface ISectionMenu {
     // #region Properties (10)
 
     
-    public active: boolean;
+    active: boolean;
     
-    public companyId: string;
+    companyId: string;
     
-    public containerId: string;
+    containerId: string;
     
-    public createdAt: Date;
+    createdAt: Date;
     
-    public id: string;
+    id: string;
     
-    public imageURL: string;
+    imageURL: string;
     
-    public name: string;
+    name: string;
     
-    public description: string;
+    description: string;
     
-    public updatedAt: Date;
+    updatedAt: Date;
     
-    public updatedBy: string;
+    updatedBy: string;
     
-    public index: number;
-    public products?: IProductSectionMenu[];
+    index: number;
+    products?: IProductSectionMenu[];
     
-    public version: '1.0.2';
+    version: '1.0.2';
     // #endregion Properties (10)
 }
-
-export const factorySectionMenu = (
-    companyInfo: CompanyInfo,
-    body: CreateSectionMenuDto,
-): ISectionMenu => {
-    return {
-        active: true,
-        companyId: companyInfo.companyId,
-        containerId: companyInfo.containerId,
-        createdAt: new Date(),
-        id: null,
-        imageURL: null,
-        name: body.name || null,
-        index: 0,
-        description: body.description || null,
-        products: [],
-        updatedAt: new Date(),
-        updatedBy: body.updatedBy || null,
-        version: '1.0.2',
-    };
-};

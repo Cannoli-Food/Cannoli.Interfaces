@@ -1,5 +1,5 @@
 import { ProductBlendItem } from './product-blend-item.interface';
-import { IProductBase } from '../../interfaces/product-interface';
+import { IProductBase } from './product-interface';
 
 export interface ProductBlend extends IProductBase {
     category: {

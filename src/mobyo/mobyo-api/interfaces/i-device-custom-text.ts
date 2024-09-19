@@ -1,16 +1,16 @@
 
 
-export class IDeviceCustomText {
+export interface IDeviceCustomText {
     // #region Properties (4)
 
     
-    public color: string;
+    color: string;
     
-    public size: number;
+    size: number;
     
-    public style: string;
+    style: string;
     
-    public weight: string;
+    weight: string;
 
     // #endregion Properties (4)
 }

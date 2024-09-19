@@ -1,25 +1,25 @@
 
 import { ILatLng } from './i-company-lat-lng';
 
-export class IDeliveryAreaFixed {
+export interface IDeliveryAreaFixed {
     // #region Properties (8)
 
-    public active: boolean;
+    active: boolean;
     
-    public deliveryFee: number;
+    deliveryFee: number;
     
-    public id: string;
-    public latlngs: ILatLng[];
+    id: string;
+    latlngs: ILatLng[];
     
-    public maxTime: number;
+    maxTime: number;
     
-    public minTime: number;
+    minTime: number;
     
-    public minimumOrderValue: number;
+    minimumOrderValue: number;
     
-    public name: string;
+    name: string;
     
-    public sequence: number;
+    sequence: number;
 
     // #endregion Properties (8)
 }

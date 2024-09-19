@@ -1,32 +1,31 @@
-
-import { IProductV2 } from '../../../products-v2/interfaces/i-product-v2';
 import { IProductSectionSchedule } from './i-product-section-schedule';
+import { IProductV2 } from './i-product-v2';
 
-export class IProductSectionMenu {
+export interface IProductSectionMenu {
     // #region Properties (12)
 
     
-    public active: boolean;
+    active: boolean;
     
-    public id: string;
+    id: string;
     
-    public index: number;
-    public product?: IProductV2;
+    index: number;
+    product?: IProductV2;
     
-    public name?: string;
+    name?: string;
     
-    public price?: number;
+    price?: number;
     
-    public productId: string;
+    productId: string;
     
-    public promotional: boolean;
+    promotional: boolean;
     
-    public updatedAt: Date;
+    updatedAt: Date;
     
-    public updatedBy: string;
+    updatedBy: string;
     schedule: IProductSectionSchedule;
     
-    public version: '1.0.2';
+    version: '1.0.2';
 
     // #endregion Properties (12)
 }

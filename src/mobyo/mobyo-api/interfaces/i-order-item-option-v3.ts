@@ -1,37 +1,37 @@
 
 
-export class IOrderItemOptionV3 {
+export interface IOrderItemOptionV3 {
     // #region Properties (15)
 
     
-    public ean: string;
+    ean: string;
     
-    public externalCode: string;
+    externalCode: string;
     
-    public id: string;
+    id: string;
     
-    public index: number;
+    index: number;
     
-    public name: string;
-    public options: IOrderItemOptionV3[];
+    name: string;
+    options: IOrderItemOptionV3[];
     
-    public optionsPrice: number;
+    optionsPrice: number;
     
-    public preparationPlaceId: string;
+    preparationPlaceId: string;
     
-    public price: number;
+    price: number;
     
-    public productId: string;
+    productId: string;
     
-    public quantity: number;
+    quantity: number;
     
-    public skill: string;
+    skill: string;
     
-    public totalPrice: number;
+    totalPrice: number;
     
-    public unit: string;
+    unit: string;
     
-    public weight: number;
+    weight: number;
 
     // #endregion Properties (15)
 }

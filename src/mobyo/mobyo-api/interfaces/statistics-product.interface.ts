@@ -1,6 +1,6 @@
-import { Statistics } from '../../../shared/services/repository/statistics.interface';
+import { IStatistics } from "./statistics.interface";
 
-export interface StatisticsProduct extends Statistics {
+export interface StatisticsProduct extends IStatistics {
     totalBlend: number;
     totalTopping: number;
     activesSimple: number;

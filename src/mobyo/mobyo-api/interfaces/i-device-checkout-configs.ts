@@ -1,17 +1,16 @@
-
-import { IPaymentMethod } from '../../payments/interface/i-payment-method';
-import { DeviceCustomerNameEnum } from './device-customer-name.enum';
+import { EDeviceCustomerName } from '../enum/device-customer-name.enum';
 import { IDeviceCheckoutConfigTef } from './i-device-checkout-config-tef';
 import { IDeviceCheckoutPaymentsOnline } from './i-device-checkout-payments-online';
+import { IPaymentMethod } from './i-payment-method';
 
-export class IDeviceCheckoutConfig {
-    // #region Properties (5)
+export interface IDeviceCheckoutConfig {
+  // #region Properties (5)
 
-    public customerName: DeviceCustomerNameEnum;
-    public paymentsOffline: IPaymentMethod[];
-    public paymentsOnline: IDeviceCheckoutPaymentsOnline;
-    public showReceiptDoc: boolean;
-    public tef: IDeviceCheckoutConfigTef;
+  customerName: EDeviceCustomerName;
+  paymentsOffline: IPaymentMethod[];
+  paymentsOnline: IDeviceCheckoutPaymentsOnline;
+  showReceiptDoc: boolean;
+  tef: IDeviceCheckoutConfigTef;
 
-    // #endregion Properties (5)
+  // #endregion Properties (5)
 }

@@ -1,60 +1,26 @@
+import { MottuOrderEntity } from "../../../mottu";
+import { EOrderDeliveredBy } from "../enum/order-delivered-by.enum";
+import { EOrderV3DeliveryMode } from "../enum/order-v3-delivery-mode.enum";
+import { IOrderDeliveryAddressV3 } from "./i-order-delivery-address-v3";
 
-import {
-    factoryOrderDeliveryAddressV3,
-    IOrderDeliveryAddressV3,
-} from './i-order-delivery-address-v3';
-import { OrderV3DeliveryModeEnum } from './order-v3-delivery-mode.enum';
-import { OrderDeliveredByEnum } from './order-delivered-by.enum';
-import { IsOptional } from 'class-validator';
-import { IAddress, MottuOrderEntity } from 'cecon-interfaces';
+export interface IOrderDeliveryV3 {
+  // #region Properties (8)
 
-// #region Classes (1)
+  deliveredBy: EOrderDeliveredBy;
+  deliveryAddress: IOrderDeliveryAddressV3;
 
-export class IOrderDeliveryV3 {
-    // #region Properties (8)
+  deliveryDateTime: string;
 
-    
-    public deliveredBy: OrderDeliveredByEnum;
-    public deliveryAddress: IOrderDeliveryAddressV3;
-    
-    public deliveryDateTime: string;
-    
-    public minimumCartValue: number;
-    public mode: OrderV3DeliveryModeEnum;
-    
-    
-    public mottu: MottuOrderEntity;
-    
-    public preferential: boolean;
-    
-    public preparationTime: number;
+  minimumCartValue: number;
+  mode: EOrderV3DeliveryMode;
 
-    // #endregion Properties (8)
+  mottu: MottuOrderEntity;
+
+  preferential: boolean;
+
+  preparationTime: number;
+
+  // #endregion Properties (8)
 }
 
-// #endregion Classes (1)
-
-// #region Functions (1)
-
-export function factoryOrderDeliveryV3(
-    address: IAddress,
-    deliveryDateTime: string,
-    deliveredBy: OrderDeliveredByEnum,
-    preparationTime: number,
-    mottu: MottuOrderEntity,
-): IOrderDeliveryV3 {
-    return {
-        mode: OrderV3DeliveryModeEnum.default,
-        deliveredBy,
-        deliveryDateTime,
-        preferential: false,
-        preparationTime: preparationTime || 0,
-        deliveryAddress: address
-            ? factoryOrderDeliveryAddressV3(address)
-            : null,
-        minimumCartValue: address?.deliveryArea?.minimumOrderValue || 1,
-        mottu,
-    } as IOrderDeliveryV3;
-}
-
-// #endregion Functions (1)
+// #endregion interfacees (1)

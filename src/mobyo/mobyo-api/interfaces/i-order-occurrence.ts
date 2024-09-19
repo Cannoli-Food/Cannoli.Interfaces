@@ -1,7 +1,7 @@
-import { OrderOccurrenceTypeEnum } from "../dto/order-occurrence-type.dto";
+import { EOrderOccurrenceType } from "../enum/order-occurrence-type.dto";
 
 export interface IOrderOccurrence {
-    type: OrderOccurrenceTypeEnum;
+    type: EOrderOccurrenceType;
     message: string;
     createdAt: Date;
     readed: boolean;

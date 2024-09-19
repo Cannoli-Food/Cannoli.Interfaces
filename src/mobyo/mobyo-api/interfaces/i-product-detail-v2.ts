@@ -1,24 +1,24 @@
 
 
-export class IProductDetailV2 {
+export interface IProductDetailV2 {
     // #region Properties (8)
 
     
-    public kosher: boolean;
+    kosher: boolean;
     
-    public noDairy: boolean;
+    noDairy: boolean;
     
-    public noGluten: boolean;
+    noGluten: boolean;
     
-    public noSugar: boolean;
+    noSugar: boolean;
     
-    public organic: boolean;
+    organic: boolean;
     
-    public sauceSpicy: 0 | 1 | 2 | 3 | 4;
+    sauceSpicy: 0 | 1 | 2 | 3 | 4;
     
-    public vegan: boolean;
+    vegan: boolean;
     
-    public vegetarian: boolean;
+    vegetarian: boolean;
 
     // #endregion Properties (8)
 }

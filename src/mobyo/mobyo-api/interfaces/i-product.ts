@@ -1,4 +1,5 @@
-import { IProductBase } from './interfaces/product-interface';
+import { IProductBase } from "./product-interface";
+
 export interface IProduct extends IProductBase {
     id: string;
     cost: number;

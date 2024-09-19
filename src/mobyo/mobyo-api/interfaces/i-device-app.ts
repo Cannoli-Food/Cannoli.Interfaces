@@ -1,15 +1,14 @@
-
-import { DeviceAppModeEnum } from './device-app-mode.enum';
+import { EDeviceAppMode } from '../enum/device-app-mode.enum';
+import { EOrderDeliveredBy } from '../enum/order-delivered-by.enum';
 import { IDeviceAppConfig } from './i-device-app-configs';
-import { OrderDeliveredByEnum } from '../../order-v3/interfaces-v3/order-delivered-by.enum';
 
-export class IDeviceApp {
-    // #region Properties (3)
+export interface IDeviceApp {
+  // #region Properties (3)
 
-    public configs: IDeviceAppConfig;
-    
-    public defaultDeliveredBy?: OrderDeliveredByEnum;
-    public mode: DeviceAppModeEnum;
+  configs: IDeviceAppConfig;
 
-    // #endregion Properties (3)
+  defaultDeliveredBy?: EOrderDeliveredBy;
+  mode: EDeviceAppMode;
+
+  // #endregion Properties (3)
 }

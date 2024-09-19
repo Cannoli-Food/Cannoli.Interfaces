@@ -1,4 +1,4 @@
-import { IProductSimple } from '../../product-simple/interfaces/product-simple.interface';
+import { IProductSimple } from "./product-simple.interface";
 
 export interface IProductChild extends IProductSimple {
     // #region Properties (5)

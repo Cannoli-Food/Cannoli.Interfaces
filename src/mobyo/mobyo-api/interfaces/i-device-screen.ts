@@ -1,16 +1,15 @@
-
-import { DeviceScreenModeEnum } from './device-screen-mode.enum';
+import { EDeviceScreenMode } from '../enum/device-screen-mode.enum';
 import { IDeviceScreenBoard } from './i-device-screen-board';
 
-export class IDeviceScreen {
-    // #region Properties (4)
+export interface IDeviceScreen {
+  // #region Properties (4)
 
-    public board: IDeviceScreenBoard[];
-    
-    public lateTime: number;
-    public mode: DeviceScreenModeEnum;
-    
-    public soundVolume: number;
+  board: IDeviceScreenBoard[];
 
-    // #endregion Properties (4)
+  lateTime: number;
+  mode: EDeviceScreenMode;
+
+  soundVolume: number;
+
+  // #endregion Properties (4)
 }

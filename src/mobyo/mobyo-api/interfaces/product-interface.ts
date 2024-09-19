@@ -1,4 +1,4 @@
-import { IEntity } from '../../../entities/i-entity';
+import { IEntity } from "./i-entity";
 
 export interface IProductBase extends IEntity {
     name: string;

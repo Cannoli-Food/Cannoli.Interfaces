@@ -1,20 +1,20 @@
 
 
-export class IOrderItemComposition {
+export interface IOrderItemComposition {
     // #region Properties (6)
 
     
-    public amount: number;
+    amount: number;
     
-    public code: string;
+    code: string;
     
-    public description: string;
+    description: string;
     
-    public imageURL: string;
+    imageURL: string;
     
-    public quantity: number;
+    quantity: number;
     
-    public unit: string;
+    unit: string;
 
     // #endregion Properties (6)
 }

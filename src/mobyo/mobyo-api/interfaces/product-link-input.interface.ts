@@ -1,4 +1,4 @@
-import { IEntity } from '../../../entities/i-entity';
+import { IEntity } from "./i-entity";
 
 export interface ProductLinkInput extends IEntity {
     quantity: number;

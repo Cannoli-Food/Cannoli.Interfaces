@@ -1,24 +1,24 @@
 
 
-export class ITab {
+export interface ITab {
     // #region Properties (8)
 
     
-    public createdAt: Date;
+    createdAt: Date;
     
-    public dv: string;
+    dv: string;
     
-    public dv9: string;
+    dv9: string;
     
-    public fullTab: string;
+    fullTab: string;
     
-    public fullTab9: string;
+    fullTab9: string;
     
-    public id: string;
+    id: string;
     
-    public tabId: string;
+    tabId: string;
     
-    public updatedAt: Date;
+    updatedAt: Date;
 
     // #endregion Properties (8)
 }

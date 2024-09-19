@@ -1,5 +1,6 @@
 import { EDesenfilaFrom } from '../../general';
-import { EOrderTiming, OrderStatusEnum } from '../enums';
+import { EOrderTiming } from '../enums';
+import { EOrderStatus } from '../enums/order-status.enum';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrderAdditionalFee } from './i-additional-fee';
 import { IOrderBenefits } from './i-benefits';
@@ -31,7 +32,7 @@ export interface IOrder {
   reference: string | null;
   salesChannel: string;
   sandbox: boolean;
-  status: OrderStatusEnum;
+  status: EOrderStatus;
   total: IOrderTotal;
   updatedAt: Date;
   version: string;

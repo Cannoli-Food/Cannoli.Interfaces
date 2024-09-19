@@ -1,52 +1,50 @@
-// import { SetOrderItemV3Dto } from '../usercases-v3/set-item-v3/set-item-v3.dto';
-
 import { IOrderItemComposition } from './i-order-item-composition';
 import { IOrderItemOptionV3 } from './i-order-item-option-v3';
 import { IOrderItemScaleV3 } from './i-order-item-scales-v3';
-export class IOrderItemScalePricesV3 {
+export interface IOrderItemScalePricesV3 {
     
     defaultPrice: number;
     scales: IOrderItemScaleV3[];
 }
 
-export class IOrderItemV3 {
+export interface IOrderItemV3 {
     // #region Properties (19)
 
     
-    public ean: string;
+    ean: string;
     
-    public externalCode: string;
+    externalCode: string;
     
-    public id: string;
+    id: string;
     
-    public index: number;
+    index: number;
     
-    public name: string;
-    public composition: IOrderItemComposition[];
+    name: string;
+    composition: IOrderItemComposition[];
     
-    public observations: string;
-    public options: IOrderItemOptionV3[];
+    observations: string;
+    options: IOrderItemOptionV3[];
     
-    public optionsPrice: number;
+    optionsPrice: number;
     
-    public picture: string;
+    picture: string;
     
-    public preparationPlaceId: string;
+    preparationPlaceId: string;
     
-    public price: number;
+    price: number;
     
-    public quantity: number;
-    public scalePrices: IOrderItemScalePricesV3;
+    quantity: number;
+    scalePrices: IOrderItemScalePricesV3;
     
-    public skill: string;
+    skill: string;
     
-    public totalPrice: number;
+    totalPrice: number;
     
-    public unit: string;
+    unit: string;
     
-    public unitPrice: number;
+    unitPrice: number;
     
-    public weight: number;
+    weight: number;
 
     // #endregion Properties (19)
 }

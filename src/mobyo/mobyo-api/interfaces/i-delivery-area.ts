@@ -1,24 +1,24 @@
 
 import { ILatLng } from './i-company-lat-lng';
 
-export class IDeliveryArea {
+export interface IDeliveryArea {
     // #region Properties (8)
 
     
-    public deliveryFee: number;
+    deliveryFee: number;
     
-    public id: string;
-    public latlngs: ILatLng[];
+    id: string;
+    latlngs: ILatLng[];
     
-    public maxTime: number;
+    maxTime: number;
     
-    public minTime: number;
+    minTime: number;
     
-    public minimumOrderValue: number;
+    minimumOrderValue: number;
     
-    public name: string;
+    name: string;
     
-    public sequence: number;
+    sequence: number;
 
     // #endregion Properties (8)
 }

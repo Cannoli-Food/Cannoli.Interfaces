@@ -1,21 +1,21 @@
 
 
-export class IDeviceScreenBoard {
+export interface IDeviceScreenBoard {
     // #region Properties (4)
 
     
-    public backgroundColor: string;
+    backgroundColor: string;
     
-    public titleColor: string;
+    titleColor: string;
     
-    public color: string;
+    color: string;
     
-    public backgroundUrl: string;
+    backgroundUrl: string;
     
-    public menuId: string;
+    menuId: string;
     
-    public id: string;
-    public time: number;
+    id: string;
+    time: number;
 
     // #endregion Properties (4)
 }

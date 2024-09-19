@@ -1,13 +1,12 @@
-
-import { DeviceCheckoutStatusEnum } from './device-checkout-status.enum';
+import { EDeviceCheckoutStatus } from '../enum/device-checkout-status.enum';
 import { IDeviceCheckoutConfig } from './i-device-checkout-configs';
 import { IDeviceCheckoutPicture } from './i-device-checkout-picture';
 
-export class IDeviceCheckout {
-    // #region Properties (15)
-    public configs: IDeviceCheckoutConfig;
-    public pictures: IDeviceCheckoutPicture;
-    public status: DeviceCheckoutStatusEnum;
+export interface IDeviceCheckout {
+  // #region Properties (15)
+  configs: IDeviceCheckoutConfig;
+  pictures: IDeviceCheckoutPicture;
+  status: EDeviceCheckoutStatus;
 
-    // #endregion Properties (15)
+  // #endregion Properties (15)
 }

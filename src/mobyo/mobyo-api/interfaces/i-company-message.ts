@@ -1,14 +1,12 @@
+import { ECompanyMessageChannel } from "../enum/company-message-channel.enum";
 
-import { CompanyMessageChannelEnum } from './company-message-channel.enum';
+export interface ICompanyMessage {
+  // #region Properties (22)
 
-export class ICompanyMessage {
-    // #region Properties (22)
+  id: string;
+  channelId: string;
+  nameSpace: string;
+  type: ECompanyMessageChannel;
 
-    public id: string;
-    public channelId: string;
-    public nameSpace: string;
-    public type: CompanyMessageChannelEnum;
-
-    // #endregion Properties (22)
+  // #endregion Properties (22)
 }
-

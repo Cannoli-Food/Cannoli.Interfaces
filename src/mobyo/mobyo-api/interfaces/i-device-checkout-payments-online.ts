@@ -1,6 +1,6 @@
 
 
-export class IDeviceCheckoutPaymentsOnline {
+export interface IDeviceCheckoutPaymentsOnline {
     // #region Properties (4)
     
     cash: boolean;

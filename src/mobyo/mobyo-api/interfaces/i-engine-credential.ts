@@ -1,16 +1,14 @@
-
-
-export class IEngineCredential {
+export interface IEngineCredential {
     // #region Properties (3)
 
     
-    public password: string;
+    password: string;
     
-    public storeId?: string;
+    storeId?: string;
     
-    public username: string;
+    username: string;
     
-    public autoConfirm?: boolean;
+    autoConfirm?: boolean;
 
     // #endregion Properties (3)
 }

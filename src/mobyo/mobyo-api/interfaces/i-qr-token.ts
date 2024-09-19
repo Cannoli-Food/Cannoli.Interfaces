@@ -1,16 +1,16 @@
 // Set as deprecated class
 
-export class IQrToken {
+export interface IQrToken {
     // #region Properties (8)
 
-    public active: boolean;
-    public createdAt: Date;
-    public id: string;
-    public menuId: string;
-    public merchantId: string;
-    public publishAt: Date;
-    public updatedAt: Date;
-    public views: number;
+    active: boolean;
+    createdAt: Date;
+    id: string;
+    menuId: string;
+    merchantId: string;
+    publishAt: Date;
+    updatedAt: Date;
+    views: number;
 
     // #endregion Properties (8)
 }

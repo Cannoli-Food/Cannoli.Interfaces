@@ -1,11 +1,11 @@
 
 
-export class IOrderCancellationV3 {
+export interface IOrderCancellationV3 {
     // #region Properties (3)
     
-    public cancellationBy: string;
+    cancellationBy: string;
     
-    public cancellationCode: string;
+    cancellationCode: string;
     
-    public reason: string;
+    reason: string;
 }

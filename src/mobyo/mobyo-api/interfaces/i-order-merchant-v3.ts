@@ -1,18 +1,18 @@
 
 
-export class IOrderMerchantV3 {
+export interface IOrderMerchantV3 {
     // #region Properties (3)
 
     
-    public description: string;
+    description: string;
     
-    public id: string;
+    id: string;
     
-    public name: string;
+    name: string;
     
-    public doc: string;
+    doc: string;
     
-    public docType: string;
+    docType: string;
 
     // #endregion Properties (3)
 }

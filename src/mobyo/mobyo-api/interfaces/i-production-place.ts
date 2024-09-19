@@ -1,7 +1,5 @@
 
-import { AddProductionPlacePrintInfoDto } from '../usercases/post/add/add-production-place-print-info.dto';
-
-export class IProductionPlace {
+export interface IProductionPlace {
     
     name: string;
     
@@ -26,11 +24,4 @@ export class IProductionPlace {
     updatedAt: Date;
     
     version?: string;
-}
-
-export function factoryProductionPlace(body: AddProductionPlacePrintInfoDto, type: 'PRINT' | 'MONITOR' = 'PRINT') {
-    return {
-        name: body.name,
-        type,
-    } as IProductionPlace;
 }

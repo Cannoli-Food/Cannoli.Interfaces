@@ -1,12 +1,12 @@
 
 
-export class IOrderItemScaleV3 {
+export interface IOrderItemScaleV3 {
     // #region Properties (2)
 
     
-    public minQuantity: number;
+    minQuantity: number;
     
-    public price: number;
+    price: number;
 
     // #endregion Properties (2)
 }

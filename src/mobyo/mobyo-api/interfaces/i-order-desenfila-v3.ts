@@ -1,7 +1,7 @@
 
 
-export class IOrderDesenfilaV3 {
+export interface IOrderDesenfilaV3 {
     // #region Properties (3)
-    public preferenceId: string;
-    public initPoint: string;
+    preferenceId: string;
+    initPoint: string;
 }
