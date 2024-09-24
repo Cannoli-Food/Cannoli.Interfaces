@@ -1,5 +1,5 @@
 import { EDesenfilaFrom } from '../../general';
-import { EOrderTiming, OrderStatusEnum } from '../enums';
+import { EOrderTiming, EOrderStatus } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrder } from '../interfaces';
 import { OrderAdditionalFeeEntity } from './additional-fees.entity';
@@ -32,7 +32,7 @@ export class OrderEntity implements IOrder {
   public reference: string | null = null;
   public salesChannel: string = '';
   public sandbox: boolean = false;
-  public status: OrderStatusEnum = OrderStatusEnum.PENDING;
+  public status: EOrderStatus = EOrderStatus.PENDING;
   public total: OrderTotalEntity = new OrderTotalEntity();
   public updatedAt: Date = new Date();
   public version: string = '';

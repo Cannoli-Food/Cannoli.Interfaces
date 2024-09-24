@@ -19,6 +19,7 @@ export class WithDrawRequestEntity implements IWithdrawRequest {
   public natiInfo: INatiInfo = new NatiInfoEntity();
   public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
   public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
+  public name: string = '';
 
   // #endregion Properties (11)
 

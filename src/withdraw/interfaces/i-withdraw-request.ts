@@ -13,6 +13,7 @@ export interface IWithdrawRequest {
   transactionId: string | null;
   transferDocumentUrl: string | null;
   updatedAt: Date;
+  name:string;
   natiInfo: INatiInfo;
   mobyoInfo: IMobyoInfo;
   desenfilaInfo: IDesenfilaInfo;

@@ -7,6 +7,7 @@ export interface IDeviceAppConfig {
     checkoutOnline: boolean;
     checkoutOffline: boolean;
     checkoutPix: boolean;
+    minShopValue: number;
 
     // #endregion Properties (1)
 }

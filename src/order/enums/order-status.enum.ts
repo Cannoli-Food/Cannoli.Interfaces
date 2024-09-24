@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 export enum EOrderStatus {
   PLACED = 'PLACED',
+  READY_TO_DELIVER = 'READY_TO_DELIVER',
   INTEGRATED = 'INTEGRATED',
   CONFIRMED = 'CONFIRMED',
   PENDING = 'PENDING',
