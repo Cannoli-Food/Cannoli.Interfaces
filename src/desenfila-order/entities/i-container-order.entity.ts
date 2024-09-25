@@ -1,7 +1,7 @@
-import { IDesenfilaContainerOrder } from "../interfaces";
-import { DesenfilaContainerOrderItemEntity } from "./i-container-order-item.entity";
-import { DesenfilaContainerOrderPixEntity } from "./i-container-order-pix.entity";
-import { DesenfilaContainerOrderPaymentEntity } from "./i-container-order-payment";
+import { IDesenfilaContainerOrder } from '../interfaces';
+import { DesenfilaContainerOrderItemEntity } from './i-container-order-item.entity';
+import { DesenfilaContainerOrderPaymentEntity } from './i-container-order-payment';
+import { DesenfilaContainerOrderPixEntity } from './i-container-order-pix.entity';
 
 export class DesenfilaContainerOrderEntity implements IDesenfilaContainerOrder {
   public active: boolean = true;
@@ -34,7 +34,7 @@ export class DesenfilaContainerOrderEntity implements IDesenfilaContainerOrder {
   public paidBy: string = '';
   public paidValue: number = 0;
   public payment: DesenfilaContainerOrderPaymentEntity = new DesenfilaContainerOrderPaymentEntity();
-  public payments: DesenfilaContainerOrderPaymentEntity = new DesenfilaContainerOrderPaymentEntity();
+  public payments: DesenfilaContainerOrderPaymentEntity[] = [];
   public pendingPayment: number = 0;
   public pos: string = '';
   public refId: string = '';

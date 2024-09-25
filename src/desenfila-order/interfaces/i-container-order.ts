@@ -37,7 +37,7 @@ export interface IDesenfilaContainerOrder {
    * @deprecated Use array<payments> ao invés de payment
    */
   payment: IDesenfilaContainerOrderPayment;
-  payments: IDesenfilaContainerOrderPayment;
+  payments: IDesenfilaContainerOrderPayment[];
   pendingPayment: number;
   pos: string;
   refId: string;
