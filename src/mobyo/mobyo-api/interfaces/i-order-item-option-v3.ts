@@ -32,6 +32,7 @@ export interface IOrderItemOptionV3 {
     unit: string;
     
     weight: number;
+    questionId?: string;
 
     // #endregion Properties (15)
 }

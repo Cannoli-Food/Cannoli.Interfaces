@@ -1,3 +1,4 @@
+import { EOrderPaymentMethod } from '../enum/order-payment-method.enum';
 import { EPaymentType } from '../enum/payment-type.enum';
 export class IPaymentMethod {
   // #region Properties (8)
@@ -10,7 +11,7 @@ export class IPaymentMethod {
 
   public index: number;
 
-  public method: 'app' | 'ondelivery';
+  public method: EOrderPaymentMethod;
 
   public name: string;
 

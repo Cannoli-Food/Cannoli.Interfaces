@@ -1,5 +1,5 @@
 export enum EOrderDeliveredBy {
     merchant = 'MERCHANT',
-    mottu = 'MOBYO ENTREGAS',
+    mobyo = 'MOBYO ENTREGAS',
     lalamove = 'LALAMOVE',
 }

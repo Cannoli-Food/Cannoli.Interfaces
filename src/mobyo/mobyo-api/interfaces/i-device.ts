@@ -5,6 +5,7 @@ import { IDeviceCheckout } from './i-device-checkout';
 import { IDeviceCheckoutConfig } from './i-device-checkout-configs';
 import { IDeviceCheckoutPicture } from './i-device-checkout-picture';
 import { IDeviceScreen } from './i-device-screen';
+import { IMenuScheduleV2 } from './i-menu-schedule-v2';
 
 export interface IDevice {
   // #region Properties (15)
@@ -35,6 +36,7 @@ export interface IDevice {
   screen?: IDeviceScreen;
 
   updatedAt: Date;
+  schedule: IMenuScheduleV2 | null;
 
   // #endregion Properties (15)
 }

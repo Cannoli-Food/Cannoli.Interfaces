@@ -34,4 +34,5 @@ export interface IOrderPaymentMethodV3 {
 
   value: number;
   wallet: IOrderPaymentWallet;
+  paymentId?:string
 }

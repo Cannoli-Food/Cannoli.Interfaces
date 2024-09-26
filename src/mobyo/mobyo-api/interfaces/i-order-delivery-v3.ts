@@ -19,6 +19,7 @@ export interface IOrderDeliveryV3 {
   preferential: boolean;
 
   preparationTime: number;
+  id?: string;
 
   // #endregion Properties (8)
 }

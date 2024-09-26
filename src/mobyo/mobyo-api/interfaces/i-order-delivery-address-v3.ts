@@ -30,6 +30,7 @@ export interface IOrderDeliveryAddressV3 {
     streetName: string;
     
     streetNumber: string;
+    id?:string
 
     // #endregion Properties (12)
 }
