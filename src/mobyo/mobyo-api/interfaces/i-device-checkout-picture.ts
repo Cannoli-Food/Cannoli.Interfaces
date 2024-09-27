@@ -14,6 +14,7 @@ export interface IDeviceCheckoutPicture {
     header: string;
     
     banners: Array<string>;
+    ordermode: string;
 
     // #endregion Properties (9)
 }

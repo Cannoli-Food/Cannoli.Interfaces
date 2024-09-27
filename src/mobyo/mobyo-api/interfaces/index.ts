@@ -39,9 +39,11 @@ export { IDeviceAppConfig as MobyoIDeviceAppConfig } from './i-device-app-config
 export { IDeviceCheckout as MobyoIDeviceCheckout } from './i-device-checkout';
 export { IDeviceCheckoutConfigTef as MobyoIDeviceCheckoutConfigTef } from './i-device-checkout-config-tef';
 export { IDeviceCheckoutConfigTefApi as MobyoIDeviceCheckoutConfigTefApi } from './i-device-checkout-config-tef-api';
+export { IDeviceCheckoutConfigTefApi } from './i-device-checkout-config-tef-api';
 export { IDeviceCheckoutConfig as MobyoIDeviceCheckoutConfig } from './i-device-checkout-configs';
 export { IDeviceCheckoutPaymentsOnline as MobyoIDeviceCheckoutPaymentsOnline } from './i-device-checkout-payments-online';
 export { IDeviceCheckoutPicture as MobyoIDeviceCheckoutPicture } from './i-device-checkout-picture';
+export { IDeviceCheckoutPicture } from './i-device-checkout-picture';
 export { IDeviceCustomText as MobyoIDeviceCustomText } from './i-device-custom-text';
 export { IDeviceMenu as MobyoIDeviceMenu } from './i-device-menu';
 export { IDeviceScreen as MobyoIDeviceScreen } from './i-device-screen';

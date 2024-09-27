@@ -1,8 +1,7 @@
 
 
 export interface IDeviceCheckoutConfigTefApi {
-    // #region Properties (2)
-    port: number;
+    storeId: string;
     url: string;
 
     // #endregion Properties (2)
