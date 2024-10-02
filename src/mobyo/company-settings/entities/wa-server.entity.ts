@@ -3,8 +3,8 @@ import { ICompanySettingsWaServer } from '../interfaces';
 export class CompanySettingsWaServerEntity implements ICompanySettingsWaServer {
   // #region Properties (4)
 
-  public deliveryMenuUrl: string = '';
-  public indoorMenuUrl: string = '';
+  public deliveryMenuUrl: string | null = null;
+  public indoorMenuUrl: string | null = null;
   public instanceName: string = '';
   public serverId: string = '';
 
@@ -16,8 +16,8 @@ export class CompanySettingsWaServerEntity implements ICompanySettingsWaServer {
     if (data) {
       this.serverId = data.serverId || '';
       this.instanceName = data.instanceName || '';
-      this.deliveryMenuUrl = data.deliveryMenuUrl || '';
-      this.indoorMenuUrl = data.indoorMenuUrl || '';
+      this.deliveryMenuUrl = data.deliveryMenuUrl || null;
+      this.indoorMenuUrl = data.indoorMenuUrl || null;
     }
   }
 

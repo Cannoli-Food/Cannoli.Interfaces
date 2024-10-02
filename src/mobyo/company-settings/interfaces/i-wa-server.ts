@@ -1,6 +1,6 @@
 export interface ICompanySettingsWaServer {
   serverId: string;
   instanceName: string;
-  deliveryMenuUrl: string;
-  indoorMenuUrl: string;
+  deliveryMenuUrl: string | null;
+  indoorMenuUrl: string | null;
 }
