@@ -1,18 +1,26 @@
+import { EDiscountType, IMobyoInfo, INatiInfo } from '../../general';
 import { ECampaignStatus } from '../enums';
+import { ECampaignTargetTypes } from '../enums/target-types.enum';
+import { ICampaignRule } from './i-campaign-rule';
+import { ICampaignSponsorship } from './i-campaign-sponsorship';
 
 export interface ICampaign {
-  // #region Properties (11)
-
+  info: IMobyoInfo | INatiInfo;
+  concludedAt: Date;
   createdAt: Date;
-  createdBy: string;
-  description: string;
-  endDate: Date;
   id: string;
+  isPublic: boolean;
+  key: string;
   name: string;
-  partnerId?: string[];
-  startDate: Date;
+  activatedAt: Date;
+  rules: ICampaignRule[];
+  type: EDiscountType;
+  amount: number; // soma dos values dos sponsorships
+  sponsorship: ICampaignSponsorship[]; // o valor total da campanha necessariamente precisa estar aqui
   status: ECampaignStatus;
+  targetsId: string[];
+  targetType: ECampaignTargetTypes;
   updatedAt: Date;
-
-  // #endregion Properties (11)
+  limit: number;
+  isExclusive: boolean;
 }

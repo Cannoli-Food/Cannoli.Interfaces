@@ -8,6 +8,6 @@ export interface IMenuScheduleV2 {
     thu: boolean;
     tue: boolean;
     wed: boolean;
-    startAt: string;
-    endAt: string;
+    startAt: string | Date;
+    endAt: string | Date;
 }

@@ -1,23 +1,27 @@
-import { ECampaignStatus } from '../enums';
-import { ICampaign } from '../interfaces';
+import { EDiscountType, IMobyoInfo, INatiInfo, MobyoInfoEntity } from '../../general';
+import { ECampaignStatus, ECampaignTargetTypes } from '../enums';
+import { ICampaign, ICampaignRule, ICampaignSponsorship } from '../interfaces';
 
 export class CampaignEntity implements ICampaign {
   // #region Properties (10)
-
+  public info: IMobyoInfo | INatiInfo = new MobyoInfoEntity();
+  public concludedAt: Date = new Date();
   public createdAt: Date = new Date();
-  public createdBy: string = '';
-  public description: string = '';
-  public endDate: Date = new Date(Date.now() + 1000 * 60 * 60 * 24 * 30);
   public id: string = '';
+  public isPublic: boolean = false;
+  public key: string = '';
   public name: string = '';
-  partnerId?: string[] = [];
-  public startDate: Date = new Date();
-  public status: ECampaignStatus = ECampaignStatus.PLACED;
+  public activatedAt: Date = new Date();
+  public rules: ICampaignRule[] = [];
+  public type: EDiscountType = EDiscountType.PERCENT;
+  public amount: number = 0;
+  public sponsorship: ICampaignSponsorship[] = [];
+  public status: ECampaignStatus = ECampaignStatus.ACTIVE;
+  public targetsId: string[] = [];
+  public targetType: ECampaignTargetTypes = ECampaignTargetTypes.CART;
   public updatedAt: Date = new Date();
-
-  // #endregion Properties (10)
-
-  // #region Constructors (1)
+  public limit: number = 0;
+  public isExclusive: boolean = false;
 
   constructor(data?: Partial<CampaignEntity>) {
     if (data) {
