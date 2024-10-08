@@ -5,6 +5,7 @@ export interface IOrderBenefits {
 
   description: string;
   id: string;
+  referenceId: string;
   sponsorshipValues: ISponsorshipValue[];
   target: string;
   targetId: string;

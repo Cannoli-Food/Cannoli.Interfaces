@@ -5,6 +5,7 @@ export class OrderBenefitsEntity {
 
   public description: string = '';
   public id: string = '';
+  public referenceId: string = '';
   public sponsorshipValues: SponsorshipValueEntity[] = [];
   public target: string = '';
   public targetId: string = '';
