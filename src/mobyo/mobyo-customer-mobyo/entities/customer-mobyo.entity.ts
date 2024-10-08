@@ -1,5 +1,6 @@
 import { CustomerEntity } from '../../../customer';
 import { IAddress } from '../../../general';
+import { IUsedVoucher } from '../interfaces';
 import { ICustomerMobyo } from '../interfaces/i-customer-mobyo';
 
 export class CustomerMobyoEntity extends CustomerEntity implements ICustomerMobyo {
@@ -14,7 +15,7 @@ export class CustomerMobyoEntity extends CustomerEntity implements ICustomerMoby
   public ordersCountOnRestaurant: number = 0;
   public uid: string = '';
   public version: string = '1.0.2';
-
+  public birthday: Date | null = null;
   // #endregion Properties (9)
 
   // #region Constructors (1)

@@ -13,5 +13,5 @@ export interface ICustomerMobyo extends ICustomer {
   ordersCountOnRestaurant: number;
   uid: string;
   version: string;
-
+  birthday: Date | null;
 }

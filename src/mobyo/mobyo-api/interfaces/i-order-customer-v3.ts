@@ -1,6 +1,8 @@
 
 // #region interfacees (2)
 
+import { IUsedVoucher } from "../../mobyo-customer-mobyo";
+
 export interface IOrdersCustomerPhone {
     // #region Properties (4)
 
@@ -33,8 +35,7 @@ export interface IOrderCustomerV3 {
     phone: IOrdersCustomerPhone;
     
     picture: string;
-
-    // #endregion Properties (7)
+    birthday: Date | null;
 }
 
 // #endregion interfacees (2)

@@ -1,9 +1,8 @@
 import { IMenuScheduleV2 } from '../../mobyo/mobyo-api/interfaces/i-menu-schedule-v2';
-import { ECampaignRuleType } from '../enums/rule-types.enum';
+import { EVoucherRuleType } from '../enums/rule-types.enum';
 
-export interface ICampaignRule {
-  type: ECampaignRuleType;
+export interface IVoucherRule {
+  type: EVoucherRuleType;
   value?: string | number | Date | boolean | IMenuScheduleV2;
   description: string;
 }
-

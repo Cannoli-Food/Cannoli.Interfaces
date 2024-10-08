@@ -1,11 +1,11 @@
-import { ICampaignSponsorship } from '../interfaces';
+import { IVoucherSponsorship } from '../interfaces';
 
-export class CampaignSponsorshipEntity implements ICampaignSponsorship {
+export class VoucherSponsorshipEntity implements IVoucherSponsorship {
   // #region Properties (10)
   public name: string = 'MERCHANT';
   public value: number = 0;
 
-  constructor(data?: Partial<CampaignSponsorshipEntity>) {
+  constructor(data?: Partial<VoucherSponsorshipEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
