@@ -1,15 +1,16 @@
 import { SponsorshipValueEntity } from '../../general/entities/sponsorship-value.entity';
+import { EVoucherTargetTypes } from '../../voucher';
+import { IOrderBenefits } from '../interfaces';
 
-export class OrderBenefitsEntity {
+export class OrderBenefitsEntity implements IOrderBenefits {
   // #region Properties (6)
 
   public description: string = '';
   public id: string = '';
   public referenceId: string = '';
   public sponsorshipValues: SponsorshipValueEntity[] = [];
-  public target: string = '';
-  public targetId: string = '';
   public value: number = 0;
+  public target: EVoucherTargetTypes = EVoucherTargetTypes.CART;
 
   // #endregion Properties (6)
 

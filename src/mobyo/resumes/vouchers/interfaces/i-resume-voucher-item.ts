@@ -1,4 +1,4 @@
-import { ICoords, IMobyoInfo, INatiInfo } from '../../../../general';
+import { ICoords } from '../../../../general';
 
 export interface IResumeVoucherItem {
   confirmed: IResumeVoucherItemDetail;

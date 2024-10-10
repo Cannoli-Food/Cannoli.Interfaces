@@ -5,18 +5,18 @@ import { IVoucher, IVoucherRule, IVoucherSponsorship } from '../interfaces';
 export class VoucherEntity implements IVoucher {
   // #region Properties (10)
   public info: IMobyoInfo | INatiInfo = new MobyoInfoEntity();
-  public concludedAt: Date = new Date();
+  public concludedAt: Date | null = null;
   public createdAt: Date = new Date();
   public id: string = '';
   public isPublic: boolean = false;
   public key: string = '';
   public name: string = '';
-  public activatedAt: Date = new Date();
+  public activatedAt: Date | null = null;
   public rules: IVoucherRule[] = [];
   public type: EDiscountType = EDiscountType.PERCENT;
   public amount: number = 0;
   public sponsorship: IVoucherSponsorship[] = [];
-  public status: EVoucherStatus = EVoucherStatus.ACTIVE;
+  public status: EVoucherStatus = EVoucherStatus.PLACED;
   public targetsId: string[] = [];
   public targetType: EVoucherTargetTypes = EVoucherTargetTypes.CART;
   public updatedAt: Date = new Date();

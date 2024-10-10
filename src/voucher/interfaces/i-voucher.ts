@@ -6,13 +6,13 @@ import { IVoucherSponsorship } from './i-voucher-sponsorship';
 
 export interface IVoucher {
   info: IMobyoInfo | INatiInfo;
-  concludedAt: Date;
+  concludedAt: Date | null;
   createdAt: Date;
   id: string;
   isPublic: boolean;
   key: string;
   name: string;
-  activatedAt: Date;
+  activatedAt: Date | null;
   rules: IVoucherRule[];
   type: EDiscountType;
   amount: number; // soma dos values dos sponsorships

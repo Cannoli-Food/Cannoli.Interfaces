@@ -71,7 +71,6 @@ export { IMerchant as MobyoIMerchant } from './i-merchant';
 export { IMerchantAddress as MobyoIMerchantAddress } from './i-merchant-address';
 export { IOrderActionV3 as MobyoIOrderActionV3 } from './i-order-action-v3';
 export { IOrderAditionalFeeV3 as MobyoIOrderAditionalFeeV3 } from './i-order-additional-fees-v3';
-export { IOrderBenefitsV3 as MobyoIOrderBenefitsV3, ISponsorshipValues } from './i-order-benefits-v3';
 export { IOrderCancellationV3 as MobyoIOrderCancellationV3 } from './i-order-cancellation-v3';
 export { IOrderCustomerV3 as MobyoIOrderCustomerV3, IOrdersCustomerPhone as MobyoIOrdersCustomerPhone } from './i-order-customer-v3';
 export { IOrderDelivererV3 as MobyoIOrderDelivererV3 } from './i-order-deliverer-v3';

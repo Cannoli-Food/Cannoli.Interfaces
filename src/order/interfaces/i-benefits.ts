@@ -1,15 +1,14 @@
 import { ISponsorshipValue } from '../../general/interfaces';
+import { EVoucherTargetTypes } from '../../voucher';
 
 export interface IOrderBenefits {
   // #region Properties (6)
 
-  description: string;
   id: string;
-  referenceId: string;
   sponsorshipValues: ISponsorshipValue[];
-  target: string;
-  targetId: string;
+  target: EVoucherTargetTypes;
   value: number;
+  description: string;
+  referenceId: string;
 
-  // #endregion Properties (6)
 }

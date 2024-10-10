@@ -1,10 +1,10 @@
+import { IOrderBenefits } from '../../../order';
 import { EOrderStatus } from '../../../order/enums/order-status.enum';
 import { EEngineType } from '../enum/engine-type.enum';
 import { EOrderV3SalesChannel } from '../enum/order-v3-sales-channel.enum';
 import { EOrderV3Timing } from '../enum/order-v3-timing.enum';
 import { EOrderV3Type } from '../enum/order-v3-type.enum';
 import { IOrderActionV3 } from './i-order-action-v3';
-import { IOrderBenefitsV3 } from './i-order-benefits-v3';
 import { IOrderCancellationV3 } from './i-order-cancellation-v3';
 import { IOrderCustomerV3 } from './i-order-customer-v3';
 import { IOrderDelivererV3 } from './i-order-deliverer-v3';
@@ -22,7 +22,7 @@ export interface IOrderV3 {
   // #region Properties (39)
 
   actions: IOrderActionV3[];
-  benefits: IOrderBenefitsV3[];
+  benefits: IOrderBenefits[];
   cancellation: IOrderCancellationV3;
 
   companyId: string;
