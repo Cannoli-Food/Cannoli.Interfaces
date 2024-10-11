@@ -1,0 +1,12 @@
+export { INineNineAddressInfo } from './i-address-info';
+export { INineNineCancelResponse } from './i-cancel-response';
+export { INineNineCreateResponse } from './i-create-response';
+export { INineNineDriverInfo } from './i-driver-info';
+export { INineNineEstimateResponse } from './i-estimate-response';
+export { INineNineLocation } from './i-location';
+export { INineNinePackageInfo } from './i-package-info';
+export { INineNinePreview } from './i-preview';
+export { INineNinePriceInfo } from './i-price-info';
+export { INineNineStatusData } from './i-status-data';
+export { INineNineStatusResponse } from './i-status-response';
+export { INineNineVerifyInfo } from './i-verify-info';
