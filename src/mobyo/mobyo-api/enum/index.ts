@@ -11,11 +11,11 @@ export { EIuguInvoicesStatus as MobyoEIuguInvoicesStatus } from './iugu-invoices
 export { EMemberRules as MobyoEMemberRules } from './member-rules.enum';
 export { EOrderCancelReasons as MobyoEOrderCancelReasons } from './order-cancel-reasons.enum';
 export { EOrderDeliveredBy as MobyoEOrderDeliveredBy } from './order-delivered-by.enum';
+export { EOrderOccurrenceType as MobyoEOrderOccurrenceType } from './order-occurrence-type.enum';
 export { EOrderPaymentId as MobyoEOrderPaymentId } from './order-payment-id.enum';
 export { EOrderPaymentMethod as MobyoEOrderPaymentMethod } from './order-payment-method.enum';
 export { EOrderV3DeliveryMode as MobyoEOrderV3DeliveryMode } from './order-v3-delivery-mode.enum';
 export { EOrderV3SalesChannel as MobyoEOrderV3SalesChannel } from './order-v3-sales-channel.enum';
-export { EOrderV3Status as MobyoEOrderV3Status } from './order-v3-status.enum';
 export { EOrderV3Timing as MobyoEOrderV3Timing } from './order-v3-timing.enum';
 export { EOrderV3Type as MobyoEOrderV3Type } from './order-v3-type.enum';
 export { EPaymentType as EDeprecatedPaymentType } from './payment-type.enum';

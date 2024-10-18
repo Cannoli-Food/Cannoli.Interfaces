@@ -37,6 +37,7 @@ export class OrderEntity implements IOrder {
   public updatedAt: Date = new Date();
   public version: string = '';
   public from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
+  public extraInfo: string | null = null;
 
   constructor(data?: Partial<OrderEntity>) {
     if (data) {

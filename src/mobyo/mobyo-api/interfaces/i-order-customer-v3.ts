@@ -1,6 +1,7 @@
 
 // #region interfacees (2)
 
+import { ICoords } from "../../../general";
 import { IUsedVoucher } from "../../mobyo-customer-mobyo";
 
 export interface IOrdersCustomerPhone {
@@ -36,6 +37,7 @@ export interface IOrderCustomerV3 {
     
     picture: string;
     birthday: Date | null;
+    coords: ICoords | null;
 }
 
 // #endregion interfacees (2)

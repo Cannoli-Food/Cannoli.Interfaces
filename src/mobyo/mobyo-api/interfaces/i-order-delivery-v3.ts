@@ -1,3 +1,4 @@
+import { ICoords } from "../../../general";
 import { MottuOrderEntity } from "../../../mottu";
 import { EOrderDeliveredBy } from "../enum/order-delivered-by.enum";
 import { EOrderV3DeliveryMode } from "../enum/order-v3-delivery-mode.enum";
@@ -20,6 +21,7 @@ export interface IOrderDeliveryV3 {
 
   preparationTime: number;
   id?: string;
+  coords?: ICoords | null;
 
   // #endregion Properties (8)
 }

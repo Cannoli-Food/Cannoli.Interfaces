@@ -1,4 +1,4 @@
-import { IOrderBenefits } from '../../../order';
+import { EOrderExtraInfo, IOrderBenefits } from '../../../order';
 import { EOrderStatus } from '../../../order/enums/order-status.enum';
 import { EEngineType } from '../enum/engine-type.enum';
 import { EOrderV3SalesChannel } from '../enum/order-v3-sales-channel.enum';
@@ -43,7 +43,7 @@ export interface IOrderV3 {
 
   engineType: EEngineType;
 
-  extraInfo: string;
+  extraInfo: EOrderExtraInfo | string | null;
 
   id: string;
   indoor: IOrderIndoorV3;

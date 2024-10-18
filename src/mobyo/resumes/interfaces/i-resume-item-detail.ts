@@ -1,11 +1,6 @@
-import { ICoords } from '../../../../general';
+import { ICoords } from '../../../general';
 
-export interface IResumeVoucherItem {
-  confirmed: IResumeVoucherItemDetail;
-  cancelled: IResumeVoucherItemDetail;
-}
-
-export interface IResumeVoucherItemDetail {
+export interface IResumeItemDetail {
   cords: ICoords[];
   count: number; // vezes utilizados
   orderItemsCount: number; // total de itens de todos os pedidos

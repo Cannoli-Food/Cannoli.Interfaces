@@ -3,7 +3,8 @@ export enum EPlanIdentifier {
   SAT_MANAGER_NAPOLEON = 'SAT-MANAGER-NAPOLEON',
   NATI_PDV = 'NATI-PDV',
   NATI_WA = 'NATI-WA',
-  NATI = 'NATI',
+  NATI = 'NATI-V1',
+  NATI_CHEF = 'NATI_CHEF',
   MOBYO = 'MOBYO',
   NOTAPP = 'NOTAPP',
 }

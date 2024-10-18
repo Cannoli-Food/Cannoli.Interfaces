@@ -1,2 +1,2 @@
 export * from './enums';
-export * from './interfaces/responses';
+export * from './interfaces';

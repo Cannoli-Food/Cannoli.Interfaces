@@ -2,3 +2,4 @@ export { IFcmDataReceivedDesenfilaPayment } from './i-fcm-data-received-desenfil
 export { IFcmDataRequestItems } from './i-fcm-data-request-items';
 export { IFcmNotify } from './i-fcm-notify';
 export { IFcmTokenMessage } from './i-token';
+export { IFcmDataOrder } from './i-fcm-data-order';
