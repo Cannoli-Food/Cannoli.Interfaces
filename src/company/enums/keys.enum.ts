@@ -3,6 +3,7 @@ export enum ECompanyKeys {
     LOGGI = 'LOGGI',
     DESENFILA = 'DESENFILA',
     MOTTU = 'MOTTU',
+    NINE_NINE = '99',
     ALGOLIA = 'ALGOLIA',
     NATI = 'NATI',
     WA_SERVER = 'WA-SERVER',

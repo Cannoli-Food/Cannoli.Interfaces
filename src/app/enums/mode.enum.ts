@@ -20,5 +20,6 @@ export enum EAppMode {
   MOBYO_TAB = 'MOBYO_TAB',
   MOBYO_DELIVERY = 'MOBYO_DELIVERY',
   MOBYO_TOP = 'MOBYO_TOP',
+  NATI_CHEF = 'NATI_CHEF',
   NONE = 'NONE',
 }
