@@ -1,3 +1,4 @@
+import { IMottuDeliveries } from './i-deliveries';
 import { IMottuEvent } from './i-event';
 import { IMottuOrderDeliveryMan } from './i-order-delivery-man';
 
@@ -6,6 +7,7 @@ export interface IMottuOrder {
 
   code: string;
   createdAt: Date;
+  deliveries: IMottuDeliveries[];
   deliveryFee: number;
   deliveryMan: IMottuOrderDeliveryMan;
   events: IMottuEvent[];

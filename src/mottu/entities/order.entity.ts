@@ -1,4 +1,5 @@
 import { IMottuEvent, IMottuOrder, IMottuOrderDeliveryMan } from '../interfaces';
+import { IMottuDeliveries } from '../interfaces/i-deliveries';
 import { MottuOrderDeliveryManEntity } from './order-deliverery-man.entity';
 
 export class MottuOrderEntity implements IMottuOrder {
@@ -6,6 +7,7 @@ export class MottuOrderEntity implements IMottuOrder {
 
   public code: string = '';
   public createdAt: Date = new Date();
+  public deliveries: IMottuDeliveries[] = []; // Create Entity and instanced new one
   public deliveryFee: number = 0;
   public deliveryMan: IMottuOrderDeliveryMan = new MottuOrderDeliveryManEntity();
   public events: IMottuEvent[] = [];

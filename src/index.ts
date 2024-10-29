@@ -42,6 +42,7 @@ export * from './purchases';
 export * from './requested-items';
 export * from './resume';
 export * from './sponsor';
+export * from './storage-files';
 export * from './subscription-base';
 export * from './subscription-company';
 export * from './subscription-customer';
