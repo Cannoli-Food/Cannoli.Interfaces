@@ -7,11 +7,9 @@ export class WithDrawRequestEntity implements IWithdrawRequest {
 
   public amount: number = 0;
   public aprovedAt: Date | null = null;
-  public containerId: string = '';
   public createdAt: Date = new Date();
   public id: string = '';
   public liveMode: boolean = false;
-  public merchantId: string = '';
   public status: EWithdrawRequestStatus = EWithdrawRequestStatus.PENDING;
   public transactionId: string | null = null;
   public transferDocumentUrl: string | null = null;

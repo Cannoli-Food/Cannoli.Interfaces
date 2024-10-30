@@ -10,5 +10,7 @@ export enum EImageFolder {
   TOPPINGS = 'toppings',
   SECOES = 'secoes',
   TAA = 'taa',
+  IN_TAB = 'in-tab',
+  TOP = 'top',
   DEFAULT = 'default',
 }
