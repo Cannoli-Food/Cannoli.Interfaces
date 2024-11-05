@@ -13,6 +13,7 @@ export interface IDevice {
   app?: IDeviceApp;
   checkout?: IDeviceCheckout;
   pixelFacebookToken: string;
+  pixelFacebookApiConversion: string;
 
   companyId: string;
 
