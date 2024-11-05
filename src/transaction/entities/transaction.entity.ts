@@ -40,6 +40,7 @@ export class TransactionEntity implements ITransaction {
   public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity()
   public natiInfo: INatiInfo | null = new NatiInfoEntity();
   public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
+  public resumeVersion: string = '';
 
 
   // #endregion Properties (30)

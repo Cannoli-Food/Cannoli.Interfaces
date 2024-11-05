@@ -39,6 +39,7 @@ export interface ITransaction {
   transactionAmountRefunded: number;
   transactionStatus: ETransactionStatus;
   updatedAt: Date;
+  resumeVersion: string;
 
   // #endregion Properties (30)
 }
