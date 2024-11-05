@@ -6,6 +6,7 @@ export { EOperationType } from './operation-type.enum';
 export { ESponsorIdentifier } from './operation-type.enum';
 export { EPaymentMethodId } from './payment-method-id.enum';
 export { EPaymentTypeId } from './payment-type-id.enum';
+export { ETransactionResumesTargetType } from './transaction-resumes-target-type.enum';
 
 
 

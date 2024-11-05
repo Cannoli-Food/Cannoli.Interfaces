@@ -1,16 +1,18 @@
 import { EResumeIntervalType } from '../../resume';
+import { ETransactionResumesTargetType } from '../enums/transaction-resumes-target-type.enum';
+import { ITransactionInfoResume } from '../interfaces';
+import { ITransactionResumeItemDetail } from '../interfaces/i-resume-item-detail';
 import { ITransactionResume } from '../interfaces/i-transaction-resume';
 import { TransactionInfoResumeEntity } from './transaction-info-resume.entity';
 
 export class TransactionResumeEntity implements ITransactionResume {
-  // #region Properties (6)
-
-  public balance: number = 0;
-  public createdAt: Date = new Date();
+  public info: ITransactionInfoResume = new TransactionInfoResumeEntity();
+  public interval: EResumeIntervalType = EResumeIntervalType.YEAR;
   public id: string = '';
-  public info: TransactionInfoResumeEntity = new TransactionInfoResumeEntity();
-  public interval: EResumeIntervalType = EResumeIntervalType.DAY;
+  public createdAt: Date = new Date();
   public updatedAt: Date = new Date();
+  public totalTarget: { target: ETransactionResumesTargetType; item: ITransactionResumeItemDetail }[] = []
+  public items: { id: string; target: ETransactionResumesTargetType; item: ITransactionResumeItemDetail }[] = []
 
   // #endregion Properties (6)
 
