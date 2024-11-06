@@ -19,7 +19,8 @@ export class GlobalSettingMasterEntity implements IGlobalSettingMaster {
   public waServerInstanceName: string = '';
   public waServerNumber: string = '';
   public id: string = '';
-
+  public billingDays: number = 6;
+  public resumeVersion: string = '1.0.0';
   // #endregion Properties (20)
 
   // #region Constructors (1)
