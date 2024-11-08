@@ -9,6 +9,7 @@ export class TransactionResumeEntity implements ITransactionResume {
   public info: ITransactionInfoResume = new TransactionInfoResumeEntity();
   public interval: EResumeIntervalType = EResumeIntervalType.YEAR;
   public id: string = '';
+  public resumeVersion: string = '';
   public createdAt: Date = new Date();
   public updatedAt: Date = new Date();
   public totalTarget: { target: ETransactionResumesTargetType; item: ITransactionResumeItemDetail }[] = []

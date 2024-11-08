@@ -9,6 +9,7 @@ export interface ITransactionResume {
   id: string; // padrão AAAAMMDD
   createdAt: Date;
   updatedAt: Date;
+  resumeVersion:string
   totalTarget: { target: ETransactionResumesTargetType; item: ITransactionResumeItemDetail }[];
   items: { id: string; target: ETransactionResumesTargetType; item: ITransactionResumeItemDetail }[]; // id no padrão MM - DD - HH
 }
