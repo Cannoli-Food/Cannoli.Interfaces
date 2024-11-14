@@ -14,6 +14,8 @@ export class RequestedItemsEntity implements IRequestedItems {
   public token: string = '';
   public updatedAt: Date = new Date();
   public isPaid: boolean = false;
+  public referenceToken: string | null = null;
+  public resendCount: number = 0;
 
   // #endregion Properties (9)
 

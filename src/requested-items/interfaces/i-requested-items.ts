@@ -13,4 +13,6 @@ export interface IRequestedItems {
   isPaid: boolean;
   token: string;
   data: IRequestedItemData[];
+  referenceToken: string | null;
+  resendCount: number;
 }
