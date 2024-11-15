@@ -1,7 +1,7 @@
 import { IAddress } from '../../general';
 import { EDocType } from '../../general/enums';
 
-export interface IIntegrator {
+export interface IDeveloper {
   // #region Properties (13)
 
   active: boolean;
@@ -10,6 +10,7 @@ export interface IIntegrator {
   docType: EDocType;
   email: string;
   id: string;
+  slug: string;
   imageUrl: string | null;
   internationalCode: string;
   name: string;

@@ -1,9 +1,9 @@
 import { AddressEntity } from '../../general';
 import { EDocType } from '../../general/enums';
-import { IIntegrator } from '../interfaces';
+import { IDeveloper } from '../interfaces';
 
-export class IntegratorEntity implements IIntegrator {
-  // #region Properties (13)
+export class DeveloperEntity implements IDeveloper {
+  // #region Properties (14)
 
   public active: boolean = true;
   public address: AddressEntity = new AddressEntity();
@@ -16,14 +16,15 @@ export class IntegratorEntity implements IIntegrator {
   public name: string = '';
   public phoneNumber: string = '';
   public sandbox: boolean = false;
+  public slug: string = '';
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (13)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<IntegratorEntity>) {
+  constructor(data?: Partial<DeveloperEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
