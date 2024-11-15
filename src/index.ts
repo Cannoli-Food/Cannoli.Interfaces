@@ -18,6 +18,7 @@ export * from './feature';
 export * from './general';
 export * from './global-settings';
 export * from './installation';
+export * from './integrators';
 export * from './invite';
 export * from './invoice';
 export * from './iugu';

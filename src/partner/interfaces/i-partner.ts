@@ -9,11 +9,11 @@ export interface IPartner {
   doc: string;
   docType: EDocType;
   email: string;
-  level: number;
   fullName: string;
   id: string;
-  imageUrl?: string;
+  imageUrl: string | null;
   internationalCode: string;
+  level: number;
   logoUrl?: string;
   name: string;
   paymentProvider: IPaymentProvider;

@@ -12,7 +12,7 @@ export class PartnerEntity implements IPartner {
   public email: string = '';
   public fullName: string = '';
   public id: string = '';
-  public imageUrl?: string = '';
+  public imageUrl: string | null = '';
   public internationalCode: string = '';
   public level: number = 50;
   public logoUrl?: string = '';
