@@ -15,8 +15,10 @@ export interface IGlobalSettingMaster {
   waServerBaseUrl: string;
   waServerGlobalKey: string;
   waServerInstanceName: string;
-  id:string;
+  id: string;
   waServerNumber: string;
+  billingDays: number;
+  resumeVersion: string;
 
   // #endregion Properties (15)
 }

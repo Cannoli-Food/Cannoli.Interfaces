@@ -2,8 +2,6 @@ import { EDeviceMode } from '../enum/device-mode.enum';
 import { IDeviceAdjustValue } from './device-adjust-value.dto';
 import { IDeviceApp } from './i-device-app';
 import { IDeviceCheckout } from './i-device-checkout';
-import { IDeviceCheckoutConfig } from './i-device-checkout-configs';
-import { IDeviceCheckoutPicture } from './i-device-checkout-picture';
 import { IDeviceScreen } from './i-device-screen';
 import { IMenuScheduleV2 } from './i-menu-schedule-v2';
 
@@ -14,6 +12,8 @@ export interface IDevice {
   adjustValue: IDeviceAdjustValue;
   app?: IDeviceApp;
   checkout?: IDeviceCheckout;
+  pixelFacebookToken: string;
+  pixelFacebookApiConversion: string;
 
   companyId: string;
 

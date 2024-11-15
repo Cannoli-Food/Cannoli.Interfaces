@@ -43,6 +43,7 @@ export interface IProductV2 {
   skill: EProductSkillV2;
   tags?: Array<string>;
   tags2?: Array<string>;
+  customTags?: Array<string>;
 
   updatedAt?: Date;
 

@@ -144,3 +144,5 @@ export { IProductSimple as MobyoIProductSimple } from './product-simple.interfac
 export { StatisticsProduct as MobyoStatisticsProduct } from './statistics-product.interface';
 export { IStatistics as MobyoIStatistics } from './statistics.interface';
 export { TaxConfig as MobyoTaxConfig } from './tax-config.interface';
+export { IDeviceAppImages } from './i-device-app-images';
+

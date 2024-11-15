@@ -6,3 +6,4 @@ export { ITransactionTotal } from './i-total';
 export { ITransaction } from './i-transaction';
 export { ITransactionInfoResume } from './i-transaction-info-resume';
 export { ITransactionResume } from './i-transaction-resume';
+export { ITransactionResumeItemDetail } from './i-resume-item-detail'
