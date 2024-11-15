@@ -23,6 +23,7 @@ export interface IDeveloperApp {
    */
   reference: string | null;
   slug: string;
+  tags: string[];
   softwareHouseName: string;
   status: DeveloperAppStatusEnum;
 
