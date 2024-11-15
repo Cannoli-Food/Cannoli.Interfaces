@@ -12,7 +12,7 @@ export * from './desenfila-merchant';
 export * from './desenfila-order';
 export * from './developer-members';
 export * from './developers';
-export * from './developers-app';
+export * from './developer-apps';
 export * from './device';
 export * from './event-message';
 export * from './evolution';
