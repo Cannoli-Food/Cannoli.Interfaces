@@ -5,11 +5,11 @@ export interface IDeveloper {
   // #region Properties (13)
 
   active: boolean;
-  address: IAddress;
+  address: IAddress | null;
   createdAt: Date;
   doc: string;
   docType: EDocType;
-  email: string;
+  email: string | null;
   id: string;
   slug: string;
   imageUrl: string | null;

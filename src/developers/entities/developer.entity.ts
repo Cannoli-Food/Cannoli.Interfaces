@@ -6,11 +6,11 @@ export class DeveloperEntity implements IDeveloper {
   // #region Properties (15)
 
   public active: boolean = true;
-  public address: AddressEntity = new AddressEntity();
+  public address: AddressEntity | null = new AddressEntity();
   public createdAt: Date = new Date();
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
-  public email: string = '';
+  public email: string | null = '';
   public id: string = '';
   public imageUrl: string | null = null;
   public internationalCode: string = '';
