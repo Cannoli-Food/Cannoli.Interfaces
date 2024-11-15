@@ -7,6 +7,8 @@ export interface IDeveloperApp {
   credentials: IDeveloperAppCredentials;
   description: string | null;
   developerId: string;
+  createdAt: Date;
+  updatedAt: Date;
   developerName: string;
   developerSlug: string;
   homePageUrl: string | null;

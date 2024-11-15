@@ -3,10 +3,11 @@ import { EDocType } from '../../general/enums';
 import { IDeveloper } from '../interfaces';
 
 export class DeveloperEntity implements IDeveloper {
-  // #region Properties (14)
+  // #region Properties (15)
 
   public active: boolean = true;
   public address: AddressEntity = new AddressEntity();
+  public createdAt: Date = new Date();
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
@@ -20,7 +21,7 @@ export class DeveloperEntity implements IDeveloper {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (14)
+  // #endregion Properties (15)
 
   // #region Constructors (1)
 

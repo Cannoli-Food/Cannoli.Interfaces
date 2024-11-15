@@ -3,8 +3,9 @@ import { IDeveloperApp } from '../interfaces';
 import { DeveloperAppCredentialsEntity } from './developer-app-credentials.entity';
 
 export class DeveloperAppEntity implements IDeveloperApp {
-  // #region Properties (16)
+  // #region Properties (18)
 
+  public createdAt: Date = new Date();
   public credentials: DeveloperAppCredentialsEntity = new DeveloperAppCredentialsEntity();
   public description: string | null = null;
   public developerId: string = '';
@@ -24,8 +25,9 @@ export class DeveloperAppEntity implements IDeveloperApp {
   public slug: string = '';
   public softwareHouseName: string = '';
   public status: DeveloperAppStatusEnum = DeveloperAppStatusEnum.PENDING;
+  public updatedAt: Date = new Date();
 
-  // #endregion Properties (16)
+  // #endregion Properties (18)
 
   // #region Constructors (1)
 

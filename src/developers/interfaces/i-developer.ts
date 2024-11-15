@@ -6,6 +6,7 @@ export interface IDeveloper {
 
   active: boolean;
   address: IAddress;
+  createdAt: Date;
   doc: string;
   docType: EDocType;
   email: string;
