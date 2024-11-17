@@ -3,25 +3,33 @@ import { MemberRulesEnum, MemberTypeEnum } from '../enums';
 import { IMember } from '../interfaces';
 
 export class MemberEntity extends BaseEntity implements IMember {
-  // #region Properties (14)
+  // #region Properties (17)
 
   public active: boolean = true;
   public companyName: string = '';
   public containerName: string = '';
+  public developerId: string | null = '';
   public email: string = '';
-  public name: string = '';
-  public partnerId: string = '';
+  public imageUrl: string | null = '';
   public internationalCode: string = '55';
+  public name: string = '';
+  public partnerId: string | null = '';
   public phoneNumber: string = '';
   public phoneNumberVerified: boolean = false;
   public phoneNumberVerifiedAt: Date | null = null;
-  public photoUrl: string = '';
+  /**
+   * @deprecated Use `imageUrl` instead
+   */
+  public photoUrl: string | null = '';
   public rule: MemberRulesEnum = MemberRulesEnum.USER;
   public tags: string[] = [];
-  public type: MemberTypeEnum = MemberTypeEnum.CLIENT;
+  public type: MemberTypeEnum | null = MemberTypeEnum.CLIENT;
+  /**
+   * @deprecated Use `id` instead.
+   */
   public uid: string = '';
 
-  // #endregion Properties (14)
+  // #endregion Properties (17)
 
   // #region Constructors (1)
 

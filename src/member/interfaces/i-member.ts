@@ -8,14 +8,19 @@ export interface IMember extends IBase {
   containerName: string;
   email: string;
   name: string;
-  partnerId: string;
+  partnerId: string | null;
+  developerId: string | null;
   internationalCode: string;
   phoneNumber: string;
   phoneNumberVerified: boolean;
   phoneNumberVerifiedAt: Date | null;
-  photoUrl: string;
+  /**
+   * @deprecated Use `imageUrl` instead
+   */
+  photoUrl: string | null;
+  imageUrl: string | null;
   rule: MemberRulesEnum;
-  type: MemberTypeEnum;
+  type: MemberTypeEnum | null;
   tags: string[];
   uid: string;
 
