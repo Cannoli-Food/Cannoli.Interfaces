@@ -9,7 +9,6 @@ export interface IMember extends IBase {
   email: string;
   name: string;
   partnerId: string | null;
-  developerId: string | null;
   internationalCode: string;
   phoneNumber: string;
   phoneNumberVerified: boolean;

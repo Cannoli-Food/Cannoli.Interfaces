@@ -8,7 +8,6 @@ export class MemberEntity extends BaseEntity implements IMember {
   public active: boolean = true;
   public companyName: string = '';
   public containerName: string = '';
-  public developerId: string | null = '';
   public email: string = '';
   public imageUrl: string | null = '';
   public internationalCode: string = '55';
@@ -43,6 +42,7 @@ export class MemberEntity extends BaseEntity implements IMember {
       }
     }
   }
+  developerId: string | null;
 
   // #endregion Constructors (1)
 }
