@@ -3,4 +3,5 @@ export enum MemberTypeEnum {
   ADMIN = 'ADMIN',
   CLIENT = 'CLIENT',
   CUSTOMER = 'CUSTOMER',
+  DEVELOPER = 'DEVELOPER',
 }
