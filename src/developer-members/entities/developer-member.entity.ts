@@ -5,6 +5,7 @@ export class DeveloperMemberEntity extends MemberEntity implements IDeveloperMem
   // #region Properties (1)
 
   public developerId: string = '';
+  public developerName: string = '';
 
   // #endregion Properties (1)
 
