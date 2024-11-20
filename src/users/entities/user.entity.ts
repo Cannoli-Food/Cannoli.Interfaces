@@ -3,11 +3,12 @@ import { IUser } from '../interfaces';
 import { UserSessionEntity } from './user-session.entity';
 
 export class UserEntity implements IUser {
-  // #region Properties (12)
+  // #region Properties (13)
 
   public active: boolean = true;
   public createdAt: Date = new Date();
   public email: string | null = null;
+  public engaged: boolean = false;
   public id: string = '';
   public imageUrl: string | null = null;
   public internationalCode: string = '55';
@@ -18,7 +19,7 @@ export class UserEntity implements IUser {
   public type: MemberTypeEnum | null = null;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (12)
+  // #endregion Properties (13)
 
   // #region Constructors (1)
 

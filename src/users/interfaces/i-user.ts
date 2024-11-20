@@ -2,11 +2,12 @@ import { MemberTypeEnum } from '../../member/enums';
 import { IUserSession } from './i-user-session';
 
 export interface IUser {
-  // #region Properties (12)
+  // #region Properties (13)
 
   active: boolean;
   createdAt: Date;
   email: string | null;
+  engaged: boolean;
   id: string;
   imageUrl: string | null;
   internationalCode: string;
@@ -17,5 +18,5 @@ export interface IUser {
   type: MemberTypeEnum | null;
   updatedAt: Date;
 
-  // #endregion Properties (12)
+  // #endregion Properties (13)
 }
