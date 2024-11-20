@@ -1,4 +1,4 @@
-import { MemberTypeEnum } from '../enums';
+import { MemberTypeEnum } from '../../member/enums';
 import { IUser } from '../interfaces';
 import { UserSessionEntity } from './user-session.entity';
 

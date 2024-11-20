@@ -1,4 +1,4 @@
-import { MemberTypeEnum } from '../enums';
+import { MemberTypeEnum } from '../../member/enums';
 import { IUserSession } from './i-user-session';
 
 export interface IUser {
