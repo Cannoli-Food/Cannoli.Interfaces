@@ -8,6 +8,7 @@ export { ICustomVariable } from './i-custom-variable';
 export { IDeliveryArea } from './i-delivery-area';
 export { IDeliveryAreaFixed } from './i-delivery-area-fixed';
 export { IDesenfilaInfo } from './i-desenfila-info';
+export { IFirebaseQuery } from './i-firebase-query';
 export { IMessagerChannel } from './i-messager-channel';
 export { IMobyoApiConfig } from './i-mobyo-api-config';
 export { IMobyoInfo } from './i-mobyo-info';

@@ -14,6 +14,7 @@ export * from './developer-apps';
 export * from './developer-members';
 export * from './developers';
 export * from './device';
+export * from './envelope';
 export * from './event-message';
 export * from './evolution';
 export * from './fcm-token-message';

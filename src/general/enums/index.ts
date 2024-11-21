@@ -8,6 +8,7 @@ export { EDiscountType } from './e-discount-type.enum';
 export { EFiscalDocModelCode } from './fiscal-doc-model-code.enum';
 export { EIntervalType } from './interval-type.enum';
 export { ELeadOrigin } from './lead-origin.enum';
+export { EOperator } from './operators.enum';
 export { EOs } from './os.enum';
 export { EPaymentChannel } from './payment-channel.enum';
 export { EPaymentMode } from './payment-mode.enum';
