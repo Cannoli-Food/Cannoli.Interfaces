@@ -2,23 +2,24 @@ import { MemberRulesEnum } from '../../member/enums';
 import { IMemberAccess } from '../interfaces/i-member-access';
 
 export class MemberAccessEntity implements IMemberAccess {
-  // #region Properties (13)
+  // #region Properties (14)
 
   public accessCount: number | null = null;
   public active: boolean = true;
   public companyId: string = '';
+  public companyName: string = '';
   public containerId: string | null = null;
   public createdAt: Date = new Date();
   public id: string = '';
   public imageUrl: string | null = null;
   public lastAccessAt: Date | null = null;
-  public memberId: string = '';
   public name: string = '';
   public rule: MemberRulesEnum = MemberRulesEnum.USER;
   public tags: string[] = [];
   public updated: Date = new Date();
+  public userId: string = '';
 
-  // #endregion Properties (13)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 
