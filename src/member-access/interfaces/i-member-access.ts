@@ -1,4 +1,4 @@
-import { EMemberRules } from '../../mobyo/mobyo-api/enum/member-rules.enum';
+import { MemberRulesEnum } from '../../member/enums';
 
 export interface IMemberAccess {
   // #region Properties (9)
@@ -11,7 +11,7 @@ export interface IMemberAccess {
   memberId: string;
   imageUrl: string | null;
   name: string;
-  rule: EMemberRules;
+  rule: MemberRulesEnum;
   updated: Date;
 
   // #endregion Properties (9)

@@ -1,8 +1,8 @@
-import { EMemberRules } from '../../mobyo/mobyo-api/enum/member-rules.enum';
+import { MemberRulesEnum } from '../../member/enums';
 import { IMemberAccess } from '../interfaces/i-member-access';
 
 export class MemberAccessEntity implements IMemberAccess {
-  // #region Properties (10)
+  // #region Properties (12)
 
   public accessCount: number | null = null;
   public active: boolean = true;
@@ -12,10 +12,10 @@ export class MemberAccessEntity implements IMemberAccess {
   public lastAccessAt: Date | null = null;
   public memberId: string = '';
   public name: string = '';
-  public rule: EMemberRules = EMemberRules.user;
+  public rule: MemberRulesEnum = MemberRulesEnum.USER;
   public updated: Date = new Date();
 
-  // #endregion Properties (10)
+  // #endregion Properties (12)
 
   // #region Constructors (1)
 
