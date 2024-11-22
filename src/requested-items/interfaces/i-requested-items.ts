@@ -1,3 +1,4 @@
+import { EOrderExtraInfo } from '../../order/enums/extra-info.enum';
 import { IRequestedItemData } from './i-requested-items-data';
 
 export interface IRequestedItems {
@@ -12,5 +13,6 @@ export interface IRequestedItems {
   preview: boolean;
   isPaid: boolean;
   token: string;
+  status: EOrderExtraInfo | null;
   data: IRequestedItemData[];
 }

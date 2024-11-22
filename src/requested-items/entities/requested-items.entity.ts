@@ -1,3 +1,4 @@
+import { EOrderExtraInfo } from '../../order';
 import { IRequestedItems } from '../interfaces/i-requested-items';
 import { IRequestedItemData } from '../interfaces/i-requested-items-data';
 
@@ -14,6 +15,7 @@ export class RequestedItemsEntity implements IRequestedItems {
   public token: string = '';
   public updatedAt: Date = new Date();
   public isPaid: boolean = false;
+  public status: EOrderExtraInfo | null = null;
 
   // #endregion Properties (9)
 
