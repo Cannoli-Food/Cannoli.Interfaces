@@ -8,4 +8,5 @@ export enum MemberRulesEnum {
   MARKETING = 'MARKETING',
   SALES = 'SALES',
   MENAGER = 'MENAGER',
+  DEVELOPER = 'DEVELOPER',
 }
