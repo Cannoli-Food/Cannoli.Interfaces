@@ -12,14 +12,10 @@ export class FirebaseQueryEntity implements IFirebaseQuery {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<FirebaseQueryEntity>) {
-    if (data) {
-      for (let key in data) {
-        if (data.hasOwnProperty(key) && key in this) {
-          (this as any)[key] = (data as any)[key];
-        }
-      }
-    }
+  constructor(field: string, operator: EOperator, value: string | number | boolean | (string | number | boolean)[] | Date | null) {
+    this.field = field;
+    this.operator = operator;
+    this.value = value;
   }
 
   // #endregion Constructors (1)
