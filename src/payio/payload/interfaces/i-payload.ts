@@ -1,5 +1,6 @@
 import { IPayioJwtPayloadApp } from './i-payload-app';
 import { IPayioJwtPayloadDevice } from './i-payload-device';
+import { IPayioJwtPayloadInfo } from './i-payload-info';
 import { IPayioJwtPayloadSubscription } from './i-payload-subscription';
 import { IPayioJwtPayloadUser } from './i-payload-user';
 
@@ -25,6 +26,7 @@ export interface IPayioJwtPayload {
    */
   iss: string;
   permissions: string[];
+  info: IPayioJwtPayloadInfo | null;
   sub: string;
   subscription: IPayioJwtPayloadSubscription | null;
   type: string | null;
