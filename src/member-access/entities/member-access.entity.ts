@@ -1,4 +1,4 @@
-import { ERole } from '../../general';
+import { PayioPermissionRoleEntity } from '../../payio/permissions/entities/permission-role.entity';
 import { IMemberAccess } from '../interfaces/i-member-access';
 
 export class MemberAccessEntity implements IMemberAccess {
@@ -14,8 +14,7 @@ export class MemberAccessEntity implements IMemberAccess {
   public imageUrl: string | null = null;
   public lastAccessAt: Date | null = null;
   public name: string = '';
-  public permissions: string[] = [];
-  public roles: ERole[] = [];
+  public roles: PayioPermissionRoleEntity[] = [];
   public tags: string[] = [];
   public updated: Date = new Date();
   public userId: string = '';

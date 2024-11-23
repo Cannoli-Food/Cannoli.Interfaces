@@ -1,15 +1,16 @@
 import { IPayioJwtPayloadUser } from '../interfaces/i-payload-user';
 
 export class PayioJwtPayloadUserEntity implements IPayioJwtPayloadUser {
-  // #region Properties (5)
+  // #region Properties (6)
 
   public email: string | null = null;
   public id: string = '';
   public internationalCode: string = '';
+  public name: string = '';
   public phoneNumber: string = '';
   public roles: string[] = [];
 
-  // #endregion Properties (5)
+  // #endregion Properties (6)
 
   // #region Constructors (1)
 

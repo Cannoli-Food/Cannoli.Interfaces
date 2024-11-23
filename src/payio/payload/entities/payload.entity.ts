@@ -1,3 +1,4 @@
+import { PayioPermissionRoleEntity } from '../../permissions';
 import { IPayioJwtPayload } from '../interfaces/i-payload';
 import { IPayioJwtPayloadApp } from '../interfaces/i-payload-app';
 import { IPayioJwtPayloadInfo } from '../interfaces/i-payload-info';
@@ -15,7 +16,7 @@ export class PayioJwtPayloadEntity implements IPayioJwtPayload {
   public iat: number = 0;
   public info: IPayioJwtPayloadInfo | null = null;
   public iss: string = '';
-  public permissions: string[] = [];
+  public permissions: PayioPermissionRoleEntity[] = [];
   public sub: string = '';
   public subscription: PayioJwtPayloadSubscriptionEntity | null = null;
   public type: string | null = null;

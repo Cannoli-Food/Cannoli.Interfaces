@@ -1,3 +1,4 @@
+import { IPayioPermissionRole } from '../../permissions/interfaces/i-permission-role';
 import { IPayioJwtPayloadApp } from './i-payload-app';
 import { IPayioJwtPayloadDevice } from './i-payload-device';
 import { IPayioJwtPayloadInfo } from './i-payload-info';
@@ -25,7 +26,7 @@ export interface IPayioJwtPayload {
    * (Emissor): Identifica quem emitiu o JWT (o domínio da sua aplicação).
    */
   iss: string;
-  permissions: string[];
+  permissions: IPayioPermissionRole[];
   info: IPayioJwtPayloadInfo | null;
   sub: string;
   subscription: IPayioJwtPayloadSubscription | null;

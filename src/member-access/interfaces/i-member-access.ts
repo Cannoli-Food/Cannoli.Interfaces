@@ -1,4 +1,4 @@
-import { ERole } from '../../general';
+import { IPayioPermissionRole } from '../../payio/permissions/interfaces/i-permission-role';
 
 export interface IMemberAccess {
   // #region Properties (15)
@@ -13,8 +13,7 @@ export interface IMemberAccess {
   imageUrl: string | null;
   lastAccessAt: Date | null;
   name: string;
-  roles: ERole[];
-  permissions: string[];
+  roles: IPayioPermissionRole[];
   tags: string[];
   updated: Date;
   userId: string;
