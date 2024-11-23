@@ -7,8 +7,7 @@ export interface ISubscriptionCompany extends ISubscriptionBase {
 
   features: IFeature[];
   partnerId: string | null;
-  planId: string;
-  planName: string;
+
   profile: ISubscriptionCompanyProfile;
 
   // #endregion Properties (7)

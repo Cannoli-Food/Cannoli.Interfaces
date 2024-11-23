@@ -1,7 +1,7 @@
-import { MemberRulesEnum } from '../../member/enums';
+import { ERole } from '../../general';
 
 export interface IMemberAccess {
-  // #region Properties (14)
+  // #region Properties (15)
 
   accessCount: number | null;
   active: boolean;
@@ -13,10 +13,11 @@ export interface IMemberAccess {
   imageUrl: string | null;
   lastAccessAt: Date | null;
   name: string;
-  rule: MemberRulesEnum;
+  roles: ERole[];
+  permissions: string[];
   tags: string[];
   updated: Date;
   userId: string;
 
-  // #endregion Properties (14)
+  // #endregion Properties (15)
 }

@@ -38,6 +38,7 @@ export * from './nati-v1';
 export * from './notification';
 export * from './order';
 export * from './partner';
+export * from './payio';
 export * from './plan';
 export * from './product-company';
 export * from './product-container';

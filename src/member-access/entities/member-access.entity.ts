@@ -1,8 +1,8 @@
-import { MemberRulesEnum } from '../../member/enums';
+import { ERole } from '../../general';
 import { IMemberAccess } from '../interfaces/i-member-access';
 
 export class MemberAccessEntity implements IMemberAccess {
-  // #region Properties (14)
+  // #region Properties (15)
 
   public accessCount: number | null = null;
   public active: boolean = true;
@@ -14,12 +14,13 @@ export class MemberAccessEntity implements IMemberAccess {
   public imageUrl: string | null = null;
   public lastAccessAt: Date | null = null;
   public name: string = '';
-  public rule: MemberRulesEnum = MemberRulesEnum.USER;
+  public permissions: string[] = [];
+  public roles: ERole[] = [];
   public tags: string[] = [];
   public updated: Date = new Date();
   public userId: string = '';
 
-  // #endregion Properties (14)
+  // #endregion Properties (15)
 
   // #region Constructors (1)
 

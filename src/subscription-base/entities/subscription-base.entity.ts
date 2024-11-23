@@ -6,7 +6,7 @@ import { SubscriptionBaseItemEntity } from './subscription-base-item.entity';
 import { SubscriptionBaseLogEntity } from './subscription-base-log.entity';
 
 export class SubscriptionBaseEntity implements ISubscriptionBase {
-  // #region Properties (23)
+  // #region Properties (25)
 
   public amount: number = 0;
   public cancellationReason: string = '';
@@ -23,6 +23,8 @@ export class SubscriptionBaseEntity implements ISubscriptionBase {
   public payment: PaymentEntity = new PaymentEntity();
   public paymentType: EPaymentType = EPaymentType.NONE;
   public phoneNumbersNotification: string[] = [];
+  public planId: string = '';
+  public planName: string = '';
   public recentInvoices: IInvoice[] = [];
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
@@ -32,7 +34,7 @@ export class SubscriptionBaseEntity implements ISubscriptionBase {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (23)
+  // #endregion Properties (25)
 
   // #region Constructors (1)
 

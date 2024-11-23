@@ -8,8 +8,7 @@ export class SubscriptionCompanyEntity extends SubscriptionBaseEntity implements
 
   public features: FeatureEntity[] = [];
   public partnerId: string | null = '';
-  public planId: string = '';
-  public planName: string = '';
+
   public profile: SubscriptionCompanyProfileEntity = new SubscriptionCompanyProfileEntity();
 
   // #endregion Properties (9)
