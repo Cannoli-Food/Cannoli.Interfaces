@@ -31,6 +31,7 @@ export interface IPayioJwtPayload {
   sub: string;
   subscription: IPayioJwtPayloadSubscription | null;
   type: string | null;
+  currentSessionId: string | null;
   user: IPayioJwtPayloadUser | null;
 
   // #endregion Properties (11)

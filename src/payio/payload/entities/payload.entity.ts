@@ -7,10 +7,11 @@ import { PayioJwtPayloadSubscriptionEntity } from './payload-subscription.entity
 import { PayioJwtPayloadUserEntity } from './payload-user.entity';
 
 export class PayioJwtPayloadEntity implements IPayioJwtPayload {
-  // #region Properties (12)
+  // #region Properties (13)
 
   public app: IPayioJwtPayloadApp | null = null;
   public aud: string = '';
+  public currentSessionId: string | null = null;
   public device: PayioJwtPayloadDeviceEntity | null = null;
   public exp: number = 0;
   public iat: number = 0;
@@ -22,7 +23,7 @@ export class PayioJwtPayloadEntity implements IPayioJwtPayload {
   public type: string | null = null;
   public user: PayioJwtPayloadUserEntity | null = null;
 
-  // #endregion Properties (12)
+  // #endregion Properties (13)
 
   // #region Constructors (1)
 
