@@ -1,5 +1,4 @@
 import { MemberTypeEnum } from '../../member/enums';
-import { IUserSession } from './i-user-session';
 
 export interface IUser {
   // #region Properties (13)
@@ -13,7 +12,6 @@ export interface IUser {
   internationalCode: string;
   name: string;
   phoneNumber: string;
-  session: IUserSession;
   tags: string[];
   type: MemberTypeEnum | null;
   updatedAt: Date;

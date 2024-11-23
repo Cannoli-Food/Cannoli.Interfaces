@@ -1,6 +1,5 @@
 import { MemberTypeEnum } from '../../member/enums';
 import { IUser } from '../interfaces';
-import { UserSessionEntity } from './user-session.entity';
 
 export class UserEntity implements IUser {
   // #region Properties (13)
@@ -14,7 +13,6 @@ export class UserEntity implements IUser {
   public internationalCode: string = '55';
   public name: string = '';
   public phoneNumber: string = '';
-  public session: UserSessionEntity = new UserSessionEntity();
   public tags: string[] = [];
   public type: MemberTypeEnum | null = null;
   public updatedAt: Date = new Date();

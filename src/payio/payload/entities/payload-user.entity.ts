@@ -8,7 +8,6 @@ export class PayioJwtPayloadUserEntity implements IPayioJwtPayloadUser {
   public internationalCode: string = '';
   public name: string = '';
   public phoneNumber: string = '';
-  public roles: string[] = [];
 
   // #endregion Properties (6)
 
