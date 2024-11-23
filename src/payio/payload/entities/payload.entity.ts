@@ -11,12 +11,12 @@ export class PayioJwtPayloadEntity implements IPayioJwtPayload {
 
   public app: IPayioJwtPayloadApp | null = null;
   public aud: string = '';
-  public currentSessionId: string | null = null;
   public device: PayioJwtPayloadDeviceEntity | null = null;
   public exp: number = 0;
   public iat: number = 0;
   public info: IPayioJwtPayloadInfo | null = null;
   public iss: string = '';
+  public jti: string = '';
   public permissions: PayioPermissionRoleEntity[] = [];
   public sub: string = '';
   public subscription: PayioJwtPayloadSubscriptionEntity | null = null;

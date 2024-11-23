@@ -6,7 +6,7 @@ import { IPayioJwtPayloadSubscription } from './i-payload-subscription';
 import { IPayioJwtPayloadUser } from './i-payload-user';
 
 export interface IPayioJwtPayload {
-  // #region Properties (11)
+  // #region Properties (13)
 
   app: IPayioJwtPayloadApp | null;
   /**
@@ -22,17 +22,17 @@ export interface IPayioJwtPayload {
    * (Emitido em): Timestamp de quando o JWT foi emitido
    */
   iat: number;
+  info: IPayioJwtPayloadInfo | null;
   /**
    * (Emissor): Identifica quem emitiu o JWT (o domínio da sua aplicação).
    */
   iss: string;
+  jti: string | null;
   permissions: IPayioPermissionRole[];
-  info: IPayioJwtPayloadInfo | null;
   sub: string;
   subscription: IPayioJwtPayloadSubscription | null;
   type: string | null;
-  currentSessionId: string | null;
   user: IPayioJwtPayloadUser | null;
 
-  // #endregion Properties (11)
+  // #endregion Properties (13)
 }
