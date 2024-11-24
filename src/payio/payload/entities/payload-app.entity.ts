@@ -4,8 +4,7 @@ export class PayioJwtPayloadAppEntity implements IPayioJwtPayloadApp {
   // #region Properties (3)
 
   public id: string = '';
-  public name: string = '';
-  public version: string | null = null;
+  public slug: string = '';
 
   // #endregion Properties (3)
 

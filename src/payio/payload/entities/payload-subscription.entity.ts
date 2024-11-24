@@ -1,4 +1,4 @@
-import { ESubscriptionStatus } from '../../../subscription-base/enums/subscription-status.enum';
+import { ESubsStatus } from '../../../general';
 import { IPayioJwtPayloadSubscription } from '../interfaces/i-payload-subscription';
 
 export class PayioJwtPayloadSubscriptionEntity implements IPayioJwtPayloadSubscription {
@@ -6,7 +6,7 @@ export class PayioJwtPayloadSubscriptionEntity implements IPayioJwtPayloadSubscr
 
   public expiresAt: number = 0;
   public plan: string = '';
-  public status: ESubscriptionStatus = ESubscriptionStatus.PENDING;
+  public status: ESubsStatus = ESubsStatus.PENDING;
 
   // #endregion Properties (3)
 

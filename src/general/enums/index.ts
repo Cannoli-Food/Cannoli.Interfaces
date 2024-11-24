@@ -21,3 +21,4 @@ export { EPaymentProvider } from './providers.enum';
 export { EPubSub } from './pubsub.enum';
 export { ERole } from './role.enum';
 export { ESponsorshipValues } from './sponsorship-values.enum';
+export { ESubsStatus } from './subscription-status.enum';

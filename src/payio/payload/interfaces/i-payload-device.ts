@@ -2,8 +2,7 @@ export interface IPayioJwtPayloadDevice {
   // #region Properties (3)
 
   id: string;
-  registeredAt: number;
-  type: string;
+  name: string | null;
 
   // #endregion Properties (3)
 }

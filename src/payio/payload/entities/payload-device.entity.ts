@@ -4,8 +4,7 @@ export class PayioJwtPayloadDeviceEntity implements IPayioJwtPayloadDevice {
   // #region Properties (3)
 
   public id: string = '';
-  public registeredAt: number = 0;
-  public type: string = '';
+  public name: string | null = '';
 
   // #endregion Properties (3)
 
