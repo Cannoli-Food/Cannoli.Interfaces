@@ -27,7 +27,7 @@ export interface IPayioJwtPayload {
    * (Emissor): Identifica quem emitiu o JWT (o domínio da sua aplicação).
    */
   iss: string;
-  jti: string | null;
+  jti: string;
   permissions: IPayioPermissionRole[];
   sub: string;
   subscription: IPayioJwtPayloadSubscription | null;

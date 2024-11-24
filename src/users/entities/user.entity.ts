@@ -2,10 +2,12 @@ import { MemberTypeEnum } from '../../member/enums';
 import { IUser } from '../interfaces';
 
 export class UserEntity implements IUser {
-  // #region Properties (13)
+  // #region Properties (14)
 
   public active: boolean = true;
   public createdAt: Date = new Date();
+  public currentCompanyId: string | null = null;
+  public currentCompanyName: string | null = null;
   public email: string | null = null;
   public engaged: boolean = false;
   public id: string = '';
@@ -17,7 +19,7 @@ export class UserEntity implements IUser {
   public type: MemberTypeEnum | null = null;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (13)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 

@@ -15,6 +15,7 @@ export interface IUser {
   tags: string[];
   type: MemberTypeEnum | null;
   updatedAt: Date;
-
+  currentCompanyId: string | null;
+  currentCompanyName: string | null;
   // #endregion Properties (13)
 }
