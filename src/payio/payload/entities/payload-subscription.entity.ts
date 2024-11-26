@@ -2,13 +2,14 @@ import { ESubsStatus } from '../../../general';
 import { IPayioJwtPayloadSubscription } from '../interfaces/i-payload-subscription';
 
 export class PayioJwtPayloadSubscriptionEntity implements IPayioJwtPayloadSubscription {
-  // #region Properties (3)
+  // #region Properties (4)
 
   public expiresAt: number = 0;
-  public plan: string = '';
+  public id: string = '';
+  public planId: string = '';
   public status: ESubsStatus = ESubsStatus.PENDING;
 
-  // #endregion Properties (3)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 

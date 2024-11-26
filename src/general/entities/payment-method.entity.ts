@@ -8,8 +8,9 @@ import { PaymentWalletEntity } from './payment-wallet.entity';
 export class PaymentMethodEntity implements IPaymentMethod {
   // #region Properties (11)
 
-  card?: PaymentCardEntity | null = null;
-  cash?: PaymentCashEntity | null = null;
+  public card?: PaymentCardEntity | null = null;
+  public cash?: PaymentCashEntity | null = null;
+  public payAt?: Date = undefined;
   public code: string = '';
   public currency: 'BRL' = 'BRL';
   public id: string = '';
@@ -18,7 +19,7 @@ export class PaymentMethodEntity implements IPaymentMethod {
   public prepaid: boolean = false;
   public type: 'ONLINE' | 'OFFLINE' = 'OFFLINE';
   public value: number = 0;
-  wallet?: PaymentWalletEntity | null = null;
+  public wallet?: PaymentWalletEntity | null = null;
 
   // #endregion Properties (11)
 

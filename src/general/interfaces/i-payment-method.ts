@@ -11,6 +11,7 @@ export interface IPaymentMethod {
   cash?: IPaymentCash | null;
   code: string;
   currency: 'BRL';
+  payAt?: Date;
   id: string;
   method: EPaymentType;
   pix?: IPaymentPix | null;

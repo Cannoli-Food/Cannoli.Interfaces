@@ -1,18 +1,20 @@
 import { EIntervalType, ESubsStatus, ICustomVariable, IPaymentMethod } from '../../../general';
+import { IPayioSubscriptionActiveDevice } from './i-subscription-active-device';
 import { IPayioSubscriptionItem } from './i-subscription-item';
 import { IPayioSubscriptionLog } from './i-subscription-log';
+import { IPayioSubscriptionSeat } from './i-subscription-seat';
 
 export interface IPayioSubscription {
-  // #region Properties (21)
+  // #region Properties (24)
 
+  activeDevices: IPayioSubscriptionActiveDevice[];
   amount: number;
+  appIds: string[];
   cancellationReason: string;
   createdAt: Date;
   customVariables: ICustomVariable[];
   expiresAt: Date;
   id: string;
-  maxSeats: number;
-  activeDevices: string[];
   interval: number;
   intervalType: EIntervalType;
   items: IPayioSubscriptionItem[];
@@ -23,11 +25,12 @@ export interface IPayioSubscription {
   planName: string;
   renewPaymentDate: Date;
   renovatedAt: Date;
+  seats: IPayioSubscriptionSeat[];
   startsAt: Date;
   status: ESubsStatus;
   suspendedTimes: number;
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (21)
+  // #endregion Properties (24)
 }
