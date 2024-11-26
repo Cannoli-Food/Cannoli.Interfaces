@@ -6,8 +6,8 @@ export interface IProductOptionsV2 {
 
     
     title: string;
-    
     mix: number;
+    setAllToMax: boolean;
     types: IProductOptionsTypeV2[];
 
     // #endregion Properties (8)
