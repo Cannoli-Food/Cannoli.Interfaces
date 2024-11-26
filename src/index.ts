@@ -35,6 +35,7 @@ export * from './mobyo';
 export * from './monitor';
 export * from './mottu';
 export * from './nati-v1';
+export * from './nati-v2';
 export * from './notification';
 export * from './order';
 export * from './partner';
