@@ -23,6 +23,7 @@ export interface IQuestionV2 {
   mix: number;
 
   min: number;
+  setAllToMax: boolean;
   skill: EQuestionTypes;
 
   name: string;

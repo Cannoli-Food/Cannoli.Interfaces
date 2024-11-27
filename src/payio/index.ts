@@ -1,6 +1,7 @@
 export * from './app';
 export * from './company';
 export * from './device';
+export * from './features';
 export * from './payload';
 export * from './permissions';
 export * from './subscriptions';

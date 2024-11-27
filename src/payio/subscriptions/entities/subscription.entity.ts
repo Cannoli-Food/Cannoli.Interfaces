@@ -1,24 +1,24 @@
 import { CustomVariableEntity, EIntervalType, ESubsStatus, PaymentMethodEntity } from '../../../general';
+import { PayioFeatureEntity } from '../../features';
 import { IPayioSubscription } from '../interfaces/i-subscription';
 import { PayioSubscriptionActiveDeviceEntity } from './subscription-active-device.entity';
-import { PayioSubscriptionItemEntity } from './subscription-item.entity';
 import { PayioSubscriptionLogEntity } from './subscription-log.entity';
 import { PayioSubscriptionSeatEntity } from './subscription-seat.entity';
 
 export class PayioSubscriptionEntity implements IPayioSubscription {
-  // #region Properties (24)
+  // #region Properties (25)
 
   public activeDevices: PayioSubscriptionActiveDeviceEntity[] = [];
   public amount: number = 0;
-  public appIds: string[] = [];
   public cancellationReason: string = '';
+  public companyId: string = '';
   public createdAt: Date = new Date();
   public customVariables: CustomVariableEntity[] = [];
   public expiresAt: Date = new Date();
   public id: string = '';
   public interval: number = 0;
   public intervalType: EIntervalType = EIntervalType.MONTHS;
-  public items: PayioSubscriptionItemEntity[] = [];
+  public items: PayioFeatureEntity[] = [];
   public logs: PayioSubscriptionLogEntity[] = [];
   public notes: string = '';
   public payment: PaymentMethodEntity = new PaymentMethodEntity();
@@ -33,7 +33,7 @@ export class PayioSubscriptionEntity implements IPayioSubscription {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (24)
+  // #endregion Properties (25)
 
   // #region Constructors (1)
 

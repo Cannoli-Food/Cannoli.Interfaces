@@ -1,13 +1,13 @@
 import { EIntervalType } from '../../general/enums';
+import { PayioFeatureEntity } from '../../payio';
 import { EPlanIdentifier } from '../enums/plans-identifier.enum';
 import { IPlan } from '../interfaces';
-import { PlanFeatureEntity } from './feature.entity';
 
 export class PlanEntity implements IPlan {
   // #region Properties (12)
 
   public createdAt: Date = new Date();
-  public features: PlanFeatureEntity[] = [];
+  public features: PayioFeatureEntity[] = [];
   public id: string = '';
   public identifier: EPlanIdentifier = EPlanIdentifier.NATIGO;
   public index: number = 0;
