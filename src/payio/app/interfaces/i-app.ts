@@ -2,7 +2,6 @@ export interface IPayioApp {
   // #region Properties (10)
 
   active: boolean;
-  activeInstalls: number;
   description: string;
   downloadUrl: string;
   features: string[];

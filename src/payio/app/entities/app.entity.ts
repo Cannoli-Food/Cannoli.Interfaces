@@ -4,7 +4,6 @@ export class PayioAppEntity implements IPayioApp {
   // #region Properties (11)
 
   public active: boolean = false;
-  public activeInstalls: number = 0;
   public description: string = '';
   public downloadUrl: string = '';
   public features: string[] = [];
