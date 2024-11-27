@@ -1,15 +1,14 @@
-import { EIntervalType } from '../../general/enums';
-import { EPlanIdentifier } from '../enums/plans-identifier.enum';
-import { IPlan } from '../interfaces';
-import { PlanFeatureEntity } from './feature.entity';
+import { EIntervalType } from '../../../general';
+import { PayioFeatureEntity } from '../../features';
+import { IPayioPlan } from '../interfaces';
 
-export class PlanEntity implements IPlan {
+export class PayioPlanEntity implements IPayioPlan {
   // #region Properties (12)
 
   public createdAt: Date = new Date();
-  public features: PlanFeatureEntity[] = [];
+  public features: PayioFeatureEntity[] = [];
   public id: string = '';
-  public identifier: EPlanIdentifier = EPlanIdentifier.NATIGO;
+  public identifier: string = 'payio-selfcheckout-3';
   public index: number = 0;
   public interval: number = 12;
   public intervalType: EIntervalType = EIntervalType.MONTHS;
@@ -23,7 +22,7 @@ export class PlanEntity implements IPlan {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<PlanEntity>) {
+  constructor(data?: Partial<PayioPlanEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {

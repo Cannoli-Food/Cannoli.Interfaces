@@ -4,5 +4,6 @@ export * from './device';
 export * from './features';
 export * from './payload';
 export * from './permissions';
+export * from './plan';
 export * from './subscriptions';
 export * from './tokens';
