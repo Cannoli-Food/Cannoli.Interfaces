@@ -19,7 +19,7 @@ export interface IPayioSubscription {
   items: IPayioFeature[];
   logs: IPayioSubscriptionLog[];
   notes: string;
-  payment: IPaymentMethod;
+  payment: IPaymentMethod | null;
   planId: string;
   planName: string;
   renewPaymentDate: Date;

@@ -21,7 +21,7 @@ export class PayioSubscriptionEntity implements IPayioSubscription {
   public items: PayioFeatureEntity[] = [];
   public logs: PayioSubscriptionLogEntity[] = [];
   public notes: string = '';
-  public payment: PaymentMethodEntity = new PaymentMethodEntity();
+  public payment: PaymentMethodEntity | null = null;
   public planId: string = '';
   public planName: string = '';
   public renewPaymentDate: Date = new Date();
