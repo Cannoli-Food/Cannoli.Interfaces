@@ -1,18 +1,17 @@
-import { INatiInfo, IDesenfilaInfo, IMobyoInfo, EDesenfilaFrom, NatiInfoEntity, DesenfilaInfoEntity, MobyoInfoEntity } from '../../general';
-import { IFee } from '../../transaction';
-import { IGlobalSettingNatiPay, IGlobalSettingTaxes } from '../interfaces';
+import { DesenfilaInfoEntity, EDesenfilaFrom, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
+import { IGlobalSettingNatiPay } from '../interfaces';
 
 export class GlobalSettingNatiPayEntity implements IGlobalSettingNatiPay {
   // #region Properties (1)
   public id: string = '';
   public info: {
-    natiInfo: INatiInfo;
+    natiInfo: IInfo;
     desenfilaInfo: IDesenfilaInfo;
     mobyoInfo: IMobyoInfo;
     userName: EDesenfilaFrom.NATIPAY;
     email: string;
   } = {
-    natiInfo: new NatiInfoEntity(),
+    natiInfo: new InfoEntity(),
     desenfilaInfo: new DesenfilaInfoEntity(),
     mobyoInfo: new MobyoInfoEntity(),
     userName: EDesenfilaFrom.NATIPAY,

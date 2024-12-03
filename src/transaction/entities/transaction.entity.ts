@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, INatiInfo, MobyoInfoEntity, NatiInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, IInfo, MobyoInfoEntity, InfoEntity } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransaction } from '../interfaces';
 import { FeeDetailEntity } from './fee-detail.entity';
@@ -38,7 +38,7 @@ export class TransactionEntity implements ITransaction {
   public transactionStatus: ETransactionStatus = ETransactionStatus.PROCESSING;
   public updatedAt: Date = new Date();
   public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity()
-  public natiInfo: INatiInfo | null = new NatiInfoEntity();
+  public natiInfo: IInfo | null = new InfoEntity();
   public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
   public resumeVersion: string = '';
 

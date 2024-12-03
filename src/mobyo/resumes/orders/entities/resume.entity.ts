@@ -1,4 +1,4 @@
-import { IMobyoInfo, INatiInfo, MobyoInfoEntity } from '../../../../general';
+import { IInfo, IMobyoInfo, MobyoInfoEntity } from '../../../../general';
 import { ResumeItemEntity } from '../../entities';
 import { IResumeEngine } from '../../interfaces';
 import { IResumeOrder } from '../interfaces/i-resume';
@@ -10,7 +10,7 @@ export class ResumeOrderEntity implements IResumeOrder {
   public item: ResumeItemEntity = new ResumeItemEntity();
   public items: { id: string; item: ResumeItemEntity }[] = []; // id no padrão MM - DD - HH
   public engines: IResumeEngine[] = [];
-  public info: IMobyoInfo | INatiInfo = new MobyoInfoEntity();
+  public info: IMobyoInfo | IInfo = new MobyoInfoEntity();
 
   constructor(data?: Partial<ResumeOrderEntity>) {
     if (data) {

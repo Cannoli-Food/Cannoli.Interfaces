@@ -1,10 +1,10 @@
-import { EDiscountType, IMobyoInfo, INatiInfo, MobyoInfoEntity } from '../../general';
+import { EDiscountType, IInfo, IMobyoInfo, MobyoInfoEntity } from '../../general';
 import { EVoucherStatus, EVoucherTargetTypes } from '../enums';
 import { IVoucher, IVoucherRule, IVoucherSponsorship } from '../interfaces';
 
 export class VoucherEntity implements IVoucher {
   // #region Properties (10)
-  public info: IMobyoInfo | INatiInfo = new MobyoInfoEntity();
+  public info: IMobyoInfo | IInfo = new MobyoInfoEntity();
   public concludedAt: Date | null = null;
   public createdAt: Date = new Date();
   public id: string = '';

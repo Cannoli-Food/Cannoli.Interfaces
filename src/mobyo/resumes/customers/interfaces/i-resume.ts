@@ -1,4 +1,4 @@
-import { IMobyoInfo, INatiInfo } from '../../../../general';
+import { IInfo, IMobyoInfo } from '../../../../general';
 import { IResumeEngine, IResumeItem } from '../../interfaces';
 
 export interface IResumeCustomer {
@@ -8,5 +8,5 @@ export interface IResumeCustomer {
   item: IResumeItem;
   items: { id: string; item: IResumeItem }[]; // id no padrão MM - DD - HH
   engines: IResumeEngine[];
-  info: IMobyoInfo | INatiInfo;
+  info: IMobyoInfo | IInfo;
 }

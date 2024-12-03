@@ -1,4 +1,4 @@
-import { EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
+import { EDesenfilaFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransactionBalance } from './i-balance';
 import { IFeeDetail } from './i-fee-detail';
@@ -23,7 +23,7 @@ export interface ITransaction {
   installments: number;
   liveMode: boolean;
   desenfilaInfo: IDesenfilaInfo | null;
-  natiInfo: INatiInfo | null;
+  natiInfo: IInfo | null;
   mobyoInfo: IMobyoInfo | null;
   moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;

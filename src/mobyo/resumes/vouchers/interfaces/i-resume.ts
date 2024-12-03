@@ -1,4 +1,4 @@
-import { IMobyoInfo, INatiInfo } from '../../../../general';
+import { IInfo, IMobyoInfo } from '../../../../general';
 import { EVoucherTargetTypes } from '../../../../voucher';
 import { IResumeItem } from '../../interfaces';
 
@@ -9,5 +9,5 @@ export interface IResumeVoucher {
   item: IResumeItem;
   items: { id: string; item: IResumeItem }[]; // id no padrão MM - DD - HH
   targetType: { id: EVoucherTargetTypes; item: IResumeItem }[];
-  info: IMobyoInfo | INatiInfo;
+  info: IMobyoInfo | IInfo;
 }

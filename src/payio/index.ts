@@ -5,5 +5,6 @@ export * from './features';
 export * from './payload';
 export * from './permissions';
 export * from './plan';
+export * from './resume-queues';
 export * from './subscriptions';
 export * from './tokens';

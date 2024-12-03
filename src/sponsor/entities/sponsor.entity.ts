@@ -3,10 +3,10 @@ import {
   EDesenfilaFrom,
   EDocType,
   IDesenfilaInfo,
+  IInfo,
   IMobyoInfo,
-  INatiInfo,
+  InfoEntity,
   MobyoInfoEntity,
-  NatiInfoEntity,
 } from '../../general';
 import { ISponsor } from '../interfaces/i-sponsor';
 import { ISponsorFee } from '../interfaces/i-sponsor-fee';
@@ -27,7 +27,7 @@ export class SponsorEntity implements ISponsor {
   phoneNumer: string = '';
   email: string = '';
 
-  natiInfo: INatiInfo = new NatiInfoEntity();
+  natiInfo: IInfo = new InfoEntity();
   mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
   desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
   constructor(data?: Partial<SponsorEntity>) {

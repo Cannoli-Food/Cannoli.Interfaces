@@ -1,4 +1,4 @@
-import { IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
+import { IDesenfilaInfo, IInfo } from '../../general';
 import { EResumeIntervalType } from '../enums';
 import { IResume, IResumeChild } from '../interfaces';
 import { GeneralResumeTotalEntity } from './general-resume-total.entity';
@@ -6,7 +6,7 @@ import { GeneralResumeTotalEntity } from './general-resume-total.entity';
 export class ResumeEntity implements IResume {
   public id: string = '';
   public interval: EResumeIntervalType = EResumeIntervalType.YEAR;
-  public info: IDesenfilaInfo | INatiInfo | IMobyoInfo | null = null;
+  public info: IDesenfilaInfo | IInfo | null = null;
   public createdAt: Date = new Date();
   public updatedAt: Date = new Date();
   public totals: GeneralResumeTotalEntity = new GeneralResumeTotalEntity();

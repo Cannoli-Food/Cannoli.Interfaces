@@ -1,9 +1,9 @@
-import { EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, INatiInfo } from '../../general';
+import { EDesenfilaFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
 
 export interface IGlobalSettingNatiPay {
   id: string;
   info: {
-    natiInfo: INatiInfo;
+    natiInfo: IInfo;
     desenfilaInfo: IDesenfilaInfo;
     mobyoInfo: IMobyoInfo;
     userName: EDesenfilaFrom.NATIPAY;

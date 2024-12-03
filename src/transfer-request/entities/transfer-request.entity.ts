@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, IDesenfilaInfo, IMobyoInfo, INatiInfo, MobyoInfoEntity, NatiInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
 import { IInvoicePix } from '../../invoice';
 import { EWithdrawRequestStatus } from '../../withdraw/enums';
 import { ITransferRequest } from '../interfaces/i-transfer-request';
@@ -20,7 +20,7 @@ export class TransferRequestEntity implements ITransferRequest {
   public transactionReferenceId: string | null = null;
   public naiRefId: string = '';
   public pix: IInvoicePix | null = null;
-  public natiInfo: INatiInfo = new NatiInfoEntity();
+  public natiInfo: IInfo = new InfoEntity();
   public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
   public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
 
