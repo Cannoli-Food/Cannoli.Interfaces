@@ -1,5 +1,5 @@
 export interface IPayioToken {
-  // #region Properties (9)
+  // #region Properties (11)
 
   // Data de criação do token
   createdAt: Date;
@@ -15,10 +15,12 @@ export interface IPayioToken {
   isRevoked: boolean;
   // O refresh token em si
   refreshToken: string;
+  revokedAt: Date | null;
+  updatedAt: Date;
   // Informação do dispositivo ou navegador usado
   userAgent: string | null;
   // ID do usuário associado ao token
   userId: string;
 
-  // #endregion Properties (9)
+  // #endregion Properties (11)
 }
