@@ -1,10 +1,10 @@
-import { EDesenfilaFrom } from '../../general';
+import { EFrom } from '../../general';
 import { IDesenfilaFee } from '../interfaces/i-desenfila-fee';
 
 export class DesenfilaFeeEntity implements IDesenfilaFee {
   // #region Properties (2)
 
-  public type: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
+  public type: EFrom = EFrom.DEFAULT;
   public value: number = 0.0099;
 
   // #endregion Properties (2)

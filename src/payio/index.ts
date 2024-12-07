@@ -2,6 +2,7 @@ export * from './app';
 export * from './company';
 export * from './device';
 export * from './features';
+export * from './orders';
 export * from './payload';
 export * from './permissions';
 export * from './plan';

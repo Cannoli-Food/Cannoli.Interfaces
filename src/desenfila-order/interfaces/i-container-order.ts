@@ -1,4 +1,4 @@
-import { EDesenfilaFrom } from '../../general';
+import { EFrom } from '../../general';
 import { IDesenfilaContainerOrderItem } from './i-container-order-item';
 import { IDesenfilaContainerOrderPayment } from './i-container-order-payment';
 import { IDesenfilaContainerOrderPix } from './i-container-order-pix';
@@ -23,7 +23,7 @@ export interface IDesenfilaContainerOrder {
   pix?: IDesenfilaContainerOrderPix;
   diffConsumation: number;
   discount: number;
-  from: EDesenfilaFrom | string;
+  from: EFrom | string;
   hasReceipt: boolean;
   id: string;
   invite: number;

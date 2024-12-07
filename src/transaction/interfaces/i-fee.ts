@@ -1,6 +1,6 @@
-import { EDesenfilaFrom } from "../../general";
+import { EFrom } from '../../general';
 
 export interface IFee {
-  type: EDesenfilaFrom;
+  type: EFrom;
   value: number;
 }

@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, EDesenfilaFrom, IDesenfilaInfo, IMobyoInfo, IInfo, MobyoInfoEntity, InfoEntity } from '../../general';
+import { DesenfilaInfoEntity, EFrom, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransaction } from '../interfaces';
 import { FeeDetailEntity } from './fee-detail.entity';
@@ -19,7 +19,7 @@ export class TransactionEntity implements ITransaction {
   public description: string = '';
   public externalOrderReference: string = '';
   public feeDetails: FeeDetailEntity[] = [];
-  public from: EDesenfilaFrom = EDesenfilaFrom.NATIPAY;
+  public from: EFrom = EFrom.NATIPAY;
   public id: string = '';
   public installments: number = 0;
   public liveMode: boolean = true;
@@ -37,11 +37,10 @@ export class TransactionEntity implements ITransaction {
   public transactionAmountRefunded: number = 0;
   public transactionStatus: ETransactionStatus = ETransactionStatus.PROCESSING;
   public updatedAt: Date = new Date();
-  public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity()
+  public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity();
   public natiInfo: IInfo | null = new InfoEntity();
   public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
   public resumeVersion: string = '';
-
 
   // #endregion Properties (30)
 

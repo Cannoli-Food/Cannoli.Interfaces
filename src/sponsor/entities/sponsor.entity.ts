@@ -1,13 +1,4 @@
-import {
-  DesenfilaInfoEntity,
-  EDesenfilaFrom,
-  EDocType,
-  IDesenfilaInfo,
-  IInfo,
-  IMobyoInfo,
-  InfoEntity,
-  MobyoInfoEntity,
-} from '../../general';
+import { DesenfilaInfoEntity, EDocType, EFrom, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
 import { ISponsor } from '../interfaces/i-sponsor';
 import { ISponsorFee } from '../interfaces/i-sponsor-fee';
 
@@ -22,7 +13,7 @@ export class SponsorEntity implements ISponsor {
   desenfilaContainerId: string | null = null;
   natiRefId: string | null = null;
   mobyoRefId: string | null = null;
-  from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
+  from: EFrom = EFrom.DEFAULT;
   internationalCode: string = '';
   phoneNumer: string = '';
   email: string = '';

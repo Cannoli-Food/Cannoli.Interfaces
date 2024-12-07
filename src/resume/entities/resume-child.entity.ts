@@ -1,10 +1,10 @@
-import { EDesenfilaFrom } from '../../general';
+import { EFrom } from '../../general';
 import { EResumeType } from '../enums';
 import { IResumeChild } from '../interfaces';
 import { GeneralResumeTotalEntity } from './general-resume-total.entity';
 
 export class ResumeChildEntity implements IResumeChild {
-  public type: EResumeType | EDesenfilaFrom | string | null = null;
+  public type: EResumeType | EFrom | string | null = null;
   public totals: GeneralResumeTotalEntity = new GeneralResumeTotalEntity();
   public id: string = '';
 

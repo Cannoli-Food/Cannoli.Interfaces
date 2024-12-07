@@ -1,10 +1,10 @@
-import { EDesenfilaFrom } from "../../general";
+import { EFrom } from '../../general';
 
 export interface IOrderAdditionalFee {
-    // #region Properties (2)
+  // #region Properties (2)
 
-    type: string | EDesenfilaFrom;
-    value: number;
+  type: string | EFrom;
+  value: number;
 
-    // #endregion Properties (2)
+  // #endregion Properties (2)
 }

@@ -1,4 +1,4 @@
-import { EDesenfilaFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
+import { EFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
 
 export interface IGlobalSettingNatiPay {
   id: string;
@@ -6,7 +6,7 @@ export interface IGlobalSettingNatiPay {
     natiInfo: IInfo;
     desenfilaInfo: IDesenfilaInfo;
     mobyoInfo: IMobyoInfo;
-    userName: EDesenfilaFrom.NATIPAY;
+    userName: EFrom.NATIPAY;
     email: string;
   };
 }

@@ -1,4 +1,4 @@
-import { EDesenfilaFrom } from '../../general';
+import { EFrom } from '../../general';
 import { EOrderExtraInfo, EOrderTiming } from '../enums';
 import { EOrderStatus } from '../enums/order-status.enum';
 import { EOrderType } from '../enums/order-type.enum';
@@ -36,7 +36,7 @@ export interface IOrder {
   total: IOrderTotal;
   updatedAt: Date;
   version: string;
-  from: EDesenfilaFrom;
+  from: EFrom;
   extraInfo: EOrderExtraInfo | string | null;
   // #endregion Properties (20)
 }

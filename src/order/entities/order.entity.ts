@@ -1,5 +1,5 @@
-import { EDesenfilaFrom } from '../../general';
-import { EOrderTiming, EOrderStatus } from '../enums';
+import { EFrom } from '../../general';
+import { EOrderStatus, EOrderTiming } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrder } from '../interfaces';
 import { OrderAdditionalFeeEntity } from './additional-fees.entity';
@@ -36,7 +36,7 @@ export class OrderEntity implements IOrder {
   public total: OrderTotalEntity = new OrderTotalEntity();
   public updatedAt: Date = new Date();
   public version: string = '';
-  public from: EDesenfilaFrom = EDesenfilaFrom.DEFAULT;
+  public from: EFrom = EFrom.DEFAULT;
   public extraInfo: string | null = null;
 
   constructor(data?: Partial<OrderEntity>) {

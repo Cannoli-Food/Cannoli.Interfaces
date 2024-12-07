@@ -1,4 +1,4 @@
-import { EDesenfilaFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
+import { EFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransactionBalance } from './i-balance';
 import { IFeeDetail } from './i-fee-detail';
@@ -18,7 +18,7 @@ export interface ITransaction {
   description: string;
   externalOrderReference: string;
   feeDetails: IFeeDetail[];
-  from: EDesenfilaFrom;
+  from: EFrom;
   id: string;
   installments: number;
   liveMode: boolean;
