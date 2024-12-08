@@ -8,6 +8,7 @@ import { IOrderCancellation } from './i-cancellation';
 import { IOrderCustomer } from './i-customer';
 import { IOrderDelivery } from './i-delivery';
 import { IOrderItem } from './i-item';
+import { IOrderIndoor } from './i-order-indoor';
 import { IOrderPayment } from './i-payment';
 import { IOrderTotal } from './i-total';
 
@@ -25,6 +26,7 @@ export interface IOrder {
   invoiceId: string | null;
   delivery: IOrderDelivery | null;
   id: string;
+  indoor: IOrderIndoor | null;
   items: IOrderItem[];
   orderTiming: EOrderTiming;
   orderType: EOrderType | null;

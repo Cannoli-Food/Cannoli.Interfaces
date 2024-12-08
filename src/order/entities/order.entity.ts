@@ -2,6 +2,7 @@ import { EFrom } from '../../general';
 import { EOrderStatus, EOrderTiming } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrder } from '../interfaces';
+import { IOrderIndoor } from '../interfaces/i-order-indoor';
 import { OrderAdditionalFeeEntity } from './additional-fees.entity';
 import { OrderBenefitsEntity } from './benefits.entity';
 import { OrderCancellationEntity } from './cancellation.entity';
@@ -12,7 +13,7 @@ import { OrderPaymentEntity } from './payment.entity';
 import { OrderTotalEntity } from './total.entity';
 
 export class OrderEntity implements IOrder {
-  // #region Properties (22)
+  // #region Properties (25)
 
   public additionalFees: OrderAdditionalFeeEntity[] = [];
   public benefits: OrderBenefitsEntity[] = [];
@@ -23,7 +24,10 @@ export class OrderEntity implements IOrder {
   public customer: OrderCustomerEntity | null = new OrderCustomerEntity();
   public delivery: OrderDeliveryEntity | null = null;
   public displayId: string = Math.round(Math.random() * 100000).toString();
+  public extraInfo: string | null = null;
+  public from: EFrom = EFrom.DEFAULT;
   public id: string = '';
+  public indoor: IOrderIndoor | null = null;
   public invoiceId: string | null = null;
   public items: OrderItemEntity[] = [];
   public orderTiming: EOrderTiming = EOrderTiming.IMMEDIATE;
@@ -36,8 +40,10 @@ export class OrderEntity implements IOrder {
   public total: OrderTotalEntity = new OrderTotalEntity();
   public updatedAt: Date = new Date();
   public version: string = '';
-  public from: EFrom = EFrom.DEFAULT;
-  public extraInfo: string | null = null;
+
+  // #endregion Properties (25)
+
+  // #region Constructors (1)
 
   constructor(data?: Partial<OrderEntity>) {
     if (data) {
