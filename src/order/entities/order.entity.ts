@@ -2,7 +2,6 @@ import { EFrom } from '../../general';
 import { EOrderStatus, EOrderTiming } from '../enums';
 import { EOrderType } from '../enums/order-type.enum';
 import { IOrder } from '../interfaces';
-import { IOrderIndoor } from '../interfaces/i-order-indoor';
 import { OrderAdditionalFeeEntity } from './additional-fees.entity';
 import { OrderBenefitsEntity } from './benefits.entity';
 import { OrderCancellationEntity } from './cancellation.entity';
@@ -27,7 +26,6 @@ export class OrderEntity implements IOrder {
   public extraInfo: string | null = null;
   public from: EFrom = EFrom.DEFAULT;
   public id: string = '';
-  public indoor: IOrderIndoor | null = null;
   public invoiceId: string | null = null;
   public items: OrderItemEntity[] = [];
   public orderTiming: EOrderTiming = EOrderTiming.IMMEDIATE;

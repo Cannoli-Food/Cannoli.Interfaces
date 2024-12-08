@@ -1,7 +1,7 @@
-import { EIndoorMode } from '../enums';
-import { IOrderIndoor } from '../interfaces/i-order-indoor';
+import { EIndoorMode } from '../../../order/enums';
+import { IPayioOrderIndoor } from '../interfaces/i-order-indoor';
 
-export class OrderIndoorEntity implements IOrderIndoor {
+export class PayioOrderIndoorEntity implements IPayioOrderIndoor {
   // #region Properties (5)
 
   public deliveryDateTime: Date = new Date(new Date().getTime() + 1000 * 60 * 15);
@@ -14,7 +14,7 @@ export class OrderIndoorEntity implements IOrderIndoor {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<OrderIndoorEntity>) {
+  constructor(data?: Partial<PayioOrderIndoorEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {

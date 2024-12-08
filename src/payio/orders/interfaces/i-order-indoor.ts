@@ -1,6 +1,6 @@
-import { EIndoorMode } from '../enums';
+import { EIndoorMode } from '../../../order/enums';
 
-export interface IOrderIndoor {
+export interface IPayioOrderIndoor {
   // #region Properties (4)
 
   deliveryDateTime: Date;

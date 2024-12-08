@@ -1,7 +1,9 @@
 import { OrderEntity } from '../../../order';
+import { PayioOrderIndoorEntity } from './indoor.entity';
 
 export class PayioOrderEntity extends OrderEntity {
   // #region Constructors (1)
+  public indoor: PayioOrderIndoorEntity | null = null;
 
   constructor(data?: Partial<PayioOrderEntity>) {
     super();

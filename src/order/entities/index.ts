@@ -4,7 +4,6 @@ export { OrderCancellationEntity } from './cancellation.entity';
 export { OrdersCustomerPhoneEntity } from './customer-phone.entity';
 export { OrderCustomerEntity } from './customer.entity';
 export { OrderDeliveryEntity } from './delivery.entity';
-export { OrderIndoorEntity } from './indoor.entity';
 export { OrderItemCompositionEntity } from './item-composition.entity';
 export { OrderItemOptionEntity } from './item-option.entity';
 export { OrderItemEntity } from './item.entity';

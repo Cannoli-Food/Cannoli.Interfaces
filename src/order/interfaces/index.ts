@@ -9,7 +9,6 @@ export { IOrderItemComposition } from './i-item-composition';
 export { IOrderItemOption } from './i-item-option';
 export { IOrderMerchant } from './i-merchant';
 export { IOrder } from './i-order';
-export { IOrderIndoor } from './i-order-indoor';
 export { IOrderPayment } from './i-payment';
 export { IOrderPaymentCard } from './i-payment-card';
 export { IOrderPaymentCash } from './i-payment-cash';

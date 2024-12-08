@@ -1,7 +1,7 @@
 export interface IOrderPaymentCash {
-    // #region Properties (1)
+  // #region Properties (1)
 
-    changeFor: Number;
+  changeFor: number;
 
-    // #endregion Properties (1)
+  // #endregion Properties (1)
 }
