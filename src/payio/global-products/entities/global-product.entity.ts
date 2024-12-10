@@ -1,17 +1,18 @@
 import { IPayioGlobalProduct } from '../interfaces/i-global-products';
 
 export class PayioGlobalProductEntity implements IPayioGlobalProduct {
-  // #region Properties (15)
+  // #region Properties (16)
 
   public active: boolean = true;
   public avgPrice: number = 0;
   public brand: string = '';
   public code: string = '';
   public createdAt: Date = new Date();
-  public name: string = '';
   public id: string = '';
+  public lastPrices: number[] = [];
   public maxPrice: number = 0;
   public minPrice: number = 0;
+  public name: string = '';
   public quantityPackaging: number = 0;
   public tags: string[] = [];
   public thumbnail: string | null = null;
@@ -19,7 +20,7 @@ export class PayioGlobalProductEntity implements IPayioGlobalProduct {
   public updatedAt: Date = new Date();
   public weight: number = 0;
 
-  // #endregion Properties (15)
+  // #endregion Properties (16)
 
   // #region Constructors (1)
 

@@ -1,15 +1,16 @@
 export interface IPayioGlobalProduct {
-  // #region Properties (15)
+  // #region Properties (16)
 
   active: boolean;
   avgPrice: number;
   brand: string;
   code: string;
   createdAt: Date;
-  name: string;
   id: string;
+  lastPrices: number[];
   maxPrice: number;
   minPrice: number;
+  name: string;
   quantityPackaging: number;
   tags: string[];
   thumbnail: string | null;
@@ -17,5 +18,5 @@ export interface IPayioGlobalProduct {
   updatedAt: Date;
   weight: number;
 
-  // #endregion Properties (15)
+  // #endregion Properties (16)
 }
