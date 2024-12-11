@@ -14,6 +14,8 @@ export interface IRequestedItems {
   isPaid: boolean;
   token: string;
   status: EOrderExtraInfo | null;
+  message: string | null;
+  messageExepction: string | null;
   data: IRequestedItemData[];
   referenceToken: string | null;
   resendCount: number;

@@ -16,6 +16,8 @@ export class RequestedItemsEntity implements IRequestedItems {
   public updatedAt: Date = new Date();
   public isPaid: boolean = false;
   public status: EOrderExtraInfo | null = null;
+  public message: string | null = null;
+  public messageExepction: string | null = null;
   public referenceToken: string | null = null;
   public resendCount: number = 0;
 
