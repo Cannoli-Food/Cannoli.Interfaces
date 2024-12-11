@@ -15,7 +15,7 @@ export interface IRequestedItems {
   token: string;
   status: EOrderExtraInfo | null;
   message: string | null;
-  messageExepction: string | null;
+  messageException: string | null;
   data: IRequestedItemData[];
   referenceToken: string | null;
   resendCount: number;
