@@ -1,11 +1,11 @@
-import { IPayioScheduleSlot } from "./i-schedule-slot";
+import { IPayioScheduleSlot } from './i-schedule-slot';
 
 export interface IPayioSchedule {
   // #region Properties (4)
 
   active: boolean;
   createdAt: Date;
-  time: IPayioScheduleSlot[];
+  slots: IPayioScheduleSlot[];
   // SEG; TER; ... SEX; 20241231, 20250101
   id: string;
   updatedAt: Date;

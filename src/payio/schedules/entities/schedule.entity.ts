@@ -7,7 +7,7 @@ export class PayioScheduleEntity implements IPayioSchedule {
   public active: boolean = true;
   public createdAt: Date = new Date();
   public id: string = 'SEG';
-  public time: PayioScheduleSlotEntity[] = [];
+  public slots: PayioScheduleSlotEntity[] = [];
   public updatedAt: Date = new Date();
 
   // #endregion Properties (5)
