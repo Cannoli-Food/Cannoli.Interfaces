@@ -10,5 +10,6 @@ export * from './plan';
 export * from './products';
 export * from './resume-companies';
 export * from './resume-queues';
+export * from './schedules';
 export * from './subscriptions';
 export * from './tokens';
