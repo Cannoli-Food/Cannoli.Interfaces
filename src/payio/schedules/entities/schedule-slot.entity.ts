@@ -3,7 +3,7 @@ import { IPayioScheduleSlot } from '../interfaces';
 export class PayioScheduleSlotEntity implements IPayioScheduleSlot {
   // #region Properties (2)
 
-  public code: string = '';
+  public productCode: string = '';
   public slot: string = '';
 
   // #endregion Properties (2)
