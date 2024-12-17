@@ -10,6 +10,7 @@ import {
 } from '../../general';
 import { IInstallation } from '../../installation';
 import { IFee } from '../../transaction';
+import { EPixKeyTypes } from '../enums';
 import { ICompanyContact } from './i-company-contact';
 import { ICompanyCustomData } from './i-company-custom-data';
 import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
@@ -48,6 +49,7 @@ export interface ICompany {
   phoneNumber: string;
   phoneNumbersNotification: string[];
   pixKey: string;
+  pixKeyType: EPixKeyTypes;
   sandbox: boolean;
   tags: string[];
   updatedAt: Date;

@@ -10,6 +10,7 @@ export interface IWithdrawRequest {
   id: string;
   liveMode: boolean;
   status: EWithdrawRequestStatus;
+  refusalReason: string | null;
   transactionId: string | null;
   transferDocumentUrl: string | null;
   updatedAt: Date;
