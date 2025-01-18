@@ -1,6 +1,9 @@
+export * from './activation-key';
 export * from './app';
+export * from './chef-config';
 export * from './company';
 export * from './device';
+export * from './distributors';
 export * from './features';
 export * from './global-products';
 export * from './orders';
@@ -13,3 +16,4 @@ export * from './resume-queues';
 export * from './schedules';
 export * from './subscriptions';
 export * from './tokens';
+export * from './trials';

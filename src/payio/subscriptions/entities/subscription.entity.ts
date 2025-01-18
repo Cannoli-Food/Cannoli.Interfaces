@@ -8,6 +8,7 @@ import { PayioSubscriptionSeatEntity } from './subscription-seat.entity';
 export class PayioSubscriptionEntity implements IPayioSubscription {
   // #region Properties (25)
 
+  public activationKey: string | null = null;
   public activeDevices: PayioSubscriptionActiveDeviceEntity[] = [];
   public amount: number = 0;
   public cancellationReason: string = '';

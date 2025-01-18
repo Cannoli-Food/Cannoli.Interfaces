@@ -1,12 +1,13 @@
+import { EPayuioActivationStatus } from '../../activation-key/enums/activation-key-status.enum';
 import { IPayioPermissionRole } from '../../permissions/interfaces/i-permission-role';
 import { IPayioJwtPayloadApp } from './i-payload-app';
 import { IPayioJwtPayloadDevice } from './i-payload-device';
 import { IPayioJwtPayloadInfo } from './i-payload-info';
-import { IPayioJwtPayloadSubscription } from './i-payload-subscription';
+import { IPayioJwtPayloadSchedule } from './i-payload-schedule';
 import { IPayioJwtPayloadUser } from './i-payload-user';
 
 export interface IPayioJwtPayload {
-  // #region Properties (13)
+  // #region Properties (15)
 
   app: IPayioJwtPayloadApp | null;
   /**
@@ -14,6 +15,7 @@ export interface IPayioJwtPayload {
    */
   aud: string;
   device: IPayioJwtPayloadDevice | null;
+  distributorId: string | null;
   /**
    * (Expiração): Timestamp de quando o JWT expira
    */
@@ -23,16 +25,17 @@ export interface IPayioJwtPayload {
    */
   iat: number;
   info: IPayioJwtPayloadInfo | null;
+  activationStatus: EPayuioActivationStatus;
   /**
    * (Emissor): Identifica quem emitiu o JWT (o domínio da sua aplicação).
    */
   iss: string;
   jti: string;
   permissions: IPayioPermissionRole[];
+  schedule: IPayioJwtPayloadSchedule | null;
   sub: string;
-  subscription: IPayioJwtPayloadSubscription | null;
   type: string | null;
   user: IPayioJwtPayloadUser | null;
 
-  // #endregion Properties (13)
+  // #endregion Properties (15)
 }

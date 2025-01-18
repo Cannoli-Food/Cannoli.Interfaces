@@ -17,6 +17,7 @@ export * from './device';
 export * from './envelope';
 export * from './event-message';
 export * from './evolution';
+export * from './exchange-data';
 export * from './fcm-token-message';
 export * from './feature';
 export * from './general';
@@ -63,3 +64,4 @@ export * from './viacep';
 export * from './voucher';
 export * from './wa-server';
 export * from './withdraw';
+

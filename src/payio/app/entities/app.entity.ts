@@ -1,3 +1,4 @@
+import { EPayuioAppSlug } from '../enums';
 import { IPayioApp } from '../interfaces/i-app';
 
 export class PayioAppEntity implements IPayioApp {
@@ -11,7 +12,7 @@ export class PayioAppEntity implements IPayioApp {
   public name: string = '';
   public price: number = 0;
   public secrets: string = '';
-  public slug: string = '';
+  public slug: EPayuioAppSlug = EPayuioAppSlug.none;
   public tags: string[] = [];
 
   // #endregion Properties (11)

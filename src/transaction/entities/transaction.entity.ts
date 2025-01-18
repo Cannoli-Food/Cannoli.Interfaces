@@ -7,7 +7,7 @@ import { TransactionPaymentMethodEntity } from './transaction-payment-method.ent
 import { TransactionTotalEntity } from './transaction-total.entity';
 
 export class TransactionEntity implements ITransaction {
-  // #region Properties (30)
+  // #region Properties (33)
 
   public balance: TransactionBalanceEntity | null = null;
   public card: {} = {};
@@ -17,19 +17,24 @@ export class TransactionEntity implements ITransaction {
   public dateLastUpdated: Date = new Date();
   public dateOfExpiration: Date | null = null;
   public description: string = '';
+  public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity();
   public externalOrderReference: string = '';
   public feeDetails: FeeDetailEntity[] = [];
   public from: EFrom = EFrom.NATIPAY;
   public id: string = '';
   public installments: number = 0;
   public liveMode: boolean = true;
+  public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
   public moneyReleaseDate: Date | null = null;
   public moneyReleaseStatus: EReleaseStatus = EReleaseStatus.PENDING;
+  public natiInfo: IInfo | null = new InfoEntity();
   public operationType: EOperationType = EOperationType.REGULAR_PAYMENT;
   public paymentMethod: TransactionPaymentMethodEntity | null = null;
   public paymentMethodId: EPaymentMethodId = EPaymentMethodId.ACCOUNT_MONEY;
   public posId: string = '';
   public referenceId: string = '';
+  public resumeVersion: string = '';
+  public stamped: string | null = null;
   public status: EMpStatus = EMpStatus.PENDING;
   public statusDetail: EMpStatusDetail = EMpStatusDetail.ACCREDITED;
   public total: TransactionTotalEntity | null = null;
@@ -37,12 +42,8 @@ export class TransactionEntity implements ITransaction {
   public transactionAmountRefunded: number = 0;
   public transactionStatus: ETransactionStatus = ETransactionStatus.PROCESSING;
   public updatedAt: Date = new Date();
-  public desenfilaInfo: IDesenfilaInfo | null = new DesenfilaInfoEntity();
-  public natiInfo: IInfo | null = new InfoEntity();
-  public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
-  public resumeVersion: string = '';
 
-  // #endregion Properties (30)
+  // #endregion Properties (33)
 
   // #region Constructors (1)
 

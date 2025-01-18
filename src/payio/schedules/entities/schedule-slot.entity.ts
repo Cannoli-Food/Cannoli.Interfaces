@@ -4,7 +4,7 @@ export class PayioScheduleSlotEntity implements IPayioScheduleSlot {
   // #region Properties (2)
 
   public productCode: string = '';
-  public slot: string = '';
+  public time: string = '';
 
   // #endregion Properties (2)
 

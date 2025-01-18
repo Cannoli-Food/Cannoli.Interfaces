@@ -1,4 +1,5 @@
 import { IPayioDevice } from '../interfaces/i-device';
+import { PayioDeviceChefEntity } from './device-chef.entity';
 
 export class PayioDeviceEntity implements IPayioDevice {
   // #region Properties (10)
@@ -13,6 +14,7 @@ export class PayioDeviceEntity implements IPayioDevice {
   public name: string = '';
   public tags: string[] = [];
   public updatedAt: Date = new Date();
+  public chef: PayioDeviceChefEntity | null = null;
 
   // #endregion Properties (10)
 

@@ -1,3 +1,5 @@
+import { IPayioDeviceChef } from './i-device-chef';
+
 export interface IPayioDevice {
   // #region Properties (10)
 
@@ -10,6 +12,7 @@ export interface IPayioDevice {
   lastAccess: Date;
   name: string;
   tags: string[];
+  chef: IPayioDeviceChef | null;
   updatedAt: Date;
 
   // #endregion Properties (10)

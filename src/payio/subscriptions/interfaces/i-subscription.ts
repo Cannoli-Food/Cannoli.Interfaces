@@ -22,6 +22,7 @@ export interface IPayioSubscription {
   payment: IPaymentMethod | null;
   planId: string;
   planName: string;
+  activationKey: string | null;
   renewPaymentDate: Date;
   renovatedAt: Date;
   startsAt: Date;
