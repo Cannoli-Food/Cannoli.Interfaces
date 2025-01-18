@@ -1,31 +1,34 @@
-import { EDocType, IPaymentProvider } from '../../../general';
+import { EDocType } from '../../../general';
+import { IAction } from '../../../mobyo/mobyo-api/interfaces/action.interface';
 import { PayioAddressEntity } from '../../company';
-import { IPayioDistributor } from '../interfaces/i-distributor';
+import { EPayuioDistributorStatus } from '../enums';
+import { IPayioDistributor } from '../interfaces';
+import { PayioDistributorResponsibleEntity } from './distributor-responsible.entity';
 
 export class PayioDistributorEntity implements IPayioDistributor {
-  // #region Properties (19)
+  // #region Properties (20)
 
-  public active: boolean = false;
+  public actions: IAction[] = [];
   public address: PayioAddressEntity = new PayioAddressEntity();
-  public containerId: string = '';
   public createdAt: Date = new Date();
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
-  public fullName: string = '';
   public id: string = '';
   public imageUrl: string | null = null;
   public internationalCode: string = '55';
   public logoUrl: string | null = null;
+  public logs: string[] = [];
   public name: string = '';
-  public paymentProvider: IPaymentProvider | null = null;
   public phoneNumber: string = '';
+  public responsible: PayioDistributorResponsibleEntity = new PayioDistributorResponsibleEntity();
   public sandbox: boolean = false;
+  public slug: string = '';
+  public status: EPayuioDistributorStatus = EPayuioDistributorStatus.PLACED;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
-  public version: string = '';
 
-  // #endregion Properties (19)
+  // #endregion Properties (20)
 
   // #region Constructors (1)
 

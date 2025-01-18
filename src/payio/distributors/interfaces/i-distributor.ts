@@ -1,29 +1,31 @@
 import { EDocType } from '../../../general/enums/doc-type.enum';
-import { IPaymentProvider } from '../../../general/interfaces/i-payment-provider';
+import { IAction } from '../../../mobyo/mobyo-api/interfaces/action.interface';
 import { IPayioAddress } from '../../company';
+import { EPayuioDistributorStatus } from '../enums';
+import { IPayioDistributorResponsible } from './i-distributor-responsible';
 
 export interface IPayioDistributor {
-  // #region Properties (19)
+  // #region Properties (20)
 
-  active: boolean;
+  actions: IAction[];
   address: IPayioAddress;
-  containerId: string;
   createdAt: Date;
   doc: string;
   docType: EDocType;
   email: string;
-  fullName: string;
   id: string;
   imageUrl: string | null;
   internationalCode: string;
   logoUrl: string | null;
+  logs: string[];
   name: string;
-  paymentProvider: IPaymentProvider | null;
   phoneNumber: string;
+  responsible: IPayioDistributorResponsible;
   sandbox: boolean;
+  slug: string;
+  status: EPayuioDistributorStatus;
   tags: string[];
   updatedAt: Date;
-  version: string;
 
-  // #endregion Properties (19)
+  // #endregion Properties (20)
 }

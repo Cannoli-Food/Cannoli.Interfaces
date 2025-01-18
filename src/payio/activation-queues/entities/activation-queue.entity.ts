@@ -1,5 +1,5 @@
 import { EPayuioActivationStatus } from '../enums/activation-key-status.enum';
-import { IPayioActivationKey } from '../interfaces/i-activation-key';
+import { IPayioActivationKey } from '../interfaces/i-activation-queue';
 
 export class PayioActivationKeyEntity implements IPayioActivationKey {
   // #region Properties (19)

@@ -6,7 +6,10 @@ export enum PayioEntitiesEnum {
     orders = 'orders',
     products = 'products',
     resumes = 'resumes',
-    subscriptions = 'subscriptions',
+    activation_keys = 'activation-keys',
     tokens = 'tokens',
     users = 'users',
 }
+
+
+// Adiquirida

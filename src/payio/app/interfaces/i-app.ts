@@ -1,4 +1,4 @@
-import { EPayuioAppSlug } from "../enums";
+import { EPayuioAppSlug } from '../enums';
 
 export interface IPayioApp {
   // #region Properties (10)
@@ -6,7 +6,6 @@ export interface IPayioApp {
   active: boolean;
   description: string;
   downloadUrl: string;
-  features: string[];
   id: string;
   name: string;
   slug: EPayuioAppSlug;

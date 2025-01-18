@@ -7,7 +7,6 @@ export class PayioAppEntity implements IPayioApp {
   public active: boolean = false;
   public description: string = '';
   public downloadUrl: string = '';
-  public features: string[] = [];
   public id: string = '';
   public name: string = '';
   public price: number = 0;
