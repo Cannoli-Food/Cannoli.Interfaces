@@ -1,1 +1,1 @@
-export { EPayuioDistributorStatus } from './status.enum';
+export { EPayioDistributorStatus } from './status.enum';

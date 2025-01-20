@@ -1,7 +1,7 @@
 import { EDocType } from '../../../general';
 import { IAction } from '../../../mobyo/mobyo-api/interfaces/action.interface';
 import { PayioAddressEntity } from '../../company';
-import { EPayuioDistributorStatus } from '../enums';
+import { EPayioDistributorStatus } from '../enums';
 import { IPayioDistributor } from '../interfaces';
 import { PayioDistributorResponsibleEntity } from './distributor-responsible.entity';
 
@@ -24,7 +24,7 @@ export class PayioDistributorEntity implements IPayioDistributor {
   public responsible: PayioDistributorResponsibleEntity = new PayioDistributorResponsibleEntity();
   public sandbox: boolean = false;
   public slug: string = '';
-  public status: EPayuioDistributorStatus = EPayuioDistributorStatus.PLACED;
+  public status: EPayioDistributorStatus = EPayioDistributorStatus.PLACED;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 

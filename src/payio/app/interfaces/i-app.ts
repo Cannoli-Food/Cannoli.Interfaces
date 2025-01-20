@@ -10,7 +10,8 @@ export interface IPayioApp {
   name: string;
   slug: EPayuioAppSlug;
   price: number;
-  secrets: string;
+  secret: string;
+  version: string;
   tags: string[];
 
   // #endregion Properties (10)

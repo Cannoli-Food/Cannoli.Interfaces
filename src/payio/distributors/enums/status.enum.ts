@@ -1,4 +1,4 @@
-export enum EPayuioDistributorStatus {
+export enum EPayioDistributorStatus {
   BLOCKED = 'BLOCKED',
   ACTIVE = 'ACTIVE',
   PLACED = 'PLACED',

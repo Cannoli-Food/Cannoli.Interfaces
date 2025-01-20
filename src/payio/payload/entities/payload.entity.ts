@@ -1,10 +1,9 @@
 import { EPayuioActivationStatus } from '../../activation-key/enums/activation-key-status.enum';
-import { PayioPermissionRoleEntity } from '../../permissions';
+import { PayioMemberRoleEntity } from '../../members';
 import { IPayioJwtPayload } from '../interfaces/i-payload';
 import { IPayioJwtPayloadApp } from '../interfaces/i-payload-app';
 import { IPayioJwtPayloadInfo } from '../interfaces/i-payload-info';
 import { PayioJwtPayloadDeviceEntity } from './payload-device.entity';
-import { PayioJwtPayloadScheduleEntity } from './payload-schedule.entity';
 import { PayioJwtPayloadUserEntity } from './payload-user.entity';
 
 export class PayioJwtPayloadEntity implements IPayioJwtPayload {
@@ -15,13 +14,12 @@ export class PayioJwtPayloadEntity implements IPayioJwtPayload {
   public aud: string = '';
   public device: PayioJwtPayloadDeviceEntity | null = null;
   public distributorId: string | null = null;
-  public exp: number = 0;
+  public exp?: number = 0;
   public iat: number = 0;
   public info: IPayioJwtPayloadInfo | null = null;
   public iss: string = '';
   public jti: string = '';
-  public permissions: PayioPermissionRoleEntity[] = [];
-  public schedule: PayioJwtPayloadScheduleEntity | null = null;
+  public permissions: PayioMemberRoleEntity[] = [];
   public sub: string = '';
   public type: string | null = null;
   public user: PayioJwtPayloadUserEntity | null = null;

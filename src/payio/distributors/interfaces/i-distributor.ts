@@ -1,7 +1,7 @@
 import { EDocType } from '../../../general/enums/doc-type.enum';
 import { IAction } from '../../../mobyo/mobyo-api/interfaces/action.interface';
 import { IPayioAddress } from '../../company';
-import { EPayuioDistributorStatus } from '../enums';
+import { EPayioDistributorStatus } from '../enums';
 import { IPayioDistributorResponsible } from './i-distributor-responsible';
 
 export interface IPayioDistributor {
@@ -23,7 +23,7 @@ export interface IPayioDistributor {
   responsible: IPayioDistributorResponsible;
   sandbox: boolean;
   slug: string;
-  status: EPayuioDistributorStatus;
+  status: EPayioDistributorStatus;
   tags: string[];
   updatedAt: Date;
 

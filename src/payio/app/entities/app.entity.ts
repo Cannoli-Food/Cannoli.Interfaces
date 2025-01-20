@@ -2,7 +2,7 @@ import { EPayuioAppSlug } from '../enums';
 import { IPayioApp } from '../interfaces/i-app';
 
 export class PayioAppEntity implements IPayioApp {
-  // #region Properties (11)
+  // #region Properties (10)
 
   public active: boolean = false;
   public description: string = '';
@@ -10,11 +10,12 @@ export class PayioAppEntity implements IPayioApp {
   public id: string = '';
   public name: string = '';
   public price: number = 0;
-  public secrets: string = '';
+  public secret: string = '';
   public slug: EPayuioAppSlug = EPayuioAppSlug.none;
   public tags: string[] = [];
+  public version: string = '0.0.1';
 
-  // #endregion Properties (11)
+  // #endregion Properties (10)
 
   // #region Constructors (1)
 
