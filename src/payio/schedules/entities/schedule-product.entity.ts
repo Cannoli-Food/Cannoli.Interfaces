@@ -1,19 +1,21 @@
 import { IPayioScheduleProduct } from '../interfaces/i-schedule-product';
 
 export class PayioScheduleProductEntity implements IPayioScheduleProduct {
-  // #region Properties (9)
+  // #region Properties (11)
 
   public code: string = '';
   public description: string = '';
   public exceededWeightMessageText: string | null = '';
   public exceededWeightPrice: number = 0;
+  public helpYourSelfId: string = '';
+  public helpYourSelfPrice: number = 0;
   public id: string = '';
-  public maxWeightLimitMessage: number = 0;
-  public maxWeightLimitPrice: number = 0;
   public price: number = 0;
   public unit: string = 'KG';
+  public weightLimitMessage: number = 0;
+  public weightLimitPrice: number = 0;
 
-  // #endregion Properties (9)
+  // #endregion Properties (11)
 
   // #region Constructors (1)
 

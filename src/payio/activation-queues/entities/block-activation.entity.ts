@@ -1,7 +1,7 @@
 import { EPayuioActivationStatus } from '../enums/activation-key-status.enum';
-import { IPayioActivationKey } from '../interfaces/i-activation-queue';
+import { IPayioActivationKey } from '../interfaces/i-block-activation';
 
-export class PayioActivationKeyEntity implements IPayioActivationKey {
+export class PayioBlockActivationEntity implements IPayioActivationKey {
   // #region Properties (19)
 
   public activationDate: Date | null = null;
@@ -28,7 +28,7 @@ export class PayioActivationKeyEntity implements IPayioActivationKey {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<PayioActivationKeyEntity>) {
+  constructor(data?: Partial<PayioBlockActivationEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {

@@ -10,6 +10,7 @@ export class PayioDistributorEntity implements IPayioDistributor {
 
   public actions: IAction[] = [];
   public address: PayioAddressEntity = new PayioAddressEntity();
+  public contratoSocialPdfUrl: string | null = null;
   public createdAt: Date = new Date();
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
@@ -21,7 +22,7 @@ export class PayioDistributorEntity implements IPayioDistributor {
   public logs: string[] = [];
   public name: string = '';
   public phoneNumber: string = '';
-  public responsible: PayioDistributorResponsibleEntity = new PayioDistributorResponsibleEntity();
+  public responsibles: PayioDistributorResponsibleEntity[] = [];
   public sandbox: boolean = false;
   public slug: string = '';
   public status: EPayioDistributorStatus = EPayioDistributorStatus.PLACED;

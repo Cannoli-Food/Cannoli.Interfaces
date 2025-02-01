@@ -1,1 +1,1 @@
-export { IPayioActivationKey } from './i-activation-queue';
+export { IPayioActivationKey } from './i-block-activation';

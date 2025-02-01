@@ -1,21 +1,24 @@
-import { MemberTypeEnum } from '../../member/enums';
+import { PayioUserTypeEnum } from '../enums';
 
 export interface IUser {
-  // #region Properties (13)
+  // #region Properties (15)
 
+  accessCount: number;
   active: boolean;
   createdAt: Date;
+  currentCompanyId: string | null;
+  currentCompanyName: string | null;
   email: string | null;
-  engaged: boolean;
   id: string;
   imageUrl: string | null;
   internationalCode: string;
+  lastAccessAt: Date;
   name: string;
+  code: string | null; // Caso seja um usuário do tipo TESTER, esse campo será preenchido quando solicitar o código de verificação do telefone
   phoneNumber: string;
   tags: string[];
-  type: MemberTypeEnum | null;
+  type: PayioUserTypeEnum;
   updatedAt: Date;
-  currentCompanyId: string | null;
-  currentCompanyName: string | null;
-  // #endregion Properties (13)
+
+  // #endregion Properties (15)
 }

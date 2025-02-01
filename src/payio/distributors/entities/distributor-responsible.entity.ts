@@ -2,16 +2,17 @@ import { EDocType } from '../../../general';
 import { IPayioDistributorResponsible } from '../interfaces/i-distributor-responsible';
 
 export class PayioDistributorResponsibleEntity implements IPayioDistributorResponsible {
-  // #region Properties (6)
+  // #region Properties (7)
 
   public doc: string = '';
   public docType: EDocType = EDocType.CPF;
+  public documentFileUrl: string = '';
   public email: string = '';
   public internationalCode: string = '55';
   public name: string = '';
   public phoneNumber: string = '';
 
-  // #endregion Properties (6)
+  // #endregion Properties (7)
 
   // #region Constructors (1)
 

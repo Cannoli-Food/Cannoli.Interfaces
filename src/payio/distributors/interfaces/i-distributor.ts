@@ -15,12 +15,13 @@ export interface IPayioDistributor {
   email: string;
   id: string;
   imageUrl: string | null;
+  contratoSocialPdfUrl: string | null;
   internationalCode: string;
   logoUrl: string | null;
   logs: string[];
   name: string;
   phoneNumber: string;
-  responsible: IPayioDistributorResponsible;
+  responsibles: IPayioDistributorResponsible[];
   sandbox: boolean;
   slug: string;
   status: EPayioDistributorStatus;

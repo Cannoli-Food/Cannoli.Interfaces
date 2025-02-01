@@ -8,6 +8,7 @@ export * from './distributors';
 export * from './global-products';
 export * from './members';
 export * from './orders';
+export * from './orders-queue';
 export * from './partners';
 export * from './payload';
 export * from './permissions';

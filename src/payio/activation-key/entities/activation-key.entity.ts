@@ -2,7 +2,7 @@ import { EPayuioActivationStatus } from '../enums/activation-key-status.enum';
 import { IPayioActivationKey } from '../interfaces/i-activation-key';
 
 export class PayioActivationKeyEntity implements IPayioActivationKey {
-  // #region Properties (19)
+  // #region Properties (20)
 
   public activationDate: Date | null = null;
   public activationReleasedId: string = '';
@@ -20,11 +20,12 @@ export class PayioActivationKeyEntity implements IPayioActivationKey {
   public expirationDate: Date | null = null;
   public id: string = '';
   public logs: string[] = [];
+  public sandbox: boolean = false;
   public status: EPayuioActivationStatus = EPayuioActivationStatus.PENDING;
   public usageLimit: number = 0;
   public usedCount: number = 0;
 
-  // #endregion Properties (19)
+  // #endregion Properties (20)
 
   // #region Constructors (1)
 

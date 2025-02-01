@@ -16,6 +16,7 @@ export interface IPayioToken {
   // O refresh token em si
   refreshToken: string;
   revokedAt: Date | null;
+  sandbox: boolean;
   updatedAt: Date;
   // Informação do dispositivo ou navegador usado
   userAgent: string | null;

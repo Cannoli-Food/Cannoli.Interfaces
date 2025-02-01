@@ -1,15 +1,21 @@
 export interface IPayioScheduleProduct {
-  // #region Properties (9)
+  // #region Properties (11)
 
   code: string;
   description: string;
+  // Preço fixo aplicado ao exceder o limite de peso
+  exceededWeightMessageText: string | null;
+  // Limite de peso para enviar mensagem
+  exceededWeightPrice: number;
+  helpYourSelfId: string | null;
+  helpYourSelfPrice: number;
   id: string;
-  maxWeightLimitPrice: number; // Limite máximo de peso para aplicar regras
-  maxWeightLimitMessage: number; // Limite de peso para enviar mensagem
-  exceededWeightPrice: number; // Preço fixo aplicado ao exceder o limite de peso
-  exceededWeightMessageText: string | null; // Texto associado à mensagem sonora
+  // Texto associado à mensagem sonora
   price: number;
   unit: string;
+  // Limite máximo de peso para aplicar regras
+  weightLimitMessage: number;
+  weightLimitPrice: number;
 
-  // #endregion Properties (9)
+  // #endregion Properties (11)
 }

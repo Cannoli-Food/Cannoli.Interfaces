@@ -1,8 +1,0 @@
-export enum EPayuioFeatureType {
-  FEATURE = 'FEATURE',
-  DESCRIPTION = 'DESCRIPTION',
-  VOUCHER = 'VOUCHER',
-  DISCOUNT = 'DISCOUNT',
-  ITEM = 'ITEM',
-  SEAT = 'SEAT',
-}

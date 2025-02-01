@@ -15,6 +15,7 @@ export class PayioMemberEntity implements IPayioMember {
   public lastAccessAt: Date | null = null;
   public name: string = '';
   public roles: PayioMemberRoleEntity[] = [];
+  public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
   public userId: string = '';

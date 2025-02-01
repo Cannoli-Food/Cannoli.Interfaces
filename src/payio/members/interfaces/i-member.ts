@@ -1,4 +1,3 @@
-import { IPayioPermissionRole } from '../../permissions';
 import { IPayioMemberRole } from './i-member-role';
 
 export interface IPayioMember {
@@ -15,6 +14,7 @@ export interface IPayioMember {
   lastAccessAt: Date | null;
   name: string;
   roles: IPayioMemberRole[];
+  sandbox: boolean;
   tags: string[];
   updatedAt: Date;
   userId: string;

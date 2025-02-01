@@ -8,6 +8,7 @@ export interface IPayioDistributorResponsible {
   email: string;
   name: string;
   phoneNumber: string;
+  documentFileUrl: string;
   internationalCode: string;
 
   // #endregion Properties (5)

@@ -16,6 +16,7 @@ export interface IPayioActivationKey {
   createdAt: Date;
   // Data de geração da chave
   createdBy: string | null;
+  sandbox: boolean;
   deviceId: string | null;
   // ID do distribuidor que adquiriu o pacote (se aplicável)
   distributorId: string | null;

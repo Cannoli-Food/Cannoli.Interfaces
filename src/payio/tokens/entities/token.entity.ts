@@ -1,7 +1,7 @@
 import { IPayioToken } from '../interfaces/i-token';
 
 export class PayioTokenEntity implements IPayioToken {
-  // #region Properties (11)
+  // #region Properties (12)
 
   public createdAt: Date = new Date();
   public deviceId: string | null = null;
@@ -11,11 +11,12 @@ export class PayioTokenEntity implements IPayioToken {
   public isRevoked: boolean = false;
   public refreshToken: string = '';
   public revokedAt: Date | null = null;
+  public sandbox: boolean = false;
   public updatedAt: Date = new Date();
   public userAgent: string | null = null;
   public userId: string = '';
 
-  // #endregion Properties (11)
+  // #endregion Properties (12)
 
   // #region Constructors (1)
 
