@@ -7,8 +7,7 @@ export class PayioScheduleProductEntity implements IPayioScheduleProduct {
   public description: string = '';
   public exceededWeightMessageText: string | null = '';
   public exceededWeightPrice: number = 0;
-  public helpYourSelfId: string = '';
-  public helpYourSelfPrice: number = 0;
+  public helpYourSelf: boolean = false;
   public id: string = '';
   public price: number = 0;
   public unit: string = 'KG';

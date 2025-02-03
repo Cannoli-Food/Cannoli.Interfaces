@@ -7,8 +7,7 @@ export interface IPayioScheduleProduct {
   exceededWeightMessageText: string | null;
   // Limite de peso para enviar mensagem
   exceededWeightPrice: number;
-  helpYourSelfId: string | null;
-  helpYourSelfPrice: number;
+  helpYourSelf: boolean;
   id: string;
   // Texto associado à mensagem sonora
   price: number;
