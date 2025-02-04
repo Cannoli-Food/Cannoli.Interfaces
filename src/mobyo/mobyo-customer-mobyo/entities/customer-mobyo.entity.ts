@@ -2,6 +2,8 @@ import { CustomerEntity } from '../../../customer';
 import { IAddress } from '../../../general';
 import { IUsedVoucher } from '../interfaces';
 import { ICustomerMobyo } from '../interfaces/i-customer-mobyo';
+import { IPrivacySetting } from '../interfaces/i-customer-privacy';
+import { PrivacySettingEntity } from './customer-privacy.entity';
 
 export class CustomerMobyoEntity extends CustomerEntity implements ICustomerMobyo {
   // #region Properties (9)
@@ -16,6 +18,7 @@ export class CustomerMobyoEntity extends CustomerEntity implements ICustomerMoby
   public uid: string = '';
   public version: string = '1.0.2';
   public birthday: Date | null = null;
+  public privacySettings: IPrivacySetting = new PrivacySettingEntity()
   // #endregion Properties (9)
 
   // #region Constructors (1)

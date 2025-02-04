@@ -1,6 +1,6 @@
 import { ICustomer } from '../../../customer';
 import { IAddress } from '../../../general';
-import { IPrivacySetting } from './i-customer-mobyo copy';
+import { IPrivacySetting } from './i-customer-privacy';
 
 export interface ICustomerMobyo extends ICustomer {
   active: boolean;
