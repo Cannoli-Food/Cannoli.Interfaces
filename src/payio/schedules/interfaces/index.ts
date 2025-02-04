@@ -1,2 +1,4 @@
 export { IPayioSchedule } from './i-schedule';
-export { IPayioScheduleSlot } from './i-schedule-slot';
+export { IPayioScheduleDay } from './i-schedule-day';
+export { IPayioScheduleSlot } from './i-schedule-slots';
+export { IPayioScheduleProduct } from './i-schedule-product';

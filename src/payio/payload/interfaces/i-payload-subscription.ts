@@ -6,6 +6,7 @@ export interface IPayioJwtPayloadSubscription {
   expiresAt: number;
   id: string;
   status: ESubsStatus;
+  usedTrial: boolean;
 
   // #endregion Properties (3)
 }

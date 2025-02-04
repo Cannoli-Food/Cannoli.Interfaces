@@ -1,14 +1,17 @@
 import { OrderEntity } from '../../../order';
+import { EPayuioAppSlug } from '../../app';
 import { IPayioOrder } from '../interfaces';
 import { PayioOrderIndoorEntity } from './indoor.entity';
 
 export class PayioOrderEntity extends OrderEntity implements IPayioOrder {
-  // #region Properties (2)
+  // #region Properties (4)
 
+  public appId: string | null = null;
+  public appSlug: EPayuioAppSlug = EPayuioAppSlug.none;
   public deviceId: string | null = null;
   public indoor: PayioOrderIndoorEntity | null = null;
 
-  // #endregion Properties (2)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 

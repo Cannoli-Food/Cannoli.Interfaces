@@ -1,16 +1,17 @@
-import { IPayioSchedule } from '../interfaces';
-import { PayioScheduleSlotEntity } from './schedule-slot.entity';
+import { IPayioSchedule, IPayioScheduleDay, IPayioScheduleProduct } from '../interfaces';
 
 export class PayioScheduleEntity implements IPayioSchedule {
-  // #region Properties (5)
+  // #region Properties (7)
 
   public active: boolean = true;
   public createdAt: Date = new Date();
-  public id: string = 'SEG';
-  public slots: PayioScheduleSlotEntity[] = [];
+  public days: IPayioScheduleDay[] = [];
+  public id: string = '';
+  public name: string = '';
+  public products: IPayioScheduleProduct[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (5)
+  // #endregion Properties (7)
 
   // #region Constructors (1)
 

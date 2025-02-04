@@ -6,7 +6,7 @@ import { ITransactionPaymentMethod } from './i-payment-method';
 import { ITransactionTotal } from './i-total';
 
 export interface ITransaction {
-  // #region Properties (30)
+  // #region Properties (33)
 
   balance: ITransactionBalance | null;
   card: {};
@@ -16,22 +16,24 @@ export interface ITransaction {
   dateLastUpdated: Date;
   dateOfExpiration: Date | null;
   description: string;
+  desenfilaInfo: IDesenfilaInfo | null;
   externalOrderReference: string;
   feeDetails: IFeeDetail[];
   from: EFrom;
   id: string;
   installments: number;
   liveMode: boolean;
-  desenfilaInfo: IDesenfilaInfo | null;
-  natiInfo: IInfo | null;
   mobyoInfo: IMobyoInfo | null;
   moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;
+  natiInfo: IInfo | null;
   operationType: EOperationType;
   paymentMethod: ITransactionPaymentMethod | null;
   paymentMethodId: EPaymentMethodId;
   posId: string;
   referenceId: 'goLive' | 'engine_mobyo_fee' | 'withdraw' | string;
+  resumeVersion: string;
+  stamped: string | null;
   status: EMpStatus;
   statusDetail: EMpStatusDetail;
   total: ITransactionTotal | null;
@@ -39,7 +41,6 @@ export interface ITransaction {
   transactionAmountRefunded: number;
   transactionStatus: ETransactionStatus;
   updatedAt: Date;
-  resumeVersion: string;
 
-  // #endregion Properties (30)
+  // #endregion Properties (33)
 }

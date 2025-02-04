@@ -7,6 +7,7 @@ export class PayioJwtPayloadSubscriptionEntity implements IPayioJwtPayloadSubscr
   public expiresAt: number = 0;
   public id: string = '';
   public status: ESubsStatus = ESubsStatus.PENDING;
+  public usedTrial: boolean = false;
 
   // #endregion Properties (4)
 

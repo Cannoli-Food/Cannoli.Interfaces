@@ -1,0 +1,11 @@
+export enum EPayuioActivationStatus {
+  NONE = 'NONE',
+  PENDING = 'PENDING',
+  ACTIVE = 'ACTIVE',
+  EXPIRED = 'EXPIRED',
+  CANCELLED = 'CANCELLED',
+  REVOKED = 'REVOKED',
+  TRIAL_7 = 'TRIAL_7',
+  TRIAL_15 = 'TRIAL_15',
+  TRIAL_30 = 'TRIAL_30',
+}

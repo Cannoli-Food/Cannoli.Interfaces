@@ -1,12 +1,14 @@
 import { IPayioJwtPayloadDevice } from '../interfaces/i-payload-device';
 
 export class PayioJwtPayloadDeviceEntity implements IPayioJwtPayloadDevice {
-  // #region Properties (3)
+  // #region Properties (4)
 
+  public chefConfigId: string | null = '';
   public id: string = '';
   public name: string | null = '';
+  public scheduleId: string | null = '';
 
-  // #endregion Properties (3)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 

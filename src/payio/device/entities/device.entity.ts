@@ -1,9 +1,11 @@
 import { IPayioDevice } from '../interfaces/i-device';
+import { PayioDeviceChefEntity } from './device-chef.entity';
 
 export class PayioDeviceEntity implements IPayioDevice {
-  // #region Properties (10)
+  // #region Properties (12)
 
   public active: boolean = false;
+  public chef: PayioDeviceChefEntity | null = null;
   public companyId: string = '';
   public containerId: string = '';
   public createdAt: Date = new Date();
@@ -11,10 +13,11 @@ export class PayioDeviceEntity implements IPayioDevice {
   public id: string = '';
   public lastAccess: Date = new Date();
   public name: string = '';
+  public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (10)
+  // #endregion Properties (12)
 
   // #region Constructors (1)
 
