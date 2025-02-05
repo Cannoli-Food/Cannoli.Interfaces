@@ -7,6 +7,7 @@ export interface IPayioOrderQueue {
   createdAt: Date;
   reference: string;
   companyId: string;
+  companyName: string;
   appId: string;
   error: string;
   id: string;
