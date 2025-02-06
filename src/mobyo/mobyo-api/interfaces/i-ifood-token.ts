@@ -11,3 +11,12 @@ export interface IIFoodV1Token {
     refreshToken: string;
     expiresIn: number;
 }
+
+export interface IIFoodV2Token {
+    accessToken: string;
+    type: string;
+    expiresIn: number;
+    expiresAt: Date;
+    createdAt: Date;
+    updatedAt: Date;
+}

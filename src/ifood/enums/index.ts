@@ -1,0 +1,1 @@
+export { EIFoodCatalogContext } from './ifood-catalog-context.enum'
