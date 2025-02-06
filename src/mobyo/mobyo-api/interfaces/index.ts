@@ -61,8 +61,8 @@ export { IGeocodeEnvelopeArray as MobyoIGeocodeEnvelopeArray } from './i-geocode
 export { IGlobalsProduct as MobyoIGlobalsProduct } from './i-globals-product';
 export { IRating as MobyoIRating } from './i-globals-rating';
 export { IGlobalsUtilization as MobyoIGlobalsUtilization } from './i-globals-utilizations';
-export { IIFoodCategoryItem as MobyoIIFoodCategoryItem } from './i-ifood-category-item';
-export { IIFoodToken as MobyoIIFoodToken, IIFoodV1Token } from './i-ifood-token';
+// export { IIFoodCategoryItem as MobyoIIFoodCategoryItem } from './i-ifood-category-item';
+export { IIFoodToken as MobyoIIFoodToken, IIFoodV1Token, IIFoodV2Token } from './i-ifood-token';
 export { IMember as MobyoIMember } from './i-member';
 export { IMenuConfig as MobyoIMenuConfig } from './i-menu-config';
 export { IMenuScheduleV2 as MobyoIMenuScheduleV2 } from './i-menu-schedule-v2';
