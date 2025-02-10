@@ -1,27 +1,24 @@
 import { EIFoodDietaryRestrictions } from '../enums/ifood-dietary-restrictions.enum';
 import { EIFoodServing } from '../enums/ifood-serving.enum';
 import { IIFoodOptionGroups } from './i-ifood-category-option-groups';
-import { IIFoodPrice } from './i-ifood-price';
 import { IIFoodSellingOptions } from './i-ifood-selling-options';
 import { IIFoodShifts } from './i-ifood-shifts';
+import { IIFoodWeight } from './i-ifood-weight';
 
-export interface IIFoodCategoryItems {
+export interface IIFoodProduct {
   id: string;
   name: string;
   description: string;
   additionalInformation: string;
   externalCode: string;
-  status: string; // 'AVAILABLE'
-  productId: string;
-  index: number;
-  imagePath: string;
-  price: IIFoodPrice;
-  shifts: IIFoodShifts[];
+  image: string;
+  shifts: IIFoodShifts;
   serving: EIFoodServing;
-  dietaryRestrictions: EIFoodDietaryRestrictions[]; // ['ORGANIC', 'VEGAN']
+  dietaryRestrictions: EIFoodDietaryRestrictions[];
+  tags: string[];
   ean: string;
-  optionGroups: IIFoodOptionGroups[];
   sellingOption: IIFoodSellingOptions;
-  tags: string[]; // ['FROSTY']
-  hasOptionGroups: boolean;
+  weight: IIFoodWeight;
+  multipleImages: string;
+  optionGroups: IIFoodOptionGroups;
 }
