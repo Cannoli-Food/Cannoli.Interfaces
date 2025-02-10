@@ -1,6 +1,6 @@
 import { EIFoodDietaryRestrictions } from '../enums/ifood-dietary-restrictions.enum';
 import { EIFoodServing } from '../enums/ifood-serving.enum';
-import { IIFoodOptionGroups } from './i-ifood-category-option-groups';
+import { IIFoodOptionGroups } from './i-ifood-option-groups';
 import { IIFoodSellingOptions } from './i-ifood-selling-options';
 import { IIFoodShifts } from './i-ifood-shifts';
 import { IIFoodWeight } from './i-ifood-weight';
