@@ -1,0 +1,7 @@
+export enum EIFoodServing {
+  NOT_APPLICABLE = 'NOT_APPLICABLE',
+  SERVES_1 = "SERVES_1",
+  SERVES_2 = "SERVES_2",
+  SERVES_3 = "SERVES_3",
+  SERVES_4 = "SERVES_4",
+}

@@ -3,12 +3,12 @@ import { IPrivacySetting } from '../interfaces/i-customer-privacy';
 export class PrivacySettingEntity implements IPrivacySetting {
   // #region Properties (9)
 
-  public orderNotifications: boolean = false;
-  public pushNotificationsPromo: boolean = false;
-  public emailNotificationsPromo: boolean = false;
-  public whatsAppNotificationsPromo: boolean = false;
-  public smsNotificationsPromo: boolean = false;
-  public acceptPrivayAndPolicyTerm: boolean = false;
+  public orderNotifications: boolean = true;
+  public pushNotificationsPromo: boolean = true;
+  public emailNotificationsPromo: boolean = true;
+  public whatsAppNotificationsPromo: boolean = true;
+  public smsNotificationsPromo: boolean = true;
+  public acceptPrivayAndPolicyTerm: boolean = true;
   // #endregion Properties (9)
 
   // #region Constructors (1)
