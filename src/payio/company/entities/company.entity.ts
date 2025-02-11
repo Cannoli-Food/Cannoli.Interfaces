@@ -3,8 +3,6 @@ import { IPayioCompany } from '../interfaces/i-company';
 import { PayioAddressEntity } from './address.entity';
 
 export class PayioCompanyEntity implements IPayioCompany {
-  // #region Properties (19)
-
   public active: boolean = false;
   public address: PayioAddressEntity = new PayioAddressEntity();
   public containerId: string = '';
@@ -21,13 +19,10 @@ export class PayioCompanyEntity implements IPayioCompany {
   public paymentProvider: IPaymentProvider | null = null;
   public phoneNumber: string = '';
   public sandbox: boolean = false;
+  public shortName: string = '';
   public tags: string[] = [];
   public updatedAt: Date = new Date();
   public version: string = '';
-
-  // #endregion Properties (19)
-
-  // #region Constructors (1)
 
   constructor(data?: Partial<PayioCompanyEntity>) {
     if (data) {
@@ -38,6 +33,4 @@ export class PayioCompanyEntity implements IPayioCompany {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }

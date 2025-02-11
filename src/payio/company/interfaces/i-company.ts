@@ -3,8 +3,6 @@ import { IPaymentProvider } from '../../../general/interfaces/i-payment-provider
 import { IPayioAddress } from './i-address';
 
 export interface IPayioCompany {
-  // #region Properties (19)
-
   active: boolean;
   address: IPayioAddress;
   containerId: string;
@@ -21,9 +19,8 @@ export interface IPayioCompany {
   paymentProvider: IPaymentProvider | null;
   phoneNumber: string;
   sandbox: boolean;
+  shortName: string;
   tags: string[];
   updatedAt: Date;
   version: string;
-
-  // #endregion Properties (19)
 }
