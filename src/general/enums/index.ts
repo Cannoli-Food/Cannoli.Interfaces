@@ -6,6 +6,7 @@ export { EFrom } from './desenfila-from.enum';
 export { EDocType } from './doc-type.enum';
 export { EDiscountType } from './e-discount-type.enum';
 export { EFiscalDocModelCode } from './fiscal-doc-model-code.enum';
+export { EIntDocType } from './international-doc-type.enum';
 export { EIntervalType } from './interval-type.enum';
 export { EJwtStatus } from './jwt-status.enum';
 export { ELeadOrigin } from './lead-origin.enum';

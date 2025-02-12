@@ -1,4 +1,4 @@
-import { EDocType, IPaymentProvider } from '../../../general';
+import { EIntDocType, IPaymentProvider } from '../../../general';
 import { IPayioCompany } from '../interfaces/i-company';
 import { PayioAddressEntity } from './address.entity';
 
@@ -7,10 +7,11 @@ export class PayioCompanyEntity implements IPayioCompany {
   public address: PayioAddressEntity = new PayioAddressEntity();
   public containerId: string = '';
   public createdAt: Date = new Date();
+  public currency: string = 'BRL';
+  public country: string = 'BR';
   public doc: string = '';
-  public docType: EDocType = EDocType.CNPJ;
+  public docType: EIntDocType = EIntDocType.CNPJ;
   public email: string = '';
-  public fullName: string = '';
   public id: string = '';
   public imageUrl: string | null = null;
   public internationalCode: string = '55';
