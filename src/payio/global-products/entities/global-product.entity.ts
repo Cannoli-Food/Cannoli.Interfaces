@@ -1,8 +1,6 @@
 import { IPayioGlobalProduct } from '../interfaces/i-global-products';
 
 export class PayioGlobalProductEntity implements IPayioGlobalProduct {
-  // #region Properties (16)
-
   public active: boolean = true;
   public avgPrice: number = 0;
   public brand: string = '';
@@ -13,16 +11,13 @@ export class PayioGlobalProductEntity implements IPayioGlobalProduct {
   public maxPrice: number = 0;
   public minPrice: number = 0;
   public name: string = '';
+  public ncm: string | null = null;
   public quantityPackaging: number = 0;
   public tags: string[] = [];
   public thumbnail: string | null = null;
   public unit: string = '';
   public updatedAt: Date = new Date();
   public weight: number = 0;
-
-  // #endregion Properties (16)
-
-  // #region Constructors (1)
 
   constructor(data?: Partial<PayioGlobalProductEntity>) {
     if (data) {
@@ -33,6 +28,4 @@ export class PayioGlobalProductEntity implements IPayioGlobalProduct {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }
