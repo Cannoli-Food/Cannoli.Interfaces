@@ -1,25 +1,23 @@
 import { IPayioProduct } from '../interfaces/i-products';
 
 export class PayioProductEntity implements IPayioProduct {
-  // #region Properties (13)
-
   public active: boolean = true;
   public brand: string = '';
   public code: string = '';
+  public companyId: string = '';
+  public containerId: string | null = null;
   public createdAt: Date = new Date();
   public id: string = '';
   public name: string = '';
+  public ncm: string | null = '';
   public price: number = 0;
   public quantityPackaging: number = 0;
+  public sandbox: boolean = false;
   public tags: string[] = [];
   public thumbnail: string | null = null;
   public unit: string = 'UN';
   public updatedAt: Date = new Date();
   public weight: number = 0;
-
-  // #endregion Properties (13)
-
-  // #region Constructors (1)
 
   constructor(data?: Partial<PayioProductEntity>) {
     if (data) {
@@ -30,6 +28,4 @@ export class PayioProductEntity implements IPayioProduct {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }
