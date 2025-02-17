@@ -1,8 +1,12 @@
+import { EPayioRole } from '../enums/role.enum';
+
 export interface IPayioPermission {
+  active: boolean;
+  createdAt: Date;
+  description: string;
   id: string;
   name: string;
-  description: string;
-  isActive: boolean;
-  createdAt: Date;
+  role: EPayioRole;
+  tags: string[];
   updatedAt: Date;
 }

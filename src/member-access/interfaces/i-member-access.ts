@@ -1,5 +1,3 @@
-import { IPayioPermissionRole } from '../../payio/permissions/interfaces/i-permission-role';
-
 export interface IMemberAccess {
   // #region Properties (15)
 
@@ -13,7 +11,7 @@ export interface IMemberAccess {
   imageUrl: string | null;
   lastAccessAt: Date | null;
   name: string;
-  roles: IPayioPermissionRole[];
+  roles: any[];
   tags: string[];
   updated: Date;
   userId: string;

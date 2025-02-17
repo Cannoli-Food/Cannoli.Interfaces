@@ -1,18 +1,15 @@
+import { EPayioRole } from '../enums';
 import { IPayioPermission } from '../interfaces/i-permission';
 
 export class PayioPermissionEntity implements IPayioPermission {
-  // #region Properties (6)
-
+  public active: boolean = true;
   public createdAt: Date = new Date();
   public description: string = '';
   public id: string = '';
-  public isActive: boolean = true;
   public name: string = '';
+  public role: EPayioRole = EPayioRole.GENERAL;
+  public tags: string[] = [];
   public updatedAt: Date = new Date();
-
-  // #endregion Properties (6)
-
-  // #region Constructors (1)
 
   constructor(data?: Partial<PayioPermissionEntity>) {
     if (data) {
@@ -23,6 +20,4 @@ export class PayioPermissionEntity implements IPayioPermission {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }

@@ -1,5 +1,5 @@
 import { EPayuioActivationStatus } from '../../activation-key/enums/activation-key-status.enum';
-import { IPayioMemberRole } from '../../members';
+import { IPayioPermission } from '../../permissions';
 import { IPayioJwtPayloadApp } from './i-payload-app';
 import { IPayioJwtPayloadDevice } from './i-payload-device';
 import { IPayioJwtPayloadInfo } from './i-payload-info';
@@ -30,7 +30,7 @@ export interface IPayioJwtPayload {
    */
   iss: string;
   jti: string;
-  permissions: IPayioMemberRole[];
+  permissions: IPayioPermission[];
   sub: string;
   type: string | null;
   user: IPayioJwtPayloadUser | null;

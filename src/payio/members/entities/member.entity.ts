@@ -1,5 +1,5 @@
+import { PayioPermissionEntity } from '../../permissions';
 import { IPayioMember } from '../interfaces/i-member';
-import { PayioMemberRoleEntity } from './member-role.entity';
 
 export class PayioMemberEntity implements IPayioMember {
   // #region Properties (15)
@@ -14,7 +14,7 @@ export class PayioMemberEntity implements IPayioMember {
   public imageUrl: string | null = null;
   public lastAccessAt: Date | null = null;
   public name: string = '';
-  public roles: PayioMemberRoleEntity[] = [];
+  public permissions: PayioPermissionEntity[] = [];
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();

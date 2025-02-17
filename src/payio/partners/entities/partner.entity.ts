@@ -1,4 +1,4 @@
-import { PayioPermissionRoleEntity } from '../../permissions';
+import { PayioPermissionEntity } from '../../permissions';
 import { IPayioPartner } from '../interfaces/i-partner';
 
 export class PayioPartnerEntity implements IPayioPartner {
@@ -14,7 +14,7 @@ export class PayioPartnerEntity implements IPayioPartner {
   public imageUrl: string | null = null;
   public lastAccessAt: Date | null = null;
   public name: string = '';
-  public roles: PayioPermissionRoleEntity[] = [];
+  public roles: PayioPermissionEntity[] = [];
   public tags: string[] = [];
   public updated: Date = new Date();
   public userId: string = '';

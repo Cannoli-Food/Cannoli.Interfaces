@@ -1,4 +1,4 @@
-import { IPayioMemberRole } from './i-member-role';
+import { IPayioPermission } from '../../permissions';
 
 export interface IPayioMember {
   // #region Properties (15)
@@ -13,7 +13,7 @@ export interface IPayioMember {
   imageUrl: string | null;
   lastAccessAt: Date | null;
   name: string;
-  roles: IPayioMemberRole[];
+  permissions: IPayioPermission[];
   sandbox: boolean;
   tags: string[];
   updatedAt: Date;
