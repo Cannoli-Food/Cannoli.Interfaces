@@ -1,4 +1,4 @@
-export enum UserTypeEnum {
+export enum PayioUserTypeEnum {
   NONE = 'NONE',
   USER = 'USER',
   PARTNER = 'PARTNER',
