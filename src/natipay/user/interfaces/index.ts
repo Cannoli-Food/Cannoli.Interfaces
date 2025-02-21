@@ -1,1 +1,1 @@
-export { IUser } from './i-user';
+export { INatipayUser } from './i-user';
