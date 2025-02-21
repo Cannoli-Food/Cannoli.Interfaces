@@ -1,4 +1,4 @@
-import { IIFoodCategoryItems } from './i-ifood-category-items';
+import { IIFoodCategoryItem } from './i-ifood-category-items';
 import { IIFoodCategoryPizza } from './i-ifood-category-pizza';
 
 export interface IIFoodCategory {
@@ -7,7 +7,7 @@ export interface IIFoodCategory {
   name: string;
   externalCode: string;
   status: string;
-  items: IIFoodCategoryItems[];
+  items: IIFoodCategoryItem[];
   template: string;
   pizza: IIFoodCategoryPizza;
 }
