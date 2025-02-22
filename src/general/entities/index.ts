@@ -23,6 +23,7 @@ export { PaymentTokenDataEntity } from './payment-token-data.entity';
 export { PaymentTokenEntity } from './payment-token.entity';
 export { PaymentWalletEntity } from './payment-wallet.entity';
 export { PaymentEntity } from './payment.entity';
+export { PixKeyEntity } from './pix-keys.entity';
 export { QueryEntity } from './query.entity';
 export { RatingEntity } from './rating.entity';
 export { SponsorshipValueEntity } from './sponsorship-value.entity';
