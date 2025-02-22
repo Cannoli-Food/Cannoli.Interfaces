@@ -1,6 +1,7 @@
-import { EIntDocType } from '../../../general';
+import { EDocType } from '../../../general';
 import { IPaymentProvider } from '../../../general/interfaces/i-payment-provider';
 import { IPixKeys } from '../../../general/interfaces/i-pix-keys';
+import { IDesenfila } from '../../desenfila/interfaces';
 import { INatipayAddress } from './i-address';
 
 export interface INatipayCompany {
@@ -8,23 +9,28 @@ export interface INatipayCompany {
   address: INatipayAddress;
   containerId: string;
   containerName: string;
+  country: string;
   createdAt: Date;
+  currency: string;
+  desenfila: IDesenfila | null;
   doc: string;
-  docType: EIntDocType;
+  docType: EDocType;
   email: string;
   id: string;
   imageUrl: string | null;
   internationalCode: string;
   logoUrl: string | null;
-  name: string; //Nome registrado legalmente
+  name: string;
+
+  //Nome registrado legalmente
   paymentProvider: IPaymentProvider | null;
   phoneNumber: string;
   pixKeys: IPixKeys[];
   sandbox: boolean;
-  shortName: string; //Nome comercial ou fantasia
+  shortName: string;
+
+  //Nome comercial ou fantasia
   tags: string[];
-  currency: string;
-  country: string;
   updatedAt: Date;
   version: string;
 }

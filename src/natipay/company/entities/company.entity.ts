@@ -1,5 +1,6 @@
-import { EIntDocType, IPaymentProvider } from '../../../general';
+import { EDocType, IPaymentProvider } from '../../../general';
 import { IPixKeys } from '../../../general/interfaces/i-pix-keys';
+import { IDesenfila } from '../../desenfila/interfaces';
 import { INatipayCompany } from '../interfaces/i-company';
 import { NatiapyAddressEntity } from './address.entity';
 
@@ -11,8 +12,9 @@ export class NatipayCompanyEntity implements INatipayCompany {
   public country: string = 'BR';
   public createdAt: Date = new Date();
   public currency: string = 'BRL';
+  public desenfila: IDesenfila | null = null;
   public doc: string = '';
-  public docType: EIntDocType = EIntDocType.CNPJ;
+  public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
   public id: string = '';
   public imageUrl: string | null = null;
