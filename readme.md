@@ -1,6 +1,6 @@
 *Mude a versão do PACKAGE.JSON*
 
-Compilar:
+Compilar & publicar:
 
 npm run packagr
 npm run build

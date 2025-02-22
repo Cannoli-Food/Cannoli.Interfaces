@@ -5,7 +5,7 @@ import { IIFoodPrice } from './i-ifood-price';
 import { IIFoodSellingOptions } from './i-ifood-selling-options';
 import { IIFoodShifts } from './i-ifood-shifts';
 
-export interface IIFoodCategoryItems {
+export interface IIFoodCategoryItem {
   id: string;
   name: string;
   description: string;

@@ -8,5 +8,5 @@ export interface IIFoodOptionGroups {
   index: number;
   min: number;
   max: number;
-  options: IIFoodOptionGroupsOptions;
+  options: IIFoodOptionGroupsOptions[];
 }
