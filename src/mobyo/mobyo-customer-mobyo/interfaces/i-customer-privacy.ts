@@ -4,5 +4,6 @@ export interface IPrivacySetting {
   emailNotificationsPromo: boolean,
   whatsAppNotificationsPromo: boolean,
   smsNotificationsPromo: boolean,
-  acceptPrivayAndPolicyTerm: boolean
+  acceptPrivayAndPolicyTerm: boolean,
+  acceptPrivayAndPolicyTermAt: Date,
 }

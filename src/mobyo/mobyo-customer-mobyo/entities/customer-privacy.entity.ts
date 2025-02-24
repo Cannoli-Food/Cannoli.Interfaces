@@ -9,6 +9,7 @@ export class PrivacySettingEntity implements IPrivacySetting {
   public whatsAppNotificationsPromo: boolean = true;
   public smsNotificationsPromo: boolean = true;
   public acceptPrivayAndPolicyTerm: boolean = true;
+  public acceptPrivayAndPolicyTermAt: Date = new Date();
   // #endregion Properties (9)
 
   // #region Constructors (1)
