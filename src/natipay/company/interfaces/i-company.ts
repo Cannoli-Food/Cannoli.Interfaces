@@ -12,7 +12,6 @@ export interface INatipayCompany {
   country: string;
   createdAt: Date;
   currency: string;
-  desenfila: IDesenfila | null;
   doc: string;
   docType: EDocType;
   email: string;
@@ -21,6 +20,7 @@ export interface INatipayCompany {
   internationalCode: string;
   logoUrl: string | null;
   name: string;
+  natipay: IDesenfila | null;
 
   //Nome registrado legalmente
   paymentProvider: IPaymentProvider | null;

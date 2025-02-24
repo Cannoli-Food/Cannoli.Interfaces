@@ -12,7 +12,6 @@ export class NatipayCompanyEntity implements INatipayCompany {
   public country: string = 'BR';
   public createdAt: Date = new Date();
   public currency: string = 'BRL';
-  public desenfila: IDesenfila | null = null;
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
@@ -21,6 +20,7 @@ export class NatipayCompanyEntity implements INatipayCompany {
   public internationalCode: string = '55';
   public logoUrl: string | null = null;
   public name: string = '';
+  public natipay: IDesenfila | null = null;
   public paymentProvider: IPaymentProvider | null = null;
   public phoneNumber: string = '';
   public pixKeys: IPixKeys[] = [];
