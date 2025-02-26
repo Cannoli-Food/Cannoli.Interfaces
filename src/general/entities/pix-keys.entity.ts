@@ -1,8 +1,8 @@
 // src/models/base.entity.ts
 import { EPixKey } from '../enums';
-import { IPixKeys } from '../interfaces/i-pix-keys';
+import { IPixKey } from '../interfaces/i-pix-key';
 
-export class PixKeyEntity implements IPixKeys {
+export class PixKeyEntity implements IPixKey {
   public active: boolean = true;
   public createdAt: Date = new Date();
   public description: string = '';

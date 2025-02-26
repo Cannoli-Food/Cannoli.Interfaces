@@ -1,6 +1,6 @@
 import { EDocType } from '../../../general';
 import { IPaymentProvider } from '../../../general/interfaces/i-payment-provider';
-import { IPixKeys } from '../../../general/interfaces/i-pix-keys';
+import { IPixKey } from '../../../general/interfaces/i-pix-key';
 import { IDesenfila } from '../../desenfila/interfaces';
 import { INatipayAddress } from './i-address';
 
@@ -25,7 +25,7 @@ export interface INatipayCompany {
   //Nome registrado legalmente
   paymentProvider: IPaymentProvider | null;
   phoneNumber: string;
-  pixKeys: IPixKeys[];
+  pixKeys: IPixKey[];
   sandbox: boolean;
   shortName: string;
 

@@ -2,7 +2,7 @@
 
 import { EPixKey } from '../enums';
 
-export interface IPixKeys {
+export interface IPixKey {
   // #region Properties (7)
 
   active: boolean;
