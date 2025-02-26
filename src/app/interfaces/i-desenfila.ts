@@ -1,3 +1,4 @@
+import { EPixKeyTypes } from '../../company';
 import { IDesenfilaConfig } from './i-desenfila-config';
 import { IDesenfilaFee } from './i-desenfila-fee';
 import { IDesenfilaToken } from './i-desenfila-token';
@@ -14,5 +15,9 @@ export interface IDesenfila {
   fees: IDesenfilaFee[];
   config: IDesenfilaConfig | null;
 
+  pixKeyType: EPixKeyTypes;
+  pixKey: string;
+  docType: 'CPF' | 'CNPJ';
+  doc: string;
   // #endregion Properties (3)
 }
