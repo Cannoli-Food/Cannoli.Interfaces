@@ -1,3 +1,4 @@
+import { EPixKeyTypes } from '../../company';
 import { IDesenfila, IDesenfilaFee } from '../interfaces';
 import { DesenfilaConfigEntity } from './desenfila-config.entity';
 import { DesenfilaTokenEntity } from './desenfila-token.entity';
@@ -13,6 +14,10 @@ export class DesenfilaEntity implements IDesenfila {
   public goLive: boolean = false;
   public merchantId: string = '';
   public token: DesenfilaTokenEntity | null = null;
+  public pixKeyType: EPixKeyTypes = EPixKeyTypes.RANDOM_KEY;
+  public pixKey: string = '';
+  public docType: 'CPF' | 'CNPJ' = 'CPF';
+  public doc: string = '';
 
   // #endregion Properties (8)
 
