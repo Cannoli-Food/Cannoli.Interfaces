@@ -16,4 +16,5 @@ export * from './products';
 export * from './resume-companies';
 export * from './resume-queues';
 export * from './schedules';
+export * from './tabs';
 export * from './tokens';

@@ -4,24 +4,19 @@ import { DesenfilaConfigEntity } from './desenfila-config.entity';
 import { DesenfilaTokenEntity } from './desenfila-token.entity';
 
 export class DesenfilaEntity implements IDesenfila {
-  // #region Properties (8)
-
   public balance: number = 0;
   public blockedBalance: number = 0;
   public config: DesenfilaConfigEntity | null = null;
   public containerId: string = '';
+  public doc: string = '';
+  public docType: 'CPF' | 'CNPJ' = 'CPF';
   public fees: IDesenfilaFee[] = [];
   public goLive: boolean = false;
   public merchantId: string = '';
-  public token: DesenfilaTokenEntity | null = null;
-  public pixKeyType: EPixKeyTypes = EPixKeyTypes.RANDOM_KEY;
   public pixKey: string = '';
-  public docType: 'CPF' | 'CNPJ' = 'CPF';
-  public doc: string = '';
-
-  // #endregion Properties (8)
-
-  // #region Constructors (1)
+  public pixKeyType: EPixKeyTypes = EPixKeyTypes.RANDOM_KEY;
+  public provider: 'FIREBANKING' | 'NATIPAY' = 'NATIPAY';
+  public token: DesenfilaTokenEntity | null = null;
 
   constructor(data?: Partial<DesenfilaEntity>) {
     if (data) {
@@ -32,6 +27,4 @@ export class DesenfilaEntity implements IDesenfila {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }

@@ -14,7 +14,7 @@ export interface IDesenfila {
   goLive: boolean;
   fees: IDesenfilaFee[];
   config: IDesenfilaConfig | null;
-
+  provider: 'FIREBANKING' | 'NATIPAY';
   pixKeyType: EPixKeyTypes;
   pixKey: string;
   docType: 'CPF' | 'CNPJ';
