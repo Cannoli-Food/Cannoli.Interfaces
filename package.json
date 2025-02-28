@@ -1,7 +1,7 @@
 {
-    "name": "cecon-interfaces",
-    "version": "1.7.29",
-    "description": "Interfaces de Projetos Cecon",
+    "name": "mobyo-interfaces",
+    "version": "1.0.0",
+    "description": "Interfaces de Projetos Mobyo",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "private": false,
@@ -13,21 +13,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/markcecon/cecon-interfaces.git"
+        "url": "git+https://github.com/Mobyo/mobyo-interfaces.git"
     },
     "keywords": [
         "interfaces",
         "models",
         "pacotes",
         "types",
-        "cecon"
+        "mobyo"
     ],
-    "author": "Mark Cecon",
+    "author": "Mobyo",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/markcecon/cecon-interfaces/issues"
+        "url": "https://github.com/Mobyo/mobyo-interfaces/issues"
     },
-    "homepage": "https://github.com/markcecon/cecon-interfaces#readme",
+    "homepage": "https://github.com/Mobyo/mobyo-interfaces#readme",
     "devDependencies": {
         "ng-packagr": "^16.2.0"
     }
