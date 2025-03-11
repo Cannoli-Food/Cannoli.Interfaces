@@ -27,3 +27,4 @@ export { PixKeyEntity } from './pix-keys.entity';
 export { QueryEntity } from './query.entity';
 export { RatingEntity } from './rating.entity';
 export { SponsorshipValueEntity } from './sponsorship-value.entity';
+export { BaseCompanyEntity } from './base-company.entity';

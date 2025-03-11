@@ -28,3 +28,4 @@ export { IPaymentWallet } from './i-payment-wallet';
 export { IQuery } from './i-query';
 export { IRating } from './i-rating';
 export { ISponsorshipValue } from './i-sponsorship-value';
+export { IBaseCompany } from './i-base-company';
