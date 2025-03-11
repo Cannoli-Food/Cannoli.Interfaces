@@ -1,7 +1,6 @@
 // index.ts
 
 export { IAddress } from './i-address';
-export { IBase } from './i-base';
 export { ICarouselImage } from './i-carousel-image';
 export { ICoords } from './i-coords';
 export { ICustomVariable } from './i-custom-variable';

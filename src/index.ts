@@ -5,7 +5,6 @@ export * from './billing-order';
 export * from './bluesoft';
 export * from './clients';
 export * from './company';
-export * from './container';
 export * from './customer';
 export * from './customer-member';
 export * from './desenfila-merchant';

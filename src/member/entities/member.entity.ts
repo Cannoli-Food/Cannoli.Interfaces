@@ -1,11 +1,13 @@
-import { BaseEntity } from '../../general';
 import { EMemberRules, EMemberType } from '../enums';
 import { IMember } from '../interfaces';
 
-export class MemberEntity extends BaseEntity implements IMember {
-  // #region Properties (17)
-
+export class MemberEntity implements IMember {
   public active: boolean = true;
+  public companyId: string = '';
+  public containerId: string = '';
+  public createdAt: Date = new Date();
+  public id: string = '';
+  public updatedAt: Date = new Date();
   public companyName: string = '';
   public containerName: string = '';
   public email: string = '';
@@ -23,17 +25,13 @@ export class MemberEntity extends BaseEntity implements IMember {
   public rule: EMemberRules = EMemberRules.USER;
   public tags: string[] = [];
   public type: EMemberType | null = EMemberType.CLIENT;
+
   /**
    * @deprecated Use `id` instead.
    */
   public uid: string = '';
 
-  // #endregion Properties (17)
-
-  // #region Constructors (1)
-
   constructor(data?: Partial<MemberEntity>) {
-    super(data);
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
@@ -42,6 +40,4 @@ export class MemberEntity extends BaseEntity implements IMember {
       }
     }
   }
-
-  // #endregion Constructors (1)
 }
