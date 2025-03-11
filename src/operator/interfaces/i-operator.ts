@@ -1,8 +1,7 @@
-import { IBase, IBaseCompany } from '../../general';
+import { IBaseCompany } from '../../general';
 
 export interface IOperator {
   // #region Properties (9)
-
   active: boolean;
   id: string;
   companies: IBaseCompany[];

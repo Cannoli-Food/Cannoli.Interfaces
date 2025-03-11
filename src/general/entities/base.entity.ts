@@ -1,8 +1,4 @@
-// src/models/base.entity.ts
-
-import { IBase } from "../interfaces";
-
-export class BaseEntity implements IBase {
+export class BaseEntity {
     // #region Properties (6)
 
     public active: boolean = true;

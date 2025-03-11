@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 export interface IBase {
     // #region Properties (7)
 

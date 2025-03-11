@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 import { IDesenfilaInfo } from "../interfaces";
 
 export class DesenfilaInfoEntity implements IDesenfilaInfo {

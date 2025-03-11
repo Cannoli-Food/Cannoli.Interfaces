@@ -1,4 +1,3 @@
-// src/models/base.entity.ts
 import { EMemberRules, EMemberType } from "../../member";
 import { IBaseCompany } from "../interfaces";
 

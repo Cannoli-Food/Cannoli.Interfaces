@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 import { IInfo } from '../interfaces';
 
 export class InfoEntity implements IInfo {

@@ -1,4 +1,3 @@
-// src/models/base.entity.ts
 import { EPixKey } from '../enums';
 import { IPixKey } from '../interfaces/i-pix-key';
 
