@@ -1,5 +1,5 @@
 import { BaseEntity } from '../../general';
-import { MemberRulesEnum, MemberTypeEnum } from '../enums';
+import { EMemberRules, EMemberType } from '../enums';
 import { IMember } from '../interfaces';
 
 export class MemberEntity extends BaseEntity implements IMember {
@@ -20,9 +20,9 @@ export class MemberEntity extends BaseEntity implements IMember {
    * @deprecated Use `imageUrl` instead
    */
   public photoUrl: string | null = '';
-  public rule: MemberRulesEnum = MemberRulesEnum.USER;
+  public rule: EMemberRules = EMemberRules.USER;
   public tags: string[] = [];
-  public type: MemberTypeEnum | null = MemberTypeEnum.CLIENT;
+  public type: EMemberType | null = EMemberType.CLIENT;
   /**
    * @deprecated Use `id` instead.
    */
@@ -42,7 +42,6 @@ export class MemberEntity extends BaseEntity implements IMember {
       }
     }
   }
-  developerId: string | null;
 
   // #endregion Constructors (1)
 }
