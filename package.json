@@ -1,7 +1,7 @@
 {
     "name": "cannoli-interfaces",
     "version": "1.0.0",
-    "description": "Interfaces de Projetos Mobyo",
+    "description": "Interfaces de Projetos Cannoli",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "private": false,
