@@ -1,6 +1,6 @@
 {
-    "name": "mobyo-interfaces",
-    "version": "1.0.4",
+    "name": "cannoli-interfaces",
+    "version": "1.0.0",
     "description": "Interfaces de Projetos Mobyo",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -13,21 +13,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Mobyo/mobyo-interfaces.git"
+        "url": "git+https://github.com/Cannoli-Food/cannoli-interfaces.git"
     },
     "keywords": [
         "interfaces",
         "models",
         "pacotes",
         "types",
-        "mobyo"
+        "cannoli"
     ],
     "author": "Mobyo",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Mobyo/mobyo-interfaces/issues"
+        "url": "https://github.com/Cannoli-Food/cannoli-interfaces/issues"
     },
-    "homepage": "https://github.com/Mobyo/mobyo-interfaces#readme",
+    "homepage": "https://github.com/Cannoli-Food/cannoli-interfaces#readme",
     "devDependencies": {
         "ng-packagr": "^16.2.0"
     }
