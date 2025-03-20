@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 export interface IPaymentTokenData {
     // #region Properties (7)
 

@@ -1,0 +1,1 @@
+export { OperatorEntity } from './operator.entity';

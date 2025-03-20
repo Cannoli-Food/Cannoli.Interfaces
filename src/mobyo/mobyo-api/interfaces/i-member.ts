@@ -1,4 +1,4 @@
-import { EMemberRules } from '../enum/member-rules.enum';
+import { EMemberRules } from '../../../member';
 import { IEntity } from './i-entity';
 
 export interface IMember extends IEntity {

@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 export class BaseEntity {
     // #region Properties (6)
 

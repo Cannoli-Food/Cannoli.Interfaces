@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 import { IPaymentTokenData } from './i-payment-token-data';
 
 

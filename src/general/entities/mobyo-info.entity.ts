@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 import { IMobyoInfo } from '../interfaces';
 
 export class MobyoInfoEntity implements IMobyoInfo {

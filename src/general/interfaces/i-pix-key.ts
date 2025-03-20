@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 import { EPixKey } from '../enums';
 
 export interface IPixKey {

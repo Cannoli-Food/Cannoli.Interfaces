@@ -8,7 +8,6 @@ export { EDeviceScreenMode as MobyoEDeviceScreenMode } from './device-screen-mod
 export { EDeviceTefType as MobyoEDeviceTefType } from './device-tef-type.enum';
 export { EEngineType as MobyoEEngineType } from './engine-type.enum';
 export { EIuguInvoicesStatus as MobyoEIuguInvoicesStatus } from './iugu-invoices-status.enum';
-export { EMemberRules as MobyoEMemberRules } from './member-rules.enum';
 export { EOrderCancelReasons as MobyoEOrderCancelReasons } from './order-cancel-reasons.enum';
 export { EOrderDeliveredBy as MobyoEOrderDeliveredBy } from './order-delivered-by.enum';
 export { EOrderOccurrenceType as MobyoEOrderOccurrenceType } from './order-occurrence-type.enum';

@@ -1,5 +1,3 @@
-// src/models/base.entity.ts
-
 export interface ICustomVariable {
   // #region Properties (2)
 

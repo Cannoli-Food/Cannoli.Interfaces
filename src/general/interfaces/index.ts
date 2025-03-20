@@ -1,7 +1,6 @@
 // index.ts
 
 export { IAddress } from './i-address';
-export { IBase } from './i-base';
 export { ICarouselImage } from './i-carousel-image';
 export { ICoords } from './i-coords';
 export { ICustomVariable } from './i-custom-variable';
@@ -28,3 +27,4 @@ export { IPaymentWallet } from './i-payment-wallet';
 export { IQuery } from './i-query';
 export { IRating } from './i-rating';
 export { ISponsorshipValue } from './i-sponsorship-value';
+export { IBaseCompany } from './i-base-company';
