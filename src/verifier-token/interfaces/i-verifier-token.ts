@@ -1,8 +1,9 @@
 export interface IVerifierToken {
   // #region Properties (8)
 
-  createdAt: number;
-  expiresAt: number;
+  createdAt: Date | number;
+  updatedAt: Date | number;
+  expiresAt: Date | number;
   id: string;
   receiver: string;
   message: string;

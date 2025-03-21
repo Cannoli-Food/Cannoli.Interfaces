@@ -5,6 +5,7 @@ export class VerifierTokenEntity implements IVerifierToken {
 
   public appId: string | null = null;
   public createdAt: number = Date.now();
+  public updatedAt: number = Date.now();
   public expiresAt: number = Date.now() + 1000 * 60 * 30;
   public id: string = '';
   public message: string = '';
