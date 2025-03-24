@@ -1,6 +1,6 @@
 {
     "name": "cannoli-interfaces",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Interfaces de Projetos Cannoli",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
         "types",
         "cannoli"
     ],
-    "author": "Mobyo",
+    "author": "Cannoli",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Cannoli-Food/cannoli-interfaces/issues"
