@@ -1,6 +1,8 @@
 export { EIFoodCatalogContext } from './ifood-catalog-context.enum';
+export { EIFoodDayOfWeek } from './ifood-day-of-week.enum';
 export { EIFoodDietaryRestrictions } from './ifood-dietary-restrictions.enum';
 export { EIFoodEventCodes } from './ifood-event-codes.enum';
+export { EIFoodMerchantStatusState } from './ifood-merchant-status-state.enum';
 export { EIFoodOrderDeliveryDelilveredBy } from './ifood-order-delivery-delivered-by.enum';
 export { EIFoodOrderDeliveryMode } from './ifood-order-delivery-mode.enum';
 export { EIFoodOrderIndoorMode } from './ifood-order-indoor-mode.enum';
@@ -12,5 +14,3 @@ export { EIFoodPickingReplacementOptions } from './ifood-picking-replacement-opt
 export { EIFoodSellingOptions } from './ifood-selling-options.enum';
 export { EIFoodServing } from './ifood-serving.enum';
 export { EIFoodUnit } from './ifood-unit.enum';
-export { EIFoodDayOfWeek } from './ifood-day-of-week.enum';
-

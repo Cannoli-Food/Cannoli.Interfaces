@@ -18,7 +18,6 @@ export interface IOrderDeliveryV3 {
   id?: string;
   coords?: ICoords | null;
   pickupCode?: string;
-  pickupCodeVerified?: boolean;
 
   // #endregion Properties (8)
 }
