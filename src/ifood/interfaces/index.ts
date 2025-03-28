@@ -11,6 +11,10 @@ export { IIFoodCategoryPizzaToppings } from './i-ifood-category-pizza-toppings';
 
 export { IIFoodClient } from './i-ifood-client';
 export { IIFoodEvent } from './i-ifood-event';
+export { IIFoodMerchantInterruption } from './i-ifood-merchant-interruption';
+export { IIFoodMerchantOpeningHours } from './i-ifood-merchant-opening-hours';
+export { IIFoodMerchantShifts } from './i-ifood-merchant-shifts'
+
 export { IIFoodMerchant } from './i-ifood-merchant';
 
 export { IIFoodOptionGroups } from './i-ifood-option-groups';

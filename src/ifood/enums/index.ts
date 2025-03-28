@@ -12,3 +12,5 @@ export { EIFoodPickingReplacementOptions } from './ifood-picking-replacement-opt
 export { EIFoodSellingOptions } from './ifood-selling-options.enum';
 export { EIFoodServing } from './ifood-serving.enum';
 export { EIFoodUnit } from './ifood-unit.enum';
+export { EIFoodDayOfWeek } from './ifood-day-of-week.enum';
+
