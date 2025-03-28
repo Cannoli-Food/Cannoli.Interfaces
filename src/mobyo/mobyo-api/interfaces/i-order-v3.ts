@@ -24,27 +24,18 @@ export interface IOrderV3 {
   actions: IOrderActionV3[];
   benefits: IOrderBenefits[];
   cancellation: IOrderCancellationV3;
-
   companyId: string;
-
   containerId: string;
-
   createdAt: Date;
   customer: IOrderCustomerV3;
   deliverer: IOrderDelivererV3;
   delivery: IOrderDeliveryV3;
   desenfila?: IOrderDesenfilaV3;
-
   displayId: string;
-
   engineId: string;
-
   engineName: string;
-
   engineType: EEngineType;
-
   extraInfo: EOrderExtraInfo | string | null;
-
   id: string;
   indoor: IOrderIndoorV3;
 
