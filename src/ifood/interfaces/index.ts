@@ -10,6 +10,7 @@ export { IIFoodCategoryPizzaSizes } from './i-ifood-category-pizza-sizes';
 export { IIFoodCategoryPizzaToppings } from './i-ifood-category-pizza-toppings';
 
 export { IIFoodClient } from './i-ifood-client';
+export { IIFoodEvent } from './i-ifood-event';
 export { IIFoodMerchant } from './i-ifood-merchant';
 
 export { IIFoodOptionGroups } from './i-ifood-option-groups';

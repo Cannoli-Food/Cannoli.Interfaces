@@ -1,5 +1,6 @@
 export { EIFoodCatalogContext } from './ifood-catalog-context.enum';
 export { EIFoodDietaryRestrictions } from './ifood-dietary-restrictions.enum';
+export { EIFoodEventCodes } from './ifood-event-codes.enum';
 export { EIFoodOrderDeliveryDelilveredBy } from './ifood-order-delivery-delivered-by.enum';
 export { EIFoodOrderDeliveryMode } from './ifood-order-delivery-mode.enum';
 export { EIFoodOrderIndoorMode } from './ifood-order-indoor-mode.enum';
