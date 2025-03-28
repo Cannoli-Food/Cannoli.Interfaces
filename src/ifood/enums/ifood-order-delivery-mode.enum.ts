@@ -1,0 +1,7 @@
+export enum EIFoodOrderDeliveryMode {
+  PRIORITY = 'PRIORITY',
+  TURBO = 'TURBO',
+  HIGH_DENSITY = 'HIGH_DENSITY',
+  DEFAULT = 'DEFAULT',
+  EXPRESS = 'EXPRESS',
+}
