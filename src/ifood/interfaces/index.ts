@@ -12,9 +12,18 @@ export { IIFoodCategoryPizzaToppings } from './i-ifood-category-pizza-toppings';
 export { IIFoodClient } from './i-ifood-client';
 export { IIFoodEvent } from './i-ifood-event';
 
+export { IIFoodHandshakeAlternatives } from './i-ifood-handshake-alternatives';
+export { IIFoodHandshakeAmount } from './i-ifood-handshake-amount';
+export { IIFoodHandshakeDisputeMetadataGarnishItem } from './i-ifood-handshake-dispute-metadata-garnish-item';
+export { IIFoodHandshakeDisputeMetadataItem } from './i-ifood-handshake-dispute-metadata-item';
+export { IIFoodHandshakeDispute } from './i-ifood-handshake-dispute';
+export { IIFoodHandshakeMedia } from './i-ifood-handshake-media';
+export { IIFoodHandshake } from './i-ifood-handshake-response';
+export { IIFoodHandshakeSelectedAlternatives } from './i-ifood-handshake-selected-alternatives';
+
 export { IIFoodMerchantInterruption } from './i-ifood-merchant-interruption';
 export { IIFoodMerchantOpeningHours } from './i-ifood-merchant-opening-hours';
-export { IIFoodMerchantShifts } from './i-ifood-merchant-shifts'
+export { IIFoodMerchantShifts } from './i-ifood-merchant-shifts';
 export { IIFoodMerchantStatusMessage } from './i-ifood-merchant-status-message';
 export { IIFoodMerchantStatusReopenable } from './i-ifood-merchant-status-reopenable';
 export { IIFoodMerchantStatusValidation } from './i-ifood-merchant-status-validation';
