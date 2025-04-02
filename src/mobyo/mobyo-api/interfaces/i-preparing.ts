@@ -1,9 +1,7 @@
 import { EEngineType } from '../enum/engine-type.enum';
 import { IEntity } from './i-entity';
-import { IOrderV3 } from './i-order-v3';
 import { IPrintInfo } from './i-print-info';
-import { IProduct } from './i-product';
-import { IProductionPlace } from './i-production-place';
+
 export interface IPreparing extends IEntity {
     // #region Properties (15)
 

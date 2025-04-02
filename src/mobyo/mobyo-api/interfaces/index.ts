@@ -94,7 +94,7 @@ export {
 export { IOrderPaymentV3 as MobyoIOrderPaymentV3 } from './i-order-payment-v3';
 export { IOrderTakeoutV3 as MobyoIOrderTakeoutV3 } from './i-order-takeout-v3';
 export { IOrderTotalV3 as MobyoIOrderTotalV3 } from './i-order-total-v3';
-export { IOrderV3 as MobyoIOrderV3 } from './i-order-v3';
+export { IOrderV3 } from './i-order-v3';
 export { IPartner as MobyoIPartner } from './i-partner';
 export { IPaymentMethod as MobyoIPaymentMethod } from './i-payment-method';
 export { IPoint as MobyoIPoint } from './i-point';

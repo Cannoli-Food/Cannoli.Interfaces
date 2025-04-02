@@ -36,6 +36,7 @@ export interface IOrderV3 {
   engineName: string;
   engineType: EEngineType;
   extraInfo: EOrderExtraInfo | string | null;
+  handshake: any;
   id: string;
   indoor: IOrderIndoorV3;
 
