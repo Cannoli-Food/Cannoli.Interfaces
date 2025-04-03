@@ -1,4 +1,4 @@
-import { EFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
+import { EFrom, IDesenfilaInfo, IInfo, ICannoliInfo } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransactionBalance } from './i-balance';
 import { IFeeDetail } from './i-fee-detail';
@@ -23,7 +23,7 @@ export interface ITransaction {
   id: string;
   installments: number;
   liveMode: boolean;
-  mobyoInfo: IMobyoInfo | null;
+  cannoliInfo: ICannoliInfo | null;
   moneyReleaseDate: Date | null;
   moneyReleaseStatus: EReleaseStatus;
   natiInfo: IInfo | null;
@@ -31,7 +31,7 @@ export interface ITransaction {
   paymentMethod: ITransactionPaymentMethod | null;
   paymentMethodId: EPaymentMethodId;
   posId: string;
-  referenceId: 'goLive' | 'engine_mobyo_fee' | 'withdraw' | string;
+  referenceId: 'goLive' | 'engine_cannoli_fee' | 'withdraw' | string;
   resumeVersion: string;
   stamped: string | null;
   status: EMpStatus;

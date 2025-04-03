@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, IDesenfilaInfo, IInfo, ICannoliInfo, InfoEntity, CannoliInfoEntity } from '../../general';
 import { IInvoicePix } from '../../invoice';
 import { EWithdrawRequestStatus } from '../../withdraw/enums';
 import { ITransferRequest } from '../interfaces/i-transfer-request';
@@ -21,7 +21,7 @@ export class TransferRequestEntity implements ITransferRequest {
   public naiRefId: string = '';
   public pix: IInvoicePix | null = null;
   public natiInfo: IInfo = new InfoEntity();
-  public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
+  public cannoliInfo: ICannoliInfo = new CannoliInfoEntity();
   public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
 
   constructor(data?: Partial<TransferRequestEntity>) {

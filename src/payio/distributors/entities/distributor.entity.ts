@@ -1,5 +1,5 @@
 import { EDocType } from '../../../general';
-import { IAction } from '../../../mobyo/mobyo-api/interfaces/action.interface';
+import { IAction } from '../../../cannoli/cannoli-api/interfaces/action.interface';
 import { PayioAddressEntity } from '../../company';
 import { EPayioDistributorStatus } from '../enums';
 import { IPayioDistributor } from '../interfaces';

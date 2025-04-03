@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, EFrom, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, EFrom, IDesenfilaInfo, IInfo, ICannoliInfo, InfoEntity, CannoliInfoEntity } from '../../general';
 import { IGlobalSettingNatiPay } from '../interfaces';
 
 export class GlobalSettingNatiPayEntity implements IGlobalSettingNatiPay {
@@ -7,13 +7,13 @@ export class GlobalSettingNatiPayEntity implements IGlobalSettingNatiPay {
   public info: {
     natiInfo: IInfo;
     desenfilaInfo: IDesenfilaInfo;
-    mobyoInfo: IMobyoInfo;
+    cannoliInfo: ICannoliInfo;
     userName: EFrom.NATIPAY;
     email: string;
   } = {
     natiInfo: new InfoEntity(),
     desenfilaInfo: new DesenfilaInfoEntity(),
-    mobyoInfo: new MobyoInfoEntity(),
+    cannoliInfo: new CannoliInfoEntity(),
     userName: EFrom.NATIPAY,
     email: '',
   };

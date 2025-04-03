@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, EFrom, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, EFrom, IDesenfilaInfo, IInfo, ICannoliInfo, InfoEntity, CannoliInfoEntity } from '../../general';
 import { EMpStatus, EMpStatusDetail, EOperationType, EPaymentMethodId, EReleaseStatus, ETransactionStatus } from '../enums';
 import { ITransaction } from '../interfaces';
 import { FeeDetailEntity } from './fee-detail.entity';
@@ -24,7 +24,7 @@ export class TransactionEntity implements ITransaction {
   public id: string = '';
   public installments: number = 0;
   public liveMode: boolean = true;
-  public mobyoInfo: IMobyoInfo | null = new MobyoInfoEntity();
+  public cannoliInfo: ICannoliInfo | null = new CannoliInfoEntity();
   public moneyReleaseDate: Date | null = null;
   public moneyReleaseStatus: EReleaseStatus = EReleaseStatus.PENDING;
   public natiInfo: IInfo | null = new InfoEntity();

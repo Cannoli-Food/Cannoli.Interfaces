@@ -32,7 +32,7 @@ export * from './master';
 export * from './meli';
 export * from './member';
 export * from './member-access';
-export * from './mobyo';
+export * from './cannoli';
 export * from './monitor';
 export * from './mottu';
 export * from './nati-v1';

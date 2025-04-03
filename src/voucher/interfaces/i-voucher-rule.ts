@@ -1,4 +1,4 @@
-import { IMenuScheduleV2 } from '../../mobyo/mobyo-api/interfaces/i-menu-schedule-v2';
+import { IMenuScheduleV2 } from '../../cannoli/cannoli-api/interfaces/i-menu-schedule-v2';
 import { EVoucherRuleType } from '../enums/rule-types.enum';
 
 export interface IVoucherRule {

@@ -4,7 +4,7 @@ import {
   IDeliveryArea,
   IDeliveryAreaFixed,
   IMessagerChannel,
-  IMobyoApiConfig,
+  ICannoliApiConfig,
   IOrigin,
   IPaymentProvider,
 } from '../../general';
@@ -21,7 +21,7 @@ export interface ICompany {
   active: boolean;
   address: IAddress;
   bgImageUrl: string | null;
-  config: IMobyoApiConfig | null;
+  config: ICannoliApiConfig | null;
   contacts: ICompanyContact[];
   containerId: string;
   createdAt: Date;

@@ -1,4 +1,4 @@
-import { IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
+import { IDesenfilaInfo, IInfo, ICannoliInfo } from '../../general';
 import { IInvoicePix } from '../../invoice';
 import { EWithdrawRequestStatus } from '../../withdraw/enums';
 
@@ -15,6 +15,6 @@ export interface ITransferRequest {
   updatedAt: Date;
   pix: IInvoicePix | null;
   natiInfo: IInfo;
-  mobyoInfo: IMobyoInfo;
+  cannoliInfo: ICannoliInfo;
   desenfilaInfo: IDesenfilaInfo;
 }

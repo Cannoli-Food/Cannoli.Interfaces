@@ -1,11 +1,11 @@
-import { EFrom, IDesenfilaInfo, IInfo, IMobyoInfo } from '../../general';
+import { EFrom, IDesenfilaInfo, IInfo, ICannoliInfo } from '../../general';
 
 export interface IGlobalSettingNatiPay {
   id: string;
   info: {
     natiInfo: IInfo;
     desenfilaInfo: IDesenfilaInfo;
-    mobyoInfo: IMobyoInfo;
+    cannoliInfo: ICannoliInfo;
     userName: EFrom.NATIPAY;
     email: string;
   };

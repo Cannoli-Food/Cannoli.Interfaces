@@ -5,6 +5,6 @@ export enum EPlanIdentifier {
   NATI_WA = 'NATI-WA',
   NATI = 'NATI-V1',
   NATI_CHEF = 'NATI_CHEF',
-  MOBYO = 'MOBYO',
+  CANNOLI = 'CANNOLI',
   NOTAPP = 'NOTAPP',
 }

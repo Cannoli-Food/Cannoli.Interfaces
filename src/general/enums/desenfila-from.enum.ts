@@ -5,6 +5,6 @@ export enum EFrom {
   PAYIO = 'PAYIO',
   DESENFILA = 'DESENFILA',
   NATIST = 'NATIST',
-  MOBYO = 'MOBYO',
+  CANNOLI = 'CANNOLI',
   DEFAULT = 'DEFAULT', // outras fontes não mapeadas
 }

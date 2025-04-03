@@ -3,7 +3,7 @@ import { AddressEntity } from '../../general/entities/address.entity';
 import { DeliveryAreaEntity } from '../../general/entities/delivery-area.entity';
 import { DeliveryAreaFixedEntity } from '../../general/entities/dellivery-area-fixed.entity';
 import { MessagerChannelEntity } from '../../general/entities/messager-channel.entity';
-import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.entity';
+import { CannoliApiConfigEntity } from '../../general/entities/cannoli-apiconfig.entity';
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
 import { IInstallation } from '../../installation';
@@ -18,7 +18,7 @@ export class CompanyEntity implements ICompany {
   public active: boolean = false;
   public address: AddressEntity = new AddressEntity();
   public bgImageUrl: string | null = null;
-  public config: MobyoApiConfigEntity | null = null;
+  public config: CannoliApiConfigEntity | null = null;
   public contacts: ICompanyContact[] = [];
   public containerId: string = '';
   public createdAt: Date = new Date();

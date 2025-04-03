@@ -1,11 +1,11 @@
-import { EDiscountType, IInfo, IMobyoInfo } from '../../general';
+import { EDiscountType, IInfo, ICannoliInfo } from '../../general';
 import { EVoucherStatus } from '../enums';
 import { EVoucherTargetTypes } from '../enums/target-types.enum';
 import { IVoucherRule } from './i-voucher-rule';
 import { IVoucherSponsorship } from './i-voucher-sponsorship';
 
 export interface IVoucher {
-  info: IMobyoInfo | IInfo;
+  info: ICannoliInfo | IInfo;
   concludedAt: Date | null;
   createdAt: Date;
   id: string;

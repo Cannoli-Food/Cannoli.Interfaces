@@ -1,4 +1,4 @@
-import { DesenfilaInfoEntity, IDesenfilaInfo, IInfo, IMobyoInfo, InfoEntity, MobyoInfoEntity } from '../../general';
+import { DesenfilaInfoEntity, IDesenfilaInfo, IInfo, ICannoliInfo, InfoEntity, CannoliInfoEntity } from '../../general';
 import { EWithdrawRequestStatus } from '../enums';
 import { IWithdrawRequest } from '../interfaces/i-withdraw-request';
 
@@ -15,7 +15,7 @@ export class WithDrawRequestEntity implements IWithdrawRequest {
   public transferDocumentUrl: string | null = null;
   public updatedAt: Date = new Date();
   public natiInfo: IInfo = new InfoEntity();
-  public mobyoInfo: IMobyoInfo = new MobyoInfoEntity();
+  public cannoliInfo: ICannoliInfo = new CannoliInfoEntity();
   public desenfilaInfo: IDesenfilaInfo = new DesenfilaInfoEntity();
   public name: string = '';
   public refusalReason: string | null = null;

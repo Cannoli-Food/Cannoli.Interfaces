@@ -22,7 +22,7 @@ export enum ECollectionsTypes {
   Master = 'master',
   Member = 'member',
   MemberAccess = 'member-access',
-  Mobyo = 'mobyo',
+  Cannoli = 'cannoli',
   Order = 'order',
   Partner = 'partner',
   Plan = 'plan',

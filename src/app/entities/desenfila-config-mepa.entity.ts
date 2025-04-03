@@ -6,7 +6,7 @@ export class DesenfilaConfigMercadoPagoEntity implements IDesenfilaConfigMercado
   public active: boolean = false;
   public automationFee: number = 0;
   public fee: number = 0;
-  public mobyoFee: number = 0;
+  public cannoliFee: number = 0;
 
   // #endregion Properties (4)
 

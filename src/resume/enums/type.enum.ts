@@ -5,7 +5,7 @@ export enum EResumeType
     NATIPAY = 'NATIPAY',
     DESENFILA = 'DESENFILA',
     NATIST = 'NATIST',
-    MOBYO = 'MOBYO',
+    CANNOLI = 'CANNOLI',
     DEFAULT = 'DEFAULT' // outras fontes não mapeadas
   }
   
