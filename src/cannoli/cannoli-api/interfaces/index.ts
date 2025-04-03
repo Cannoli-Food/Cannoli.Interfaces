@@ -94,7 +94,7 @@ export {
 export { IOrderPaymentV3 as CannoliIOrderPaymentV3 } from './i-order-payment-v3';
 export { IOrderTakeoutV3 as CannoliIOrderTakeoutV3 } from './i-order-takeout-v3';
 export { IOrderTotalV3 as CannoliIOrderTotalV3 } from './i-order-total-v3';
-export { IOrderV3 } from './i-order-v3';
+export { IOrderV3 as CannoliIOrderV3 } from './i-order-v3';
 export { IPartner as CannoliIPartner } from './i-partner';
 export { IPaymentMethod as CannoliIPaymentMethod } from './i-payment-method';
 export { IPoint as CannoliIPoint } from './i-point';
