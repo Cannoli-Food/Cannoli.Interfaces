@@ -1,0 +1,1 @@
+export { NotifyEntity } from './notify.entity'

@@ -39,6 +39,7 @@ export * from './nati-v1';
 export * from './nati-v2';
 export * from './natipay';
 export * from './notification';
+export * from './notify-queue';
 export * from './operator';
 export * from './order';
 export * from './partner';

@@ -1,0 +1,1 @@
+export { INotify } from './i-notify'
