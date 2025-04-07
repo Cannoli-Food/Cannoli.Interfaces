@@ -1,4 +1,4 @@
-import { CannoliETopics } from 'src/cannoli';
+import { CannoliETopics } from "../../cannoli";
 
 export interface INotify {
   active?: boolean;

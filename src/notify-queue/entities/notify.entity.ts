@@ -1,4 +1,4 @@
-import { CannoliETopics } from 'src/cannoli';
+import { CannoliETopics } from '../../cannoli';
 import { INotify } from '../interfaces';
 
 export class NotifyEntity implements INotify {
