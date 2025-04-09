@@ -6,12 +6,12 @@ export interface INotify {
   containerId: string;
   createdAt: Date | number;
   data: any;
-  eventId: string;
+  eventId: string,
   id: string;
   notified: boolean;
   notifiedAt: number | null;
   topic: CannoliETopics;
-  topicId?: string;
+  topicId: string;
   updatedAt: Date | number;
   version?: string;
 }

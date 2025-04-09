@@ -6,23 +6,23 @@ export class NotifyEntity implements INotify {
   companyId: string = '';
   containerId: string = '';
   createdAt: number | Date = new Date();
-  data: any;
-  eventId: string = '';
+  data: any = {};
+  eventId: string;
   id: string = '';
   notified: boolean = false;
   notifiedAt: number | null = 0;
   topic: CannoliETopics = CannoliETopics.orderStatusChanged;
-  topicId?: string = '';
+  topicId: string;
   updatedAt: number | Date = 0;
   version?: string;
 
   constructor(data?: Partial<NotifyEntity>) {
     if (data) {
-      for (let key in data) {
-        if (data.hasOwnProperty(key) && key in this) {
+      Object.keys(data).forEach((key) => {
+        if (key in this) {
           (this as any)[key] = (data as any)[key];
         }
-      }
+      });
     }
   }
 }
