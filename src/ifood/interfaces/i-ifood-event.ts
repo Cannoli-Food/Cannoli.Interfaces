@@ -6,7 +6,7 @@ export interface IIFoodEvent {
   fullCode: string;
   orderId: string;
   merchantId: string;
-  createdA: string | Date;
+  createdAt: string | Date;
   /**
    * Canal de vendas pelo qual o pedido entra na plataforma 
    * (novos canais podem ser adicionados). Possíveis valores: 

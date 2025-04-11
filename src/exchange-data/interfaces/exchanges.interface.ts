@@ -3,7 +3,7 @@ export interface IExchange {
 
   batchId: string | null;
   collectedAt: Date;
-  createAt: Date;
+  createdAt: Date;
   symbol: string;
   id: string;
   name: string;

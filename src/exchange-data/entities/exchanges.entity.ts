@@ -5,7 +5,7 @@ export class ExchangeEntity implements IExchange {
 
   public batchId: string | null = null;
   public collectedAt: Date = new Date();
-  public createAt: Date = new Date();
+  public createdAt: Date = new Date();
   public id: string = '';
   public name: string = '';
   public price: number = 0;
