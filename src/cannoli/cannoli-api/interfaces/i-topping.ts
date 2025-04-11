@@ -4,7 +4,7 @@ import { IProductBase } from "./product-interface";
 export interface ITopping extends IProductBase {
     code: string;
     price: number;
-    measure: string;
+    unit: string;
     name: string;
     category: IProductCategory;
 }

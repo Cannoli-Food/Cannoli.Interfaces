@@ -16,7 +16,7 @@ export interface IProduct extends IProductBase {
 
     name: string;
     code: string;
-    measure: string;
+    unit: string;
     imageURL: string;
     skill: 'SIMPLE' | 'PARENT' | 'CHILD' | 'INPUT' | 'TOPPING' | 'BLEND';
     containerId: string;

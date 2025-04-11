@@ -11,7 +11,7 @@ export class NatiV1CartItemEntity implements INatiV1CartItem {
   public isDelivery: boolean = false;
   public isNew: boolean = false;
   public linkItemId: number = 0;
-  public measure: string = '';
+  public unit: string = '';
   public observations: string = '';
   public personId: number = 0;
   public picture: string | null | undefined = undefined;

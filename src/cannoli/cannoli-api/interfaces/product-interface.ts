@@ -3,7 +3,7 @@ import { IEntity } from "./i-entity";
 export interface IProductBase extends IEntity {
     name: string;
     code: string;
-    measure: string;
+    unit: string;
     imageURL: string;
     skill: 'SIMPLE' | 'PARENT' | 'CHILD' | 'INPUT' | 'TOPPING' | 'BLEND' | 'DIFFRACTION';
     containerId: string;

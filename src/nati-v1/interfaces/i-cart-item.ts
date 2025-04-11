@@ -9,7 +9,7 @@ export interface INatiV1CartItem {
   isDelivery: boolean;
   isNew: boolean;
   linkItemId: number;
-  measure: string;
+  unit: string;
   observations: string;
   personId: number;
   picture: string | null | undefined;

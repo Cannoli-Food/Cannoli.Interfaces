@@ -28,7 +28,7 @@ export interface IProductV2 {
 
   imageURL?: string;
 
-  measure: string;
+  unit: string;
 
   name: string;
   options: IProductOptionsV2;

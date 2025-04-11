@@ -7,7 +7,7 @@ export interface IProductToppingV2 {
     containerId: string;
     createdAt: Date;
     id?: string;
-    measure: string;
+    unit: string;
     name: string;
     price: number;
     skill: EProductSkillV2;

@@ -17,7 +17,7 @@ export interface IGlobalsProduct {
     gtinEan: string;
     id: string;
     imageURL: string;
-    measure: string;
+    unit: string;
     moderated: boolean;
     moderatedAt: Date;
     moderatedBy: string;
