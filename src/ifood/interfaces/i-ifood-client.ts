@@ -1,10 +1,8 @@
 export interface IIFoodClient {
   id: string;
   active: boolean;
-  clientIdProd: string;
-  clientIdTest: string;
-  clientSecretProd: string;
-  clientSecretTest: string;
+  clientId: string;
+  clientSecret: string;
   createdAt: Date;
   updatedAt: Date;
 }
